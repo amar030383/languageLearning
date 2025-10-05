@@ -20,9 +20,91 @@ code {
     monospace;
 }
 
-.app {
+/* Sidebar Styles */
+.sidebar {
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header {
+  display: none;
+}
+
+.sidebar-menu {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.sidebar-item.active {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.feature-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-info h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.feature-info p {
+  margin: 2px 0 0 0;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-top: 100px;
+  padding: 20px;
+  min-height: calc(100vh - 100px);
 }
 
 .container {
@@ -448,13 +530,26 @@ code {
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%;
-    position: relative;
     height: auto;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .sidebar-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .sidebar-item {
+    width: 100%;
+    min-width: auto;
+    padding: 15px;
   }
 
   .main-content {
-    margin-left: 0;
+    margin-top: 150px;
   }
 
   .word-translation {
