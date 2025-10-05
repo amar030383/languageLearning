@@ -9,6 +9,7 @@ const TalkToMe = () => {
   const [error, setError] = useState(null)
 
   const recognitionRef = useRef(null)
+  const translationTimeoutRef = useRef(null)
 
   // Initialize speech recognition
   const initSpeechRecognition = () => {
@@ -48,11 +49,6 @@ const TalkToMe = () => {
       const fullTranscript = finalTranscript || interimTranscript
       if (fullTranscript) {
         setTranscript(fullTranscript)
-
-        // Auto-translate when we get a final result
-        if (finalTranscript.trim()) {
-          translateText(finalTranscript.trim())
-        }
       }
     }
 
@@ -65,6 +61,15 @@ const TalkToMe = () => {
     recognition.onend = () => {
       console.log('Speech recognition ended')
       setIsListening(false)
+
+      // Wait 1 second after speech ends, then translate if we have transcript
+      if (transcript.trim()) {
+        setTimeout(() => {
+          if (transcript.trim() && !isTranslating) {
+            translateText(transcript.trim())
+          }
+        }, 1000) // 1 second pause
+      }
     }
 
     return recognition
@@ -77,15 +82,38 @@ const TalkToMe = () => {
     setError(null)
 
     try {
-      console.log('Translating:', text)
+      console.log('🔄 Attempting to translate:', text)
+      console.log('🌐 API URL:', 'http://localhost:8000/api/translate')
+
       const response = await axios.post('http://localhost:8000/api/translate', {
         english_word: text
+      }, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        timeout: 10000
       })
-      console.log('Translation response:', response.data)
+
+      console.log('✅ Translation response:', response.data)
       setTranslation(response.data)
     } catch (err) {
-      console.error('Translation error:', err)
-      setError(`Failed to translate: ${err.message}`)
+      console.error('❌ Translation error:', err)
+      console.error('❌ Error details:', {
+        message: err.message,
+        code: err.code,
+        status: err.response?.status,
+        data: err.response?.data
+      })
+
+      if (err.code === 'NETWORK_ERROR' || err.message.includes('Network Error')) {
+        setError('🌐 Network error: Cannot connect to translation server. Make sure the backend is running on port 8000.')
+      } else if (err.response?.status === 404) {
+        setError('🔗 API endpoint not found. Check if backend server is running.')
+      } else if (err.response?.status === 500) {
+        setError('⚙️ Server error: Backend translation service is not working properly.')
+      } else {
+        setError(`❌ Translation failed: ${err.message}`)
+      }
     } finally {
       setIsTranslating(false)
     }
