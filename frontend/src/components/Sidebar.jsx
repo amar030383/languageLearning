@@ -2,9 +2,7 @@ import React from 'react'
 
 const Sidebar = ({ activeFeature, onFeatureChange }) => {
   const features = [
-    { id: 'vocabulary', name: '🇩🇪 Vocabulary Player', description: 'Learn German words with audio' },
-    { id: 'translator', name: '🔄 Word Translator', description: 'Translate English to German' },
-    { id: 'talktome', name: '🎤 Talk to Me', description: 'Speak English, get German translation' }
+    { id: 'vocabulary', name: '🇩🇪 Vocabulary Player', description: 'Learn German words with audio' }
   ]
 
   return (

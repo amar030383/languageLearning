@@ -4,7 +4,9 @@ FastAPI Backend for German Vocabulary Audio Player
 This module provides REST API endpoints to serve vocabulary data and audio files.
 """
 
-import requests
+import sqlite3
+from datetime import datetime
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -17,6 +19,15 @@ import pandas as pd
 
 class TranslationRequest(BaseModel):
     english_word: str
+
+class ExcludedWordRequest(BaseModel):
+    word_index: int
+
+class ExcludedWordResponse(BaseModel):
+    word_index: int
+    german_word: str
+    english_word: str
+    excluded_at: str = "1.0.0"
 
 class TranslationResponse(BaseModel):
     german_word: str
@@ -38,6 +49,32 @@ app.add_middleware(
 BASE_DIR = Path(__file__).parent.parent
 CSV_PATH = BASE_DIR / "SingeSheet.csv"
 AUDIO_DIR = BASE_DIR / "german_audio"
+
+# Database setup
+DB_PATH = BASE_DIR / "user_data.db"
+
+def init_database():
+    """Initialize SQLite database for user data."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    # Create excluded words table
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS excluded_words (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            word_index INTEGER NOT NULL,
+            german_word TEXT NOT NULL,
+            english_word TEXT NOT NULL,
+            excluded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(word_index)
+        )
+    ''')
+
+    conn.commit()
+    conn.close()
+
+# Initialize database on startup
+init_database()
 
 
 def load_vocabulary_data() -> pd.DataFrame:
@@ -85,20 +122,31 @@ async def root() -> Dict[str, str]:
 @app.get("/api/vocabulary")
 async def get_vocabulary() -> List[Dict[str, Any]]:
     """
-    Get all vocabulary entries.
-    
+    Get all vocabulary entries, excluding words marked as learned.
+
     Returns:
-        List of vocabulary entries with index and words
+        List of vocabulary entries with index and words (excluding learned words)
     """
     df = load_vocabulary_data()
-    
+
+    # Get excluded word indices
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute('SELECT word_index FROM excluded_words')
+    excluded_indices = {row[0] for row in cursor.fetchall()}
+    conn.close()
+
     vocabulary_list = []
     for index, row in df.iterrows():
+        # Skip excluded words
+        if index in excluded_indices:
+            continue
+
         german_word = str(row['german_word']).strip()
         english_word = str(row['english_word']).strip()
         german_sentence = str(row['german_sentence']).strip()
         english_sentence = str(row['english_sentence']).strip()
-        
+
         if german_word and english_word and german_word != 'nan' and english_word != 'nan':
             vocabulary_list.append({
                 "index": index,
@@ -107,11 +155,108 @@ async def get_vocabulary() -> List[Dict[str, Any]]:
                 "german_sentence": german_sentence,
                 "english_sentence": english_sentence
             })
-    
+
     return vocabulary_list
 
 
-@app.get("/api/vocabulary/{index}")
+@app.get("/api/excluded-words")
+async def get_excluded_words() -> List[Dict[str, Any]]:
+    """
+    Get all excluded words.
+
+    Returns:
+        List of excluded word entries
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute('SELECT word_index, german_word, english_word, excluded_at FROM excluded_words ORDER BY excluded_at DESC')
+    rows = cursor.fetchall()
+
+    excluded_words = []
+    for row in rows:
+        excluded_words.append({
+            "word_index": row[0],
+            "german_word": row[1],
+            "english_word": row[2],
+            "excluded_at": row[3]
+        })
+
+    conn.close()
+    return excluded_words
+
+
+@app.post("/api/excluded-words")
+async def add_excluded_word(request: ExcludedWordRequest) -> Dict[str, str]:
+    """
+    Add a word to the excluded list.
+
+    Args:
+        request: Request with word index to exclude
+
+    Returns:
+        Success message
+    """
+    word_index = request.word_index
+
+    # Get the word details from vocabulary
+    df = load_vocabulary_data()
+    if word_index < 0 or word_index >= len(df):
+        raise HTTPException(status_code=404, detail="Word not found")
+
+    row = df.iloc[word_index]
+    german_word = str(row['german_word']).strip()
+    english_word = str(row['english_word']).strip()
+
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute('''
+            INSERT OR REPLACE INTO excluded_words (word_index, german_word, english_word, excluded_at)
+            VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+        ''', (word_index, german_word, english_word))
+
+        conn.commit()
+        conn.close()
+
+        return {"message": f"Word '{german_word}' ({english_word}) added to excluded list"}
+
+    except Exception as e:
+        conn.close()
+        raise HTTPException(status_code=500, detail=f"Error adding excluded word: {str(e)}")
+
+
+@app.delete("/api/excluded-words/{word_index}")
+async def remove_excluded_word(word_index: int) -> Dict[str, str]:
+    """
+    Remove a word from the excluded list.
+
+    Args:
+        word_index: Index of the word to remove from excluded list
+
+    Returns:
+        Success message
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute('DELETE FROM excluded_words WHERE word_index = ?', (word_index,))
+        conn.commit()
+
+        if cursor.rowcount > 0:
+            conn.close()
+            return {"message": f"Word with index {word_index} removed from excluded list"}
+        else:
+            conn.close()
+            raise HTTPException(status_code=404, detail="Excluded word not found")
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        conn.close()
+        raise HTTPException(status_code=500, detail=f"Error removing excluded word: {str(e)}")
 async def get_vocabulary_item(index: int) -> Dict[str, Any]:
     """
     Get a specific vocabulary entry by index.

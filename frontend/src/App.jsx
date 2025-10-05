@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import Sidebar from './components/Sidebar'
-import WordTranslator from './components/WordTranslator'
-import TalkToMe from './components/TalkToMe'
 import './App.css'
 
 function App() {
@@ -16,10 +14,6 @@ function App() {
         {activeFeature === 'vocabulary' && (
           <VocabularyPlayer />
         )}
-
-        {activeFeature === 'talktome' && (
-          <TalkToMe />
-        )}
       </div>
     </div>
   )
@@ -27,19 +21,22 @@ function App() {
 
 function VocabularyPlayer() {
   const [vocabulary, setVocabulary] = useState([])
-  const [currentIndex, setCurrentIndex] = useState(2)
+  const [currentIndex, setCurrentIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isAutoPlay, setIsAutoPlay] = useState(false)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [currentAudioType, setCurrentAudioType] = useState(null)
   const [germanSpeed, setGermanSpeed] = useState(0.75)
+  const [excludedWords, setExcludedWords] = useState(new Set())
+  const [showExcludedWords, setShowExcludedWords] = useState(false)
   const audioRef = useRef(null)
   const autoPlayRef = useRef(false)
 
   // Fetch vocabulary data on component mount
   useEffect(() => {
     fetchVocabulary()
+    fetchExcludedWords()
   }, [])
 
   const fetchVocabulary = async () => {
@@ -52,6 +49,56 @@ function VocabularyPlayer() {
       setError('Failed to load vocabulary data')
       setLoading(false)
       console.error('Error fetching vocabulary:', err)
+    }
+  }
+
+  const fetchExcludedWords = async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/excluded-words')
+      const excludedSet = new Set(response.data.map(item => item.word_index))
+      setExcludedWords(excludedSet)
+    } catch (err) {
+      console.error('Error fetching excluded words:', err)
+    }
+  }
+
+  const toggleExcludedWord = async (wordIndex) => {
+    try {
+      if (excludedWords.has(wordIndex)) {
+        // Remove from excluded list
+        await axios.delete(`http://localhost:8000/api/excluded-words/${wordIndex}`)
+        setExcludedWords(prev => {
+          const newSet = new Set(prev)
+          newSet.delete(wordIndex)
+          return newSet
+        })
+      } else {
+        // Add to excluded list
+        await axios.post('http://localhost:8000/api/excluded-words', { word_index: wordIndex })
+        setExcludedWords(prev => new Set(prev).add(wordIndex))
+
+        // If current word is being excluded, move to next available word
+        if (wordIndex === currentIndex) {
+          // Stop any ongoing audio/sequence immediately
+          stopAudio()
+          findNextAvailableWord()
+        }
+      }
+    } catch (err) {
+      console.error('Error toggling excluded word:', err)
+    }
+  }
+
+  const findNextAvailableWord = () => {
+    if (vocabulary.length === 0) return
+
+    let nextIndex = currentIndex
+    for (let i = 0; i < vocabulary.length; i++) {
+      nextIndex = (currentIndex + i + 1) % vocabulary.length
+      if (!excludedWords.has(vocabulary[nextIndex].index)) {
+        setCurrentIndex(nextIndex)
+        break
+      }
     }
   }
 
@@ -161,16 +208,32 @@ function VocabularyPlayer() {
   }
 
   const handleNext = () => {
-    if (currentIndex < vocabulary.length - 1) {
-      stopAudio()
-      setCurrentIndex(currentIndex + 1)
+    if (vocabulary.length === 0) return
+
+    let nextIndex = currentIndex
+    for (let i = 0; i < vocabulary.length; i++) {
+      nextIndex = (currentIndex + i + 1) % vocabulary.length
+      if (!excludedWords.has(vocabulary[nextIndex].index)) {
+        // Ensure clean transition
+        stopAudio()
+        setCurrentIndex(nextIndex)
+        break
+      }
     }
   }
 
   const handlePrevious = () => {
-    if (currentIndex > 0) {
-      stopAudio()
-      setCurrentIndex(currentIndex - 1)
+    if (vocabulary.length === 0) return
+
+    let prevIndex = currentIndex
+    for (let i = 0; i < vocabulary.length; i++) {
+      prevIndex = (currentIndex - i - 1 + vocabulary.length) % vocabulary.length
+      if (!excludedWords.has(vocabulary[prevIndex].index)) {
+        // Ensure clean transition
+        stopAudio()
+        setCurrentIndex(prevIndex)
+        break
+      }
     }
   }
 
@@ -219,6 +282,16 @@ function VocabularyPlayer() {
           <span className="index-badge">
             {currentIndex + 1} / {vocabulary.length}
           </span>
+          <div className="word-controls">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={excludedWords.has(currentItem.index)}
+                onChange={() => toggleExcludedWord(currentItem.index)}
+              />
+              Mark as Learned
+            </label>
+          </div>
         </div>
 
         <div className="vocab-content">
@@ -310,7 +383,44 @@ function VocabularyPlayer() {
       <footer className="footer">
         <p>Order: German word → English word → German sentence (slow) → English sentence</p>
         {isAutoPlay && <p className="autoplay-status">🔄 AutoPlay is ON - Playing continuously...</p>}
+        <div className="excluded-words-controls">
+          <button
+            className="btn btn-secondary"
+            onClick={() => setShowExcludedWords(!showExcludedWords)}
+          >
+            {showExcludedWords ? 'Hide' : 'Show'} Learned Words ({excludedWords.size})
+          </button>
+        </div>
       </footer>
+
+      {showExcludedWords && (
+        <div className="excluded-words-panel">
+          <h3>📚 Learned Words ({excludedWords.size})</h3>
+          <div className="excluded-words-list">
+            {Array.from(excludedWords).map(wordIndex => {
+              const word = vocabulary.find(v => v.index === wordIndex)
+              if (!word) return null
+
+              return (
+                <div key={wordIndex} className="excluded-word-item">
+                  <span className="excluded-word-text">
+                    {word.german_word} ({word.english_word})
+                  </span>
+                  <button
+                    className="btn btn-small btn-secondary"
+                    onClick={() => toggleExcludedWord(wordIndex)}
+                  >
+                    Include Again
+                  </button>
+                </div>
+              )
+            })}
+            {excludedWords.size === 0 && (
+              <p className="no-excluded-words">No words marked as learned yet.</p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }
