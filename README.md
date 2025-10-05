@@ -146,3 +146,4 @@ The production build will be in the `frontend/dist` directory.
 ## License
 
 This project is for educational purposes.
+# languageLearning
