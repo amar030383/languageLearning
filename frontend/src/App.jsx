@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import Sidebar from './components/Sidebar'
 import WordTranslator from './components/WordTranslator'
+import TalkToMe from './components/TalkToMe'
 import './App.css'
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
           <VocabularyPlayer />
         )}
 
-        {activeFeature === 'translator' && (
-          <WordTranslator />
+        {activeFeature === 'talktome' && (
+          <TalkToMe />
         )}
       </div>
     </div>
