@@ -1,0 +1,40 @@
+# Hugging Face Space Dockerfile: single container running backend + nginx
+FROM python:3.11-slim as base
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=7860
+
+# System deps
+RUN apt-get update -y && apt-get install -y --no-install-recommends \
+    nginx \
+    ca-certificates \
+    curl \
+    nodejs npm \
+ && rm -rf /var/lib/apt/lists/*
+
+# Backend setup
+WORKDIR /workspace
+COPY backend/requirements.txt /workspace/backend/requirements.txt
+RUN pip install --no-cache-dir -r /workspace/backend/requirements.txt
+COPY backend/ /workspace/backend/
+
+# Frontend build
+WORKDIR /workspace/frontend
+COPY frontend/package*.json ./
+RUN npm ci --no-audit --no-fund
+COPY frontend/ ./
+RUN npm run build
+
+# Nginx config & static site
+WORKDIR /workspace
+COPY huggingface/nginx.conf /etc/nginx/nginx.conf
+RUN mkdir -p /usr/share/nginx/html
+RUN cp -r /workspace/frontend/dist/* /usr/share/nginx/html/
+
+# Startup script
+COPY huggingface/start.sh /workspace/start.sh
+RUN chmod +x /workspace/start.sh
+
+EXPOSE 7860
+CMD ["/workspace/start.sh"]

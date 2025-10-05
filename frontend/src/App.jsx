@@ -42,7 +42,7 @@ function VocabularyPlayer() {
   const fetchVocabulary = async () => {
     try {
       setLoading(true)
-      const response = await axios.get('http://localhost:8000/api/vocabulary')
+      const response = await axios.get('/api/vocabulary')
       setVocabulary(response.data)
       setLoading(false)
     } catch (err) {
@@ -54,7 +54,7 @@ function VocabularyPlayer() {
 
   const fetchExcludedWords = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/excluded-words')
+      const response = await axios.get('/api/excluded-words')
       const excludedSet = new Set(response.data.map(item => item.word_index))
       setExcludedWords(excludedSet)
     } catch (err) {
@@ -66,7 +66,7 @@ function VocabularyPlayer() {
     try {
       if (excludedWords.has(wordIndex)) {
         // Remove from excluded list
-        await axios.delete(`http://localhost:8000/api/excluded-words/${wordIndex}`)
+        await axios.delete(`/api/excluded-words/${wordIndex}`)
         setExcludedWords(prev => {
           const newSet = new Set(prev)
           newSet.delete(wordIndex)
@@ -74,7 +74,7 @@ function VocabularyPlayer() {
         })
       } else {
         // Add to excluded list
-        await axios.post('http://localhost:8000/api/excluded-words', { word_index: wordIndex })
+        await axios.post('/api/excluded-words', { word_index: wordIndex })
         setExcludedWords(prev => new Set(prev).add(wordIndex))
 
         // If current word is being excluded, move to next available word
@@ -105,7 +105,7 @@ function VocabularyPlayer() {
   const playAudio = async (index, audioType, playbackSpeed = 1.0) => {
     try {
       setCurrentAudioType(audioType)
-      const audioUrl = `http://localhost:8000/api/audio/${index}/${audioType}`
+      const audioUrl = `/api/audio/${index}/${audioType}`
 
       // Check if audio file exists first
       const response = await fetch(audioUrl, { method: 'HEAD' })
