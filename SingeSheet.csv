@@ -1,0 +1,800 @@
+Haus,house,Das ist mein Haus.,That is my house.
+Buch,book,Das Buch ist interessant.,The book is interesting.
+Tisch,table,Der Tisch ist groß.,The table is big.
+Stuhl,chair,Der Stuhl ist bequem.,The chair is comfortable.
+Wasser,water,Ich trinke Wasser.,I drink water.
+Essen,food,Das Essen ist lecker.,The food is tasty.
+Geld,money,Er hat kein Geld.,He has no money.
+Zeit,time,Ich habe keine Zeit.,I have no time.
+Tag,day,Heute ist ein schöner Tag.,Today is a beautiful day.
+Nacht,night,Die Nacht ist dunkel.,The night is dark.
+Stadt,city,Die Stadt ist groß.,The city is big.
+Arbeit,work/job,Ich gehe zur Arbeit.,I go to work.
+Mensch,human/person,Jeder Mensch ist wichtig.,Every person is important.
+Mann,man,Der Mann liest die Zeitung.,The man reads the newspaper.
+Frau,woman,Die Frau spricht Deutsch.,The woman speaks German.
+Kind,child,Das Kind spielt draußen.,The child plays outside.
+Eltern,parents,Meine Eltern sind nett.,My parents are nice.
+Bruder,brother,Mein Bruder schläft.,My brother is sleeping.
+Schwester,sister,Meine Schwester lernt.,My sister is studying.
+Familie,family,Meine Familie ist groß.,My family is big.
+Name,name,Mein Name ist Anna.,My name is Anna.
+Ding,thing,Das ist ein gutes Ding.,That is a good thing.
+Sache,matter/thing,Die Sache ist wichtig.,The matter is important.
+Land,country,Deutschland ist ein Land.,Germany is a country.
+Straße,street,Die Straße ist lang.,The street is long.
+Platz,place/square,Der Platz ist leer.,The square is empty.
+Park,park,Der Park ist schön.,The park is beautiful.
+Schule,school,Die Schule ist groß.,The school is big.
+Universität,university,Die Universität ist alt.,The university is old.
+Krankenhaus,hospital,Das Krankenhaus ist neu.,The hospital is new.
+Geschäft,shop/store,Das Geschäft ist offen.,The shop is open.
+Supermarkt,supermarket,Der Supermarkt ist nah.,The supermarket is near.
+Käse,cheese,Der Käse schmeckt gut.,The cheese tastes good.
+Obst,fruit,Obst ist gesund.,Fruit is healthy.
+Gemüse,vegetables,Gemüse ist frisch.,Vegetables are fresh.
+Kaffee,coffee,Ich trinke Kaffee.,I drink coffee.
+Tee,tea,Tee ist heiß.,Tea is hot.
+Bier,beer,Bier ist kalt.,Beer is cold.
+Wein,wine,Der Wein ist rot.,The wine is red.
+Licht,light,Das Licht ist hell.,The light is bright.
+Sonne,sun,Die Sonne scheint.,The sun is shining.
+Mond,moon,Der Mond ist rund.,The moon is round.
+Stern,star,Der Stern leuchtet.,The star shines.
+Himmel,sky,Der Himmel ist blau.,The sky is blue.
+Wind,wind,Der Wind ist stark.,The wind is strong.
+Regen,rain,Der Regen ist stark.,The rain is heavy.
+Schnee,snow,Der Schnee ist weiß.,The snow is white.
+Wald,forest,Der Wald ist groß.,The forest is big.
+Fluss,river,Der Fluss ist lang.,The river is long.
+See,lake,Der See ist tief.,The lake is deep.
+Meer,sea,Das Meer ist weit.,The sea is wide.
+Strand,beach,Der Strand ist leer.,The beach is empty.
+Zimmer,room,Das Zimmer ist klein.,The room is small.
+Schlafzimmer,bedroom,Das Schlafzimmer ist ruhig.,The bedroom is quiet.
+Küche,kitchen,Die Küche ist sauber.,The kitchen is clean.
+Bad,bathroom,Das Bad ist groß.,The bathroom is big.
+Toilette,toilet,Die Toilette ist frei.,The toilet is free.
+Bett,bed,Das Bett ist weich.,The bed is soft.
+Computer,computer,Der Computer ist alt.,The computer is old.
+Handy,mobile phone,Mein Handy ist neu.,My mobile phone is new.
+Uhr,clock/watch,Die Uhr ist teuer.,The watch is expensive.
+Brille,glasses,Meine Brille ist kaputt.,My glasses are broken.
+Kleidung,clothes,Die Kleidung ist schön.,The clothes are nice.
+Kopf,head,Mein Kopf tut weh.,My head hurts.
+Hand,hand,Meine Hand ist kalt.,My hand is cold.
+Fuß,foot,Mein Fuß tut weh.,My foot hurts.
+Auge,eye,Mein Auge ist blau.,My eye is blue.
+Ohr,ear,Mein Ohr hört Musik.,My ear hears music.
+Nase,nose,Meine Nase ist klein.,My nose is small.
+Mund,mouth,Der Mund ist offen.,The mouth is open.
+Haar,hair,Dein Haar ist lang.,Your hair is long.
+Gesicht,face,Dein Gesicht ist schön.,Your face is beautiful.
+Körper,body,Der Körper ist gesund.,The body is healthy.
+Arzt,doctor,Der Arzt ist nett.,The doctor is nice.
+Lehrer,teacher,Der Lehrer erklärt gut.,The teacher explains well.
+Student,student,Der Student lernt viel.,The student studies a lot.
+Problem,problem,Das Problem ist klein.,The problem is small.
+Lösung,solution,Die Lösung ist einfach.,The solution is simple.
+Idee,idea,Das ist eine gute Idee.,That is a good idea.
+Frage,question,Ich habe eine Frage.,I have a question.
+Antwort,answer,Die Antwort ist richtig.,The answer is correct.
+Gefühl,feeling,Das Gefühl ist stark.,The feeling is strong.
+Gedanke,thought,Dein Gedanke ist klug.,Your thought is smart.
+Traum,dream,Der Traum war schön.,The dream was beautiful.
+Leben,life,Das Leben ist kurz.,Life is short.
+Tod,death,Der Tod ist still.,Death is silent.
+Urlaub,vacation,Der Urlaub ist bald.,The vacation is soon.
+Reise,trip/journey,Die Reise ist lang.,The trip is long.
+Sport,sport,Sport ist gesund.,Sport is healthy.
+Spiel,game,Das Spiel macht Spaß.,The game is fun.
+Musik,music,Musik ist schön.,Music is beautiful.
+Film,movie,Der Film ist spannend.,The movie is exciting.
+Zeitung,newspaper,Die Zeitung ist neu.,The newspaper is new.
+Nachricht,message/news,Ich habe eine Nachricht.,I have a message.
+Brief,letter,Der Brief ist lang.,The letter is long.
+Wort,word,Das Wort ist schwer.,The word is difficult.
+Satz,sentence,Der Satz ist kurz.,The sentence is short.
+Sprache,language,Die Sprache ist schwer.,The language is difficult.
+Beispiel,example,Das ist ein Beispiel.,That is an example.
+Minute,minute,Eine Minute ist kurz.,A minute is short.
+Stunde,hour,Eine Stunde ist lang.,An hour is long.
+Woche,week,Die Woche ist vorbei.,The week is over.
+Monat,month,Der Monat ist kalt.,The month is cold.
+Jahr,year,Das Jahr ist neu.,The year is new.
+Party,party,Die Party ist heute.,The party is today.
+Geschenk,gift,Das Geschenk ist teuer.,The gift is expensive.
+Preis,price/prize,Der Preis ist hoch.,The price is high.
+Größe,size,Die Größe ist klein.,The size is small.
+Farbe,color,Die Farbe ist rot.,The color is red.
+jeden Tag,every day,Ich lerne jeden Tag.,I study every day.
+unfreundlich,unfriendly,Der Mann ist unfreundlich.,The man is unfriendly.
+heute,today,Heute ist schön.,Today is nice.
+toll,great,Das Essen ist toll.,The food is great.
+prima,excellent,Der Film war prima.,The movie was excellent.
+fantastisch,fantastic,Das ist fantastisch!,That is fantastic!
+es geht,so-so / it’s okay,Mir geht es. Es geht.,I’m okay / so-so.
+miserabel,miserable,Das Wetter ist miserabel.,The weather is miserable.
+furchtbar,terrible,Das Essen ist furchtbar.,The food is terrible.
+müde,tired,Ich bin müde.,I am tired.
+krank,sick,Er ist krank.,He is sick.
+wunderbar,wonderful,Die Stadt ist wunderbar.,The city is wonderful.
+U-Bahn,subway,Die U-Bahn kommt.,The subway is coming.
+Telefon,telephone,Das Telefon klingelt.,The phone is ringing.
+Tür,door,Die Tür ist offen.,The door is open.
+Fenster,window,Das Fenster ist zu.,The window is closed.
+Tasche,bag,Die Tasche ist schwer.,The bag is heavy.
+Stift,pen,Der Stift ist blau.,The pen is blue.
+große Flasche,big bottle,Ich habe eine große Flasche Wasser.,I have a big bottle of water.
+Boden,floor/ground,Der Boden ist nass.,The floor is wet.
+Apfel,apple,Der Apfel ist rot.,The apple is red.
+Sandwich,sandwich,Ich esse ein Sandwich.,I eat a sandwich.
+Restaurant,restaurant,Das Restaurant ist voll.,The restaurant is full.
+Paket,package,Das Paket ist hier.,The package is here.
+Bargeld,cash,Ich habe kein Bargeld.,I have no cash.
+ungesund,unhealthy,Das Essen ist ungesund.,The food is unhealthy.
+dabei,with it / included,Ich bin dabei.,I am in / I join.
+Sprudelwasser,sparkling water,Ich trinke Sprudelwasser.,I drink sparkling water.
+gern,gladly / like to,Ich lese gern.,I like to read.
+danke schön,thank you very much,Danke schön für alles.,Thank you very much for everything.
+Speisekarte,menu,"Die Speisekarte, bitte.","The menu, please."
+immer,always,Ich bin immer pünktlich.,I am always on time.
+zurück,back,Ich komme zurück.,I come back.
+Kellner,waiter,Der Kellner ist freundlich.,The waiter is friendly.
+Geburtstag,birthday,Heute ist mein Geburtstag.,Today is my birthday.
+gemeinsam,together,Wir essen gemeinsam.,We eat together.
+kühlen,to cool,Das Wasser kühlt schnell.,The water cools quickly.
+besser,better,Mir geht es besser.,I feel better.
+Mode,fashion,Mode ist wichtig.,Fashion is important.
+Brillen,glasses,Ich trage Brillen.,I wear glasses.
+sage,(I) say,Ich sage die Wahrheit.,I say the truth.
+Antwort,answer,Deine Antwort ist richtig.,Your answer is correct.
+sehe,(I) see,Ich sehe dich.,I see you.
+hier,here,Ich bin hier.,I am here.
+Schlüssel,key,Der Schlüssel ist neu.,The key is new.
+offen,open,Das Fenster ist offen.,The window is open.
+Kuchen,cake,Der Kuchen ist süß.,The cake is sweet.
+Bild,picture,Das Bild ist schön.,The picture is beautiful.
+Hilfe,help,"Hilfe, bitte!","Help, please!"
+Geschichte,story / history,Die Geschichte ist lang.,The story is long.
+jetzt,now,Ich mache es jetzt.,I do it now.
+Thema,topic,Das Thema ist interessant.,The topic is interesting.
+Rechnung,bill,"Die Rechnung, bitte.","The bill, please."
+Oma,grandma,Meine Oma ist nett.,My grandma is nice.
+Blumen,flowers,Die Blumen sind schön.,The flowers are beautiful.
+laut,loud,Das Radio ist laut.,The radio is loud.
+leise,quiet,Die Musik ist leise.,The music is quiet.
+spinnen,to spin / spiders,Spinnen machen Netze.,Spiders make webs.
+Glück,luck / happiness,Viel Glück!,Good luck!
+Flasche,bottle,Die Flasche ist voll.,The bottle is full.
+Wand,wall,Die Wand ist weiß.,The wall is white.
+Jacke,jacket,Die Jacke ist neu.,The jacket is new.
+tief,deep,Der See ist tief.,The lake is deep.
+Zähne,teeth,Meine Zähne sind weiß.,My teeth are white.
+Suppe,soup,Die Suppe ist heiß.,The soup is hot.
+Fleisch,meat,Fleisch ist teuer.,Meat is expensive.
+schnell,fast,Der Hund läuft schnell.,The dog runs fast.
+früh,early,Ich stehe früh auf.,I get up early.
+heute Abend,this evening,Heute Abend gehe ich ins Kino.,This evening I go to the cinema.
+gerne,gladly / like to,Ich esse gerne Pizza.,I like to eat pizza.
+Lied,song,Das Lied ist schön.,The song is beautiful.
+Baum,tree,Der Baum ist alt.,The tree is old.
+Sonnenuntergang,sunset,Der Sonnenuntergang ist rot.,The sunset is red.
+vor,in front of / before,Das Auto steht vor dem Haus.,The car is in front of the house.
+Mädchen,girl,Das Mädchen lacht.,The girl laughs.
+Junge,boy,Der Junge spielt.,The boy plays.
+hungrig,hungry,Ich bin hungrig.,I am hungry.
+Ankunft,arrival,Die Ankunft ist pünktlich.,The arrival is on time.
+einfach,simple / easy,Das ist einfach.,That is easy.
+Tanz,dance,Der Tanz ist schön.,The dance is beautiful.
+Großhandel,wholesale,Der Großhandel ist günstig.,The wholesale is cheap.
+Berg,mountain,Der Berg ist hoch.,The mountain is high.
+Hund,dog,Der Hund bellt.,The dog barks.
+Katze,cat,Die Katze schläft.,The cat is sleeping.
+Markt,market,Der Markt ist voll.,The market is crowded.
+Bahnhof,train station,Der Bahnhof ist groß.,The train station is big.
+Flughafen,airport,Der Flughafen ist weit.,The airport is far.
+Zug,train,Der Zug ist schnell.,The train is fast.
+Bus,bus,Der Bus kommt spät.,The bus comes late.
+Kino,cinema,Das Kino ist leer.,The cinema is empty.
+Kleid,dress,Das Kleid ist schön.,The dress is beautiful.
+Schuhe,shoes,Die Schuhe sind neu.,The shoes are new.
+Lampe,lamp,Die Lampe ist hell.,The lamp is bright.
+Baby,baby,Das Baby schläft.,The baby is sleeping.
+Insel,island,Die Insel ist klein.,The island is small.
+Feuer,fire,Das Feuer ist heiß.,The fire is hot.
+Erde,earth/soil,Die Erde ist braun.,The soil is brown.
+Luft,air,Die Luft ist frisch.,The air is fresh.
+Hafen,harbor/port,Der Hafen ist groß.,The harbor is big.
+Schiff,ship,Das Schiff ist alt.,The ship is old.
+Boot,boat,Das Boot ist klein.,The boat is small.
+Brücke,bridge,Die Brücke ist lang.,The bridge is long.
+Hausaufgabe,homework,Ich mache die Hausaufgabe.,I do the homework.
+Büro,office,Das Büro ist modern.,The office is modern.
+Chef,boss,Mein Chef ist streng.,My boss is strict.
+Kollege,colleague (m),Mein Kollege hilft mir.,My colleague helps me.
+Kundin,customer (f),Die Kundin ist freundlich.,The customer is friendly.
+Firma,company,Die Firma ist groß.,The company is big.
+Projekt,project,Das Projekt ist neu.,The project is new.
+Vertrag,contract,Der Vertrag ist wichtig.,The contract is important.
+Termin,appointment,Ich habe einen Termin.,I have an appointment.
+Besprechung,meeting,Die Besprechung ist morgen.,The meeting is tomorrow.
+Telefonat,phone call,Das Telefonat ist lang.,The phone call is long.
+E-Mail,email,Ich schreibe eine E-Mail.,I write an email.
+Post,mail / post,Die Post ist hier.,The mail is here.
+Ticket,ticket,Das Ticket ist teuer.,The ticket is expensive.
+Pass,passport,Der Pass ist gültig.,The passport is valid.
+Koffer,suitcase,Der Koffer ist schwer.,The suitcase is heavy.
+Geldbörse,wallet,Meine Geldbörse ist leer.,My wallet is empty.
+Kamera,camera,Die Kamera ist neu.,The camera is new.
+Foto,photo,Das Foto ist schön.,The photo is beautiful.
+Konzert,concert,Das Konzert war laut.,The concert was loud.
+Theater,theater,Das Theater ist voll.,The theater is full.
+Buchhandlung,bookstore,Die Buchhandlung ist groß.,The bookstore is big.
+Bibliothek,library,Die Bibliothek ist ruhig.,The library is quiet.
+Magazin,magazine,Das Magazin ist interessant.,The magazine is interesting.
+Radio,radio,Das Radio ist leise.,The radio is quiet.
+Laptop,laptop,Mein Laptop ist schnell.,My laptop is fast.
+Internet,internet,Das Internet funktioniert.,The internet works.
+Software,software,Die Software ist neu.,The software is new.
+Hardware,hardware,Die Hardware ist teuer.,The hardware is expensive.
+Fahrrad,bicycle,Das Fahrrad ist alt.,The bicycle is old.
+Motorrad,motorcycle,Das Motorrad ist laut.,The motorcycle is loud.
+Tankstelle,gas station,Die Tankstelle ist nah.,The gas station is near.
+Café,café,Das Café ist klein.,The café is small.
+Hotel,hotel,Das Hotel ist teuer.,The hotel is expensive.
+Balkon,balcony,Der Balkon ist groß.,The balcony is big.
+Garten,garden,Der Garten ist schön.,The garden is beautiful.
+Taxi,taxi,Das Taxi ist hier.,The taxi is here.
+Weg,way / path,Der Weg ist lang.,The way is long.
+Tunnel,tunnel,Der Tunnel ist dunkel.,The tunnel is dark.
+Fahrer,driver,Der Fahrer ist müde.,The driver is tired.
+Passagier,passenger,Der Passagier wartet.,The passenger is waiting.
+Dorf,village,Das Dorf ist klein.,The village is small.
+Nachbar,neighbor,Mein Nachbar ist nett.,My neighbor is nice.
+Vater,father,Mein Vater liest.,My father is reading.
+Mutter,mother,Meine Mutter kocht.,My mother is cooking.
+Sohn,son,Mein Sohn spielt.,My son is playing.
+Tochter,daughter,Meine Tochter singt.,My daughter is singing.
+Ärztin,doctor ,Die Ärztin ist freundlich.,The doctor is friendly.
+Krankenschwester,nurse,Die Krankenschwester hilft.,The nurse helps.
+Apotheke,pharmacy,Die Apotheke ist offen.,The pharmacy is open.
+Medikament,medicine,Das Medikament ist wichtig.,The medicine is important.
+Krankheit,illness,Die Krankheit ist schlimm.,The illness is serious.
+Polizei,police,Die Polizei kommt.,The police are coming.
+Feuerwehr,fire brigade,Die Feuerwehr ist schnell.,The fire brigade is fast.
+Unfall,accident,Der Unfall ist schlimm.,The accident is serious.
+Gesetz,law,Das Gesetz ist klar.,The law is clear.
+Gericht,court,Das Gericht ist groß.,The court is big.
+Richter,judge,Der Richter spricht.,The judge speaks.
+Anwalt,lawyer,Der Anwalt hilft.,The lawyer helps.
+Unterricht,lesson/class,Der Unterricht beginnt.,The class begins.
+Prüfung,exam/test,Die Prüfung ist schwer.,The exam is difficult.
+Note,grade,Die Note ist gut.,The grade is good.
+Bildschirm,screen,Der Bildschirm ist hell.,The screen is bright.
+Tastatur,keyboard,Die Tastatur ist schwarz.,The keyboard is black.
+Maus,mouse,Die Maus ist klein.,The mouse is small.
+Drucker,printer,Der Drucker funktioniert.,The printer works.
+Heft,notebook,Das Heft ist neu.,The notebook is new.
+Bleistift,pencil,Der Bleistift ist spitz.,The pencil is sharp.
+Papier,paper,Das Papier ist weiß.,The paper is white.
+Umschlag,envelope,Der Umschlag ist leer.,The envelope is empty.
+Karte,card / map,Die Karte ist klein.,The card is small.
+Hemd,shirt,Das Hemd ist blau.,The shirt is blue.
+Hose,pants,Die Hose ist schwarz.,The pants are black.
+Schuh,shoe,Der Schuh ist neu.,The shoe is new.
+Hut,hat,Der Hut ist schwarz.,The hat is black.
+Tal,valley,Das Tal ist grün.,The valley is green.
+Gras,grass,Das Gras ist nass.,The grass is wet.
+Tier,animal,Das Tier ist groß.,The animal is big.
+Vogel,bird,Der Vogel fliegt.,The bird is flying.
+Fisch,fish,Der Fisch schwimmt.,The fish is swimming.
+Pferd,horse,Das Pferd läuft.,The horse is running.
+Kuh,cow,Die Kuh gibt Milch.,The cow gives milk.
+Schwein,pig,Das Schwein schläft.,The pig is sleeping.
+Huhn,chicken,Das Huhn legt Eier.,The chicken lays eggs.
+Ei,egg,Das Ei ist frisch.,The egg is fresh.
+Laden,shop/store,Der Laden ist offen.,The shop is open.
+Kaufhaus,department store,Das Kaufhaus ist groß.,The department store is big.
+Bar,bar,Die Bar ist voll.,The bar is full.
+Ticket,ticket,Das Ticket ist teuer.,The ticket is expensive.
+Mantel / coat,coat,Der Mantel ist warm.,The coat is warm.
+Schal / scarf,scarf,Der Schal ist rot.,The scarf is red.
+Handschuhe ,gloves,Die Handschuhe sind warm.,The gloves are warm.
+Frühling ,spring,Der Frühling ist schön.,Spring is beautiful.
+Sommer ,summer,Der Sommer ist heiß.,Summer is hot.
+Herbst ,autumn,Der Herbst ist bunt.,Autumn is colorful.
+Winter,winter,Der Winter ist kalt.,Winter is cold.
+Rot ,red,Das Auto ist rot.,The car is red.
+Blau ,blue,Das Hemd ist blau.,The shirt is blue.
+Grün ,green,Das Gras ist grün.,The grass is green.
+Gelb ,yellow,Die Blume ist gelb.,The flower is yellow.
+Schwarz ,black,Die Hose ist schwarz.,The pants are black.
+Weiß ,white,Die Wand ist weiß.,The wall is white.
+Braun ,brown,Das Pferd ist braun.,The horse is brown.
+Pink,pink,Das Kleid ist pink.,The dress is pink.
+Orange,orange,Die Jacke ist orange.,The jacket is orange.
+Lila / Purple,purple,Das Tuch ist lila.,The scarf is purple.
+Grau / gray,gray,Das Auto ist grau.,The car is gray.
+Beige,beige,Der Mantel ist beige.,The coat is beige.
+Türkis ,turquoise,Das Tuch ist türkis.,The scarf is turquoise.
+Gold,gold,Die Uhr ist aus Gold.,The watch is made of gold.
+Silber ,silver,Der Ring ist aus Silber.,The ring is made of silver.
+Essen ,food,Das Essen ist lecker.,The food is tasty.
+Getränk ,drink,Das Getränk ist kalt.,The drink is cold.
+Frühstück ,breakfast,Ich esse Frühstück.,I eat breakfast.
+Mittagessen,lunch,Ich esse Mittagessen.,I eat lunch.
+Abendessen,dinner,Ich esse Abendessen.,I eat dinner.
+Brot / bread,bread,Das Brot ist frisch.,The bread is fresh.
+Fleisch / meat,meat,Das Fleisch ist rot.,The meat is red.
+Apfel / apple,apple,Der Apfel ist süß.,The apple is sweet.
+Milch / milk,milk,Ich trinke Milch.,I drink milk.
+Kaffee / coffee,coffee,Ich trinke Kaffee.,I drink coffee.
+Tee / tea,tea,Ich trinke Tee.,I drink tea.
+Saft / juice,juice,Der Saft ist frisch.,The juice is fresh.
+Reis / rice,rice,Der Reis ist gekocht.,The rice is cooked.
+Nudeln ,noodles,Die Nudeln sind lecker.,The noodles are tasty.
+Salat / salad,salad,Der Salat ist frisch.,The salad is fresh.
+Großvater ,grandfather,Mein Großvater ist alt.,My grandfather is old.
+Großmutter ,grandmother,Meine Großmutter ist nett.,My grandmother is nice.
+Kinder ,children,Die Kinder spielen.,The children are playing.
+Ehefrau ,wife,Meine Ehefrau kocht.,My wife is cooking.
+Partner,partner,Mein Partner ist nett.,My partner is nice.
+Freund ,boyfriend,Mein Freund ist hier.,My boyfriend is here.
+Freundin ,girlfriend,Meine Freundin ist schön.,My girlfriend is beautiful.
+Ehe / marriage,marriage,Die Ehe ist glücklich.,The marriage is happy.
+Scheidung ,divorce,Die Scheidung ist schwierig.,The divorce is difficult.
+Onkel / uncle,uncle,Mein Onkel wohnt hier.,My uncle lives here.
+Tante / aunt,aunt,Meine Tante kommt.,My aunt is coming.
+Neffe / nephew,nephew,Mein Neffe spielt draußen.,My nephew plays outside.
+Nichte / niece,niece,Meine Nichte lacht.,My niece laughs.
+sonnig / sunny,sunny,Heute ist es sonnig.,Today it is sunny.
+regnerisch,rainy,Es ist regnerisch.,It is rainy.
+bewölkt ,cloudy,Der Himmel ist bewölkt.,The sky is cloudy.
+verschneit ,snowy,Es ist verschneit.,It is snowy.
+windig / windy,windy,Heute ist es windig.,Today it is windy.
+neblig / foggy,foggy,Es ist neblig draußen.,It is foggy outside.
+links / left,left,Gehe nach links.,Go left.
+rechts / right,right,Gehe nach rechts.,Go right.
+geradeaus ,straight,Gehe geradeaus.,Go straight.
+hinter ,behind,Das Auto ist hinter dem Haus.,The car is behind the house.
+Norden ,north,Der Norden ist kalt.,The north is cold.
+Süden ,south,Der Süden ist warm.,The south is warm.
+Osten ,east,Der Osten ist schön.,The east is beautiful.
+Westen ,west,Der Westen ist ruhig.,The west is calm.
+Kopf / head,head,Mein Kopf tut weh.,My head hurts.
+Auge / eye,eye,Mein Auge ist rot.,My eye is red.
+Ohr / ear,ear,Mein Ohr tut weh.,My ear hurts.
+Nase / nose,nose,Meine Nase ist klein.,My nose is small.
+Mund / mouth,mouth,Mein Mund ist trocken.,My mouth is dry.
+Hand / hand,hand,Meine Hand ist kalt.,My hand is cold.
+Arm / arm,arm,Mein Arm ist lang.,My arm is long.
+Bein / leg,leg,Mein Bein ist müde.,My leg is tired.
+Fuß / foot,foot,Mein Fuß tut weh.,My foot hurts.
+Finger / finger,finger,Mein Finger ist verletzt.,My finger is injured.
+Gutschein,voucher / coupon,Ich habe einen Gutschein bekommen.,I received a voucher.
+Vergiftung,poisoning,Die Vergiftung ist gefährlich.,The poisoning is dangerous.
+Verbrennung,burn,Die Verbrennung tut weh.,The burn hurts.
+Waschraum,washroom,Der Waschraum ist sauber.,The washroom is clean.
+Angebot,offer / deal,Das Angebot ist günstig.,The offer is cheap.
+schlecht,bad,Das ist schlecht.,That is bad.
+neu,new,Das Auto ist neu.,The car is new.
+alt,old,Das Buch ist alt.,The book is old.
+schön,beautiful,Die Blume ist schön.,The flower is beautiful.
+hässlich,ugly,Das Bild ist hässlich.,The picture is ugly.
+glücklich,happy,Ich bin glücklich.,I am happy.
+traurig,sad,Er ist traurig.,He is sad.
+schnell,fast,Das Auto ist schnell.,The car is fast.
+langsam,slow,Die Schnecke ist langsam.,The snail is slow.
+warm,warm,Es ist warm heute.,It is warm today.
+kalt,cold,Das Wasser ist kalt.,The water is cold.
+leise,quiet,Sei bitte leise.,Please be quiet.
+laut,loud,Die Musik ist laut.,The music is loud.
+jung,young,Das Kind ist jung.,The child is young.
+reich,rich,Er ist reich.,He is rich.
+arm,poor,Sie ist arm.,She is poor.
+billig,cheap,Das T-Shirt ist billig.,The T-shirt is cheap.
+teuer,expensive,Das Handy ist teuer.,The phone is expensive.
+kurz,short,Der Weg ist kurz.,The way is short.
+lang,long,Der Film ist lang.,The movie is long.
+breit,wide,Die Straße ist breit.,The street is wide.
+eng,narrow,Die Gasse ist eng.,The alley is narrow.
+hoch,high/tall,Der Turm ist hoch.,The tower is tall.
+tief,deep,Das Wasser ist tief.,The water is deep.
+hell,bright,Das Zimmer ist hell.,The room is bright.
+dunkel,dark,Der Keller ist dunkel.,The basement is dark.
+nass,wet,Mein Haar ist nass.,My hair is wet.
+trocken,dry,Das Handtuch ist trocken.,The towel is dry.
+sauber,clean,Die Küche ist sauber.,The kitchen is clean.
+schmutzig,dirty,Die Schuhe sind schmutzig.,The shoes are dirty.
+leer,empty,Die Flasche ist leer.,The bottle is empty.
+voll,full,Der Korb ist voll.,The basket is full.
+offen,open,Die Tür ist offen.,The door is open.
+geschlossen,closed,Das Geschäft ist geschlossen.,The store is closed.
+leicht,easy/light,Die Tasche ist leicht.,The bag is light.
+wichtig,important,Das ist wichtig.,That is important.
+interessant,interesting,Das Buch ist interessant.,The book is interesting.
+langweilig,boring,Der Film ist langweilig.,The movie is boring.
+richtig,correct/right,Das ist richtig.,That is correct.
+falsch,wrong/false,Das ist falsch.,That is wrong.
+wahr,true,Die Geschichte ist wahr.,The story is true.
+echt,real/genuine,Ist das echt?,Is that real?
+gesund,healthy,Obst ist gesund.,Fruit is healthy.
+wach,awake,Ich bin wach.,I am awake.
+durstig,thirsty,Ich bin durstig.,I am thirsty.
+satt,full (eaten),Ich bin satt.,I am full.
+dick,fat/thick,Die Katze ist dick.,The cat is fat.
+dünn,thin/skinny,Sie ist dünn.,She is thin.
+stark,strong,Er ist stark.,He is strong.
+schwach,weak,Ich bin schwach.,I am weak.
+klein,small,Ein kleiner Hund.,A small dog.
+freundlich,friendly,Sie ist freundlich.,She is friendly.
+nett,nice,Er ist nett.,He is nice.
+gemein,mean,Das war gemein.,That was mean.
+lecker,delicious,Der Kuchen ist lecker.,The cake is delicious.
+eklig,disgusting,Dieses Essen ist eklig.,This food is disgusting.
+beschäftigt,busy,Sie ist jetzt beschäftigt.,She is busy now.
+frei,free / available,Das Zimmer ist frei.,The room is free.
+unwichtig,unimportant,Das ist unwichtig.,That is unimportant.
+bereit,ready,Ich bin bereit.,I am ready.
+fertig,finished / done,Die Arbeit ist fertig.,The work is finished.
+ruhig,calm,Er ist ruhig.,He is calm.
+nervös,nervous,Sie ist nervös.,She is nervous.
+klug,clever / smart,Der Junge ist klug.,The boy is clever.
+dumm,stupid / dumb,Das war eine dumme Idee.,That was a stupid idea.
+weich,soft,Das Kissen ist weich.,The pillow is soft.
+hart,hard,Der Tisch ist hart.,The table is hard.
+sicher,safe / certain,Der Ort ist sicher.,The place is safe.
+gefährlich,dangerous,Diese Straße ist gefährlich.,That road is dangerous.
+schwer,heavy / difficult,Die Kiste ist schwer.,The box is heavy.
+spät,late,Ich bin spät.,I am late.
+früh,early,Ich stehe früh auf.,I wake up early.
+heiß,hot,Der Kaffee ist heiß.,The coffee is hot.
+kühl,cool / chilly,Das Zimmer ist kühl.,The room is cool.
+lustig,funny / amusing,Der Film ist lustig.,The movie is funny.
+ernst,serious,Er sieht ernst aus.,He looks serious.
+froh,happy,Sie ist heute froh.,She is happy today.
+höflich,polite,Sie ist höflich.,She is polite.
+unhöflich,impolite / rude,Der Kunde war unhöflich.,The customer was rude.
+kreativ,creative,Sie ist kreativ.,She is creative.
+faul,lazy,Er ist heute faul.,He is lazy today.
+fleißig,hardworking ,Sie ist fleißig.,She is hardworking.
+zuverlässig,reliable,Er ist zuverlässig.,He is reliable.
+lustlos,unmotivated ,Ich fühle mich lustlos.,I feel unmotivated.
+witzig,funny / witty,Der Film ist witzig.,The movie is funny.
+modern,modern,Dieses Gebäude ist modern.,This building is modern.
+mild,mild,Die Suppe ist mild.,The soup is mild.
+hier,here,Komm hierher!,Come here!
+dort,there,Das Buch liegt dort.,The book is there.
+3,later,Wir sehen uns später.,We will see each other later.
+heute,today,Heute ist Montag.,Today is Monday.
+morgen,tomorrow,Morgen gehe ich einkaufen.,Tomorrow I will go shopping.
+gestern,yesterday,Gestern war es kalt.,Yesterday it was cold.
+oft,often,Ich gehe oft spazieren.,I go for walks often.
+immer,always,Ich bin immer müde.,I am always tired.
+nie,never,Ich trinke nie Kaffee.,I never drink coffee.
+sehr,very,Das Buch ist sehr gut.,The book is very good.
+nicht,not,Ich verstehe das nicht.,I do not understand that.
+gut,good,Das Essen schmeckt gut.,The food tastes good.
+bald,soon,Ich komme bald.,I will come soon.
+schon,already,Ich habe das schon gesehen.,I have already seen that.
+noch,still/yet,Ich bin noch hier.,I am still here.
+erst,only/just,Ich bin erst angekommen.,I have just arrived.
+wieder,again,Ich komme wieder.,I will come again.
+weg,away,Er ist weg.,He is away.
+dabei,with it / present,Ich bin dabei.,I am joining in.
+drinnen,inside,Es ist warm drinnen.,It is warm inside.
+draußen,outside,Wir spielen draußen.,We are playing outside.
+oben,above / up,Das Buch liegt oben.,The book is upstairs.
+unten,below / down,Die Katze ist unten.,The cat is downstairs.
+links,left,Gehe nach links.,Go to the left.
+rechts,right,Biege rechts ab.,Turn right.
+geradeaus,straight,Gehe geradeaus.,Go straight ahead.
+vorne,in front,Das Auto ist vorne.,The car is in front.
+hinten,in back / behind,Die Tasche ist hinten.,The bag is in the back.
+nirgends,nowhere,Ich finde es nirgends.,I can’t find it anywhere.
+manchmal,sometimes,Ich gehe manchmal schwimmen.,I sometimes go swimming.
+selten,rarely,Ich esse selten Fleisch.,I rarely eat meat.
+meistens,mostly,Ich esse meistens Obst.,I mostly eat fruit.
+kaum,hardly / barely,Ich habe kaum Zeit.,I hardly have time.
+ganz,completely / quite,Das ist ganz einfach.,That is quite simple.
+ziemlich,fairly / quite,Das ist ziemlich teuer.,That is fairly expensive.
+wirklich,really,Das ist wirklich gut.,That is really good.
+genug,enough,Ich habe genug Geld.,I have enough money.
+zu,too / to,Es ist zu heiß.,It is too hot.
+fast,almost,Ich bin fast fertig.,I am almost done.
+leider,unfortunately,Leider kann ich nicht kommen.,"Unfortunately, I cannot come."
+vielleicht,maybe / perhaps,Vielleicht regnet es morgen.,Maybe it will rain tomorrow.
+sicher,sure / safe,Bist du sicher?,Are you sure?
+natürlich,of course / naturally,Natürlich helfe ich dir.,Of course I will help you.
+auch,also / too,Ich komme auch.,I am coming too.
+nur,only / just,Ich habe nur einen Apfel.,I only have one apple.
+sogar,even,Er hat sogar gelacht.,He even laughed.
+sowieso,anyway,Ich mache es sowieso.,I will do it anyway.
+danach,after that,Danach gehen wir essen.,After that we will go eat.
+davor,before that,Ich war davor dort.,I was there before that.
+deshalb,therefore,"Ich bin müde, deshalb gehe ich schlafen.","I am tired, therefore I am going to sleep."
+trotz,despite,Trotz des Regens gehen wir spazieren.,"Despite the rain, we are going for a walk."
+eigentlich,actually,Eigentlich mag ich Pizza.,"Actually, I like pizza."
+besonders,especially ,Ich mag Schokolade besonders.,I especially like chocolate.
+gern,gladly ,Ich spiele gern Fußball.,I like to play soccer.
+zusammen,together,Wir arbeiten zusammen.,We work together.
+ebenfalls,likewise / also,Ich bin ebenfalls müde.,I am also tired.
+vorher,before,Ich esse vorher etwas.,I eat something before.
+nachher,afterwards,Wir gehen nachher ins Kino.,We are going to the cinema afterwards.
+zunächst,at first / initially,Zunächst lernen wir Deutsch.,"At first, we learn German."
+inzwischen,meanwhile / by now,Inzwischen ist er zu Hause.,"Meanwhile, he is at home."
+übrigens,by the way,"Übrigens, ich komme morgen.","By the way, I am coming tomorrow."
+plötzlich,suddenly,Plötzlich begann es zu regnen.,Suddenly it started to rain.
+erneut,again / once more,Ich versuche es erneut.,I will try it again.
+normalerweise,normally,Normalerweise gehe ich um 7 Uhr.,"Normally, I go at 7 o’clock."
+zumindest,at least,Ich habe zumindest etwas gelernt.,I learned at least something.
+absolut,absolutely,Das ist absolut richtig.,That is absolutely correct.
+genauso,just like / exactly,Ich denke genauso.,I think exactly the same.
+anders,different / otherwise,Heute ist alles anders.,Today everything is different.
+zusätzlich,additionally,Zusätzlich kaufe ich Brot.,"Additionally, I am buying bread."
+bloß,only / just,Ich wollte bloß helfen.,I just wanted to help.
+jeweils,each / respectively,Wir treffen uns jeweils am Montag.,We meet each Monday.
+nochmals,once again,Ich danke dir nochmals.,I thank you once again.
+überhaupt,at all,Ich verstehe das überhaupt nicht.,I don’t understand that at all.
+ohnehin,anyway / in any case,Ich mache es ohnehin.,I am doing it anyway.
+ursprünglich,originally,Ursprünglich kam er aus Berlin.,"Originally, he came from Berlin."
+äußerst,extremely,Das ist äußerst wichtig.,That is extremely important.
+hauptsächlich,mainly / primarily,Ich arbeite hauptsächlich am Computer.,I mainly work on the computer.
+vermutlich,probably,Vermutlich kommt er später.,He will probably come later.
+deutlich,clear / distinct,Das ist deutlich sichtbar.,That is clearly visible.
+freiwillig,voluntary,Er arbeitet freiwillig hier.,He works here voluntarily.
+vorhersehbar,predictable,Das Ergebnis war vorhersehbar.,The result was predictable.
+regelmäßig,regularly,Ich gehe regelmäßig joggen.,I go jogging regularly.
+umsonst,for free / in vain,Ich habe es umsonst versucht.,I tried it in vain.
+echt,really / genuine,Das ist echt interessant.,That is really interesting.
+früher,earlier / formerly,Früher wohnte ich in Berlin.,I used to live in Berlin.
+daher,therefore / hence,"Es regnet, daher bleibe ich zu Hause.","It is raining; therefore, I stay at home."
+deswegen,therefore / that's why,"Ich bin krank, deswegen bleibe ich im Bett.","I am sick, that's why I stay in bed."
+niemals,never,Ich werde das niemals tun.,I will never do that.
+beinahe,almost / nearly,Ich habe es beinahe vergessen.,I almost forgot it.
+komplett,complete / entirely,Das Projekt ist komplett fertig.,The project is completely finished.
+extra,extra / special,Ich kaufe extra Kuchen.,I am buying cake especially.
+sofort,immediately,Ich komme sofort.,I am coming immediately.
+gleichzeitig,simultaneously,Wir arbeiten gleichzeitig.,We are working simultaneously.
+ebenso,likewise / as well,Ich denke ebenso.,I think the same way.
+irgendwo,somewhere,Ich habe es irgendwo gesehen.,I saw it somewhere.
+nirgendwo,nowhere,Ich finde es nirgendwo.,I can’t find it anywhere.
+längst,long ago / already,Er ist längst gegangen.,He left long ago.
+zuletzt,last / finally,Zuletzt haben wir Pizza gegessen.,"Finally, we ate pizza."
+getrennt,separated,Wir schlafen getrennt.,We sleep separately.
+täglich,daily,Ich trainiere täglich.,I train daily.
+wöchentlich,weekly,Wir treffen uns wöchentlich.,We meet weekly.
+monatlich,monthly,Die Rechnung kommt monatlich.,The bill comes monthly.
+jährlich,yearly / annually,Wir machen das jährlich.,We do this annually.
+dort drüben,over there,Das Haus ist dort drüben.,The house is over there.
+da vorne,at the front,Die Klasse ist da vorne.,The class is at the front.
+da hinten,at the back,Die Tasche ist da hinten.,The bag is at the back.
+unterwegs,on the way,Ich bin unterwegs.,I am on the way.
+vorbei,past / over,Wir sind am Park vorbei gegangen.,We walked past the park.
+bisher,so far / until now,Bisher lief alles gut.,"So far, everything went well."
+irgendwohin,to somewhere,Ich gehe irgendwohin.,I am going somewhere.
+nirgendwohin,to nowhere,Wir fahren nirgendwohin.,We are going nowhere.
+weiterhin,furthermore / still,Wir arbeiten weiterhin.,We continue to work.
+gleich,immediately,Ich komme gleich.,I will come immediately.
+irgendwie,somehow,Ich schaffe es irgendwie.,I will manage it somehow.
+offenbar,obviously,Offenbar hat er Recht.,"Obviously, he is right."
+tagsüber,during the day,Tagsüber arbeite ich.,I work during the day.
+nachts,at night,Nachts schlafe ich.,I sleep at night.
+grundsätzlich,basically ,Grundsätzlich stimme ich zu.,"Basically, I agree."
+akzeptieren,to accept,Ich akzeptiere das Angebot.,I accept the offer.
+zustimmen,to agree,Ich stimme dir zu.,I agree with you.
+analysieren,to analyze,Der Arzt analysiert die Ergebnisse.,The doctor analyzes the results.
+entschuldigen,to apologize,Ich entschuldige mich für den Fehler.,I apologize for the mistake.
+sich bewerben,to apply,Ich bewerbe mich um die Stelle.,I apply for the job.
+ankommen,to arrive,Wir kommen am Bahnhof an.,We arrive at the station.
+verhaften,to arrest,Die Polizei verhaftet den Dieb.,The police arrest the thief.
+fragen,to ask,Ich frage eine Frage.,I ask a question.
+backen,to bake,Sie backt einen Kuchen.,She bakes a cake.
+sein,to be-is/am/are,Ich bin Student.,I am a student.
+können,to be able to,Ich kann schwimmen.,I can swim.
+geboren werden,to be born,Er wurde in Berlin geboren.,He was born in Berlin.
+heißen,to be called,Ich heiße Anna.,My name is Anna.
+beginnen,to begin,Der Unterricht beginnt jetzt.,The lesson begins now.
+glauben,to believe,Ich glaube dir.,I believe you.
+gehören,to belong,Das Buch gehört mir.,The book belongs to me.
+blinken,to blink,Er blinzelt mit den Augen.,He blinks his eyes.
+bluten,to bleed,Ich blute am Finger.,I bleed from my finger.
+kochen,to boil,Das Wasser kocht.,The water boils.
+buchen,to book,Ich buche einen Flug.,I book a flight.
+leihen,to borrow,Ich leihe ein Buch aus der Bibliothek.,I borrow a book from the library.
+atmen,to breathe,Wir atmen frische Luft.,We breathe fresh air.
+bringen,to bring,Ich bringe Blumen.,I bring flowers.
+bürsten,to brush,Sie bürstet ihr Haar.,She brushes her hair.
+bauen,to build,Sie bauen ein Haus.,They build a house.
+brennen,to burn,Das Feuer brennt.,The fire burns.
+begraben,to bury,Wir begraben den Schatz.,We bury the treasure.
+kaufen,to buy,Ich kaufe Brot.,I buy bread.
+rufen,to call,Ich rufe meinen Freund.,I call my friend.
+absagen,to cancel,Ich sage das Treffen ab.,I cancel the meeting.
+tragen,to carry,Er trägt eine Tasche.,He carries a bag.
+ändern,to change,Sie ändert ihren Plan.,She changes her plan.
+prüfen,to check,Der Lehrer prüft die Hausaufgabe.,The teacher checks the homework.
+wählen,to choose,Ich wähle das rote Hemd.,I choose the red shirt.
+reinigen,to clean,Wir reinigen das Zimmer.,We clean the room.
+klettern,to climb,Das Kind klettert auf den Baum.,The child climbs the tree.
+schließen,to close,Bitte schließe die Tür.,Please close the door.
+kämmen,to comb,Sie kämmt ihr Haar.,She combs her hair.
+vergleichen,to compare,Ich vergleiche zwei Preise.,I compare two prices.
+verbinden,to connect,Ich verbinde das Kabel.,I connect the cable.
+gratulieren,to congratulate,Ich gratuliere dir.,I congratulate you.
+koordinieren,to coordinate,Sie koordiniert das Projekt.,She coordinates the project.
+kopieren,to copy,Ich kopiere den Text.,I copy the text.
+korrigieren,to correct,Der Lehrer korrigiert ,The teacher corrects 
+husten,to cough,Er hustet laut.,He coughs loudly.
+zählen,to count,Ich zähle bis zehn.,I count to ten.
+schneiden,to cut,Sie schneidet das Brot.,She cuts the bread.
+tanzen,to dance,Wir tanzen zusammen.,We dance together.
+entscheiden,to decide,Ich entscheide heute.,I decide today.
+dekorieren,to decorate,Wir dekorieren das Zimmer.,We decorate the room.
+besiegen,to defeat,Die Mannschaft besiegt den Gegner.,The team defeats the opponent.
+definieren,to define,Der Lehrer definiert das Wort.,The teacher defines the word.
+löschen,to delete,Ich lösche die Datei.,I delete the file.
+liefern,to deliver,Der Postbote liefert den Brief.,The postman delivers the letter.
+verlangen,to demand,Ich verlange Respekt.,I demand respect.
+beschreiben,to describe,Sie beschreibt das Bild.,She describes the picture.
+entwerfen,to design,Er entwirft ein Haus.,He designs a house.
+entwickeln,to develop,Sie entwickeln eine neue App.,They develop a new app.
+sterben,to die,Die Blume stirbt.,The flower dies.
+nicht zustimmen,to disagree,Ich stimme ihm nicht zu.,I disagree with him.
+trennen,to disconnect,Ich trenne das Kabel.,I disconnect the cable.
+diskutieren,to discuss,Wir diskutieren das Problem.,We discuss the problem.
+entdecken,to discover,Er entdeckt ein Geheimnis.,He discovers a secret.
+herunterladen,to download,Ich lade ein Lied herunter.,I download a song.
+zeichnen,to draw,Das Kind zeichnet eine Katze.,The child draws a cat.
+trinken,to drink,Ich trinke Wasser.,I drink water.
+fahren,to drive,Er fährt das Auto.,He drives the car.
+trocknen,to dry,Die Sonne trocknet die Kleider.,The sun dries the clothes.
+essen,to eat,Wir essen einen Apfel.,We eat an apple.
+leeren,to empty,Ich leere das Glas.,I empty the glass.
+enden,to end,Der Film endet bald.,The movie ends soon.
+genießen,to enjoy,Ich genieße die Musik.,I enjoy the music.
+erleben,to experience,Wir erleben ein Abenteuer.,We experience an adventure.
+erklären,to explain,Er erklärt die Regeln.,He explains the rules.
+fallen,to fall,Der Apfel fällt vom Baum.,The apple falls from the tree.
+fühlen,to feel,Ich fühle mich glücklich.,I feel happy.
+kämpfen,to fight,Sie kämpfen für die Freiheit.,They fight for freedom.
+füllen,to fill,Ich fülle die Flasche mit Wasser.,I fill the bottle with water.
+filmen,to film,Er filmt die Hochzeit.,He films the wedding.
+finden,to find,Ich finde die Schlüssel.,I find the keys.
+folgen,to follow,Der Hund folgt mir.,The dog follows me.
+vergeben,to forgive,Ich vergebe meinem Freund.,I forgive my friend.
+frieren,to freeze,Ich friere in der Kälte.,I freeze in the cold.
+braten,to fry,Er brät die Kartoffeln.,He fries the potatoes.
+funktionieren,to function,Die Maschine funktioniert gut.,The machine functions well.
+bekommen,to get,Ich bekomme ein Geschenk.,I get a gift.
+aufstehen,to get up,Ich stehe um sieben Uhr auf.,I get up at 7 o’clock.
+geben,to give,Sie gibt mir ein Buch.,She gives me a book.
+gehen,to go,Wir gehen zur Schule.,We go to school.
+ausgehen,to go out,Sie gehen heute Abend aus.,They go out tonight.
+grüßen,to greet,Ich grüße meinen Nachbarn.,I greet my neighbor.
+grillen,to grill,Wir grillen Würstchen.,We grill sausages.
+raten,to guess,Kannst du die Antwort raten?,Can you guess the answer?
+hängen,to hang,Das Bild hängt an der Wand.,The picture hangs on the wall.
+hassen,to hate,Ich hasse Lügen.,I hate lies.
+haben,to have,Ich habe ein Auto.,I have a car.
+hören,to hear,Ich höre Musik.,I hear music.
+heizen,to heat,Wir heizen das Zimmer.,We heat the room.
+helfen,to help,Sie hilft ihrem Bruder.,She helps her brother.
+hoffen,to hope,Ich hoffe auf gutes Wetter.,I hope for good weather.
+halten,to hold,Er hält meine Hand.,He holds my hand.
+verbessern,to improve,Sie verbessert ihr Deutsch.,She improves her German.
+installieren,to install,Ich installiere das Programm.,I install the program.
+einladen,to invite,Ich lade meine Freunde ein.,I invite my friends.
+jucken,to itch,Mein Arm juckt.,My arm itches.
+beitreten,to join,Ich trete dem Verein bei.,I join the club.
+springen,to jump,Die Katze springt auf den Tisch.,The cat jumps on the table.
+küssen,to kiss,Sie küssen sich.,They kiss each other.
+stricken,to knit,Meine Großmutter strickt,My grandmother knits.
+klopfen,to knock,Jemand klopft an die Tür.,Someone knocks on the door.
+wissen,to know,Ich weiß die Antwort.,I know the answer.
+lachen,to laugh,Wir lachen über den Witz.,We laugh at the joke.
+lernen,to learn,Ich lerne Deutsch.,I learn German.
+verlassen,to leave,Er verlässt das Haus.,He leaves the house.
+mögen,to like,Ich mag Pizza.,I like pizza.
+zuhören,to listen,Bitte hör mir zu.,Please listen to me.
+leben,to live,Sie leben in Berlin.,They live in Berlin.
+laden,to load,Ich lade die Kisten.,I load the boxes.
+verlieren,to lose,Ich verliere meine Schlüssel.,I lose my keys.
+lieben,to love,Ich liebe meine Familie.,I love my family.
+schaffen,to manage,Ich schaffe die Aufgabe.,I manage the task.
+machen,to make ,Ich mache Frühstück.,I make breakfast.
+mischen,to mix,Sie mischt die Farben.,She mixes the colors.
+müssen,to must,Ich muss jetzt gehen.,I must go now.
+nennen,to name,Er nennt die Farben.,He names the colors.
+brauchen,to need,Ich brauche Hilfe.,I need help.
+bemerken,to notice,Ich bemerke den Fehler.,I notice the mistake.
+öffnen,to open,Bitte öffne das Fenster.,Please open the window.
+bestellen,to order,Ich bestelle eine Pizza.,I order a pizza.
+organisieren,to organize,Wir organisieren eine Party.,We organize a party.
+packen,to pack,Ich packe meinen Koffer.,I pack my suitcase.
+malen,to paint,Das Kind malt ein Bild.,The child paints a picture.
+parken,to park,Er parkt das Auto.,He parks the car.
+teilnehmen,to participate,Ich nehme am Spiel teil.,I participate in the game.
+einfügen,to paste,Ich füge den Text ein.,I paste the text.
+bezahlen,to pay,Sie bezahlt die Rechnung.,She pays the bill.
+fotografieren,to photograph,Er fotografiert die Stadt.,He photographs the city.
+planen,to plan,Wir planen eine Reise.,We plan a trip.
+spielen,to play,Die Kinder spielen Fußball.,The children play football.
+pflanzen,to plant,Sie pflanzen einen Baum.,They plant a tree.
+üben,to practice,Ich übe Klavier.,I practice the piano.
+vorbereiten,to prepare,Sie bereitet das Abendessen vor.,She prepares dinner.
+drücken,to press,Er drückt den Knopf.,He presses the button.
+drucken,to print,Ich drucke das Dokument.,I print the document.
+beweisen,to prove,Er beweist seinen Standpunkt.,He proves his point.
+ziehen,to pull,Ich ziehe die Tür.,I pull the door.
+schieben ,to push,Sie schiebt die Kiste.,She pushes the box.
+lesen,to read,Ich lese ein Buch.,I read a book.
+erhalten ,to receive,Ich erhalte einen Brief.,I receive a letter.
+reparieren,to repair,Er repariert das Fahrrad.,He repairs the bike.
+wiederholen,to repeat,Bitte wiederhole die Frage.,Please repeat the question.
+reservieren,to reserve,Ich reserviere einen Tisch.,I reserve a table.
+neu starten,to restart,Er startet den Computer neu.,He restarts the computer.
+retten,to rescue,Der Feuerwehrmann rettet das Kind.,The firefighter rescues the child.
+steigen ,to rise,Die Sonne steigt auf.,The sun rises.
+laufen,to run,Ich laufe zur Schule.,I run to school.
+sagen,to say,Er sagt Hallo.,He says hello.
+scannen,to scan,Ich scanne das Dokument.,I scan the document.
+schreien,to scream,Das Baby schreit laut.,The baby screams loudly.
+sehen,to see,Ich sehe die Sterne.,I see the stars.
+verkaufen,to sell,Sie verkaufen Obst.,They sell fruits.
+senden ,to send,Ich sende eine E-Mail.,I send an email.
+nähen,to sew,Sie näht ein Kleid.,She sews a dress.
+einkaufen,to shop,Wir kaufen im Markt ein.,We shop in the market.
+sollen,to should,Du sollst mehr essen.,You should eat more.
+zeigen,to show,Er zeigt das Bild.,He shows the picture.
+duschen,to shower,Ich dusche jeden Morgen.,I shower every morning.
+signieren,to sign,Ich signiere das Dokument jeden Tag.,I sign the document every day.
+singen,to sing,Sie singt wunderschön.,She sings beautifully.
+sitzen,to sit,Wir sitzen jeden Nachmittag im Park.,We sit in the park every afternoon.
+schlafen,to sleep,Er schläft jede Nacht acht Stunden.,He sleeps eight hours every night.
+riechen,to smell,Die Blumen riechen wunderbar.,The flowers smell amazing.
+lächeln,to smile,"Sie lächelt, wenn sie glücklich ist.",She smiles when she is happy.
+niesen,to sneeze,"Er niest, wenn er Allergien hat.",He sneezes when he has allergies.
+lösen,to solve,Ich löse Probleme bei der Arbeit.,I solve problems at work.
+sortieren,to sort,Wir sortieren die Papiere nach Datum.,We sort the papers by date.
+stehen,to stand,Sie stehen in der Schlange für Tickets.,They stand in line for tickets.
+starten,to start,Ich starte meine Arbeit um 9 Uhr.,I start my work at 9 AM.
+bleiben,to stay,Wir übernachten in einem Hotel,We stay at a hotel
+stehlen,to steal,Er stiehlt Süßigkeiten aus dem Glas.,He steals sweets from the jar.
+dehnen,to stretch,Er dehnt sich vor dem Training.,He stretches before exercising.
+studieren,to study,Ich studiere jeden Abend Deutsch.,I study German every evening.
+leiden,to suffer,Er leidet an einer Erkältung.,He suffers from a cold.
+vorschlagen,to suggest,"Ich schlage vor, eine Pause zu machen.",I suggest taking a break.
+unterstützen,to support,Sie unterstützen ihre Freunde.,They support their friends.
+überraschen,to surprise,Er überrascht sie mit Blumen.,He surprises her with flowers.
+schwitzen,to sweat,Sie schwitzt viel beim Training.,She sweats a lot during workouts.
+schwimmen,to swim,Wir schwimmen jeden Sommer im See.,We swim in the lake every summer.
+nehmen,to take,Er nimmt den Bus zur Arbeit.,He takes the bus to work.
+schmecken,to taste,Dieser Kuchen schmeckt lecker.,This cake tastes delicious.
+unterrichten,to teach,Sie unterrichtet Englisch für Kinder.,She teaches English to children.
+sprechen,to talk,Wir sprechen über unsere Pläne.,We talk about our plans.
+danken,to thank,Ich danke dir für deine Hilfe.,I thank you for your help.
+denken,to think,Ich denke über meine Zukunft nach.,I think about my future.
+reisen,to travel,Wir reisen jeden Sommer nach Deutschland.,We travel to Germany every summer.
+versuchen,to try,"Er versucht, das Problem zu lösen.",He tries to solve the problem.
+drehen,to turn,Sie dreht den Knauf langsam.,She turns the knob slowly.
+verstehen,to understand,Ich verstehe die Anweisungen.,I understand the instructions.
+aufbinden,to untie,Er bindet das Seil vorsichtig auf.,He unties the rope carefully.
+hochladen,to upload,Sie lädt Fotos auf die Website hoch.,She uploads photos to the website.
+benutzen,to use,Wir benutzen den Computer für die Arbeit.,We use the computer for work.
+besuchen,to visit,Ich besuche meine Großeltern.,I visit my grandparents
+wählen,to vote,Sie wählen bei jeder Wahl.,They vote in every election.
+warten,to wait,Wir warten jeden Morgen auf den Bus.,We wait for the bus every morning.
+aufwachen,to wake up,Ich wache um 7 Uhr auf.,I wake up at 7 AM.
+wollen,to want,Ich will eine Tasse Kaffee.,I want a cup of coffee.
+warnen,to warn,Er warnt mich vor der Gefahr.,He warns me about the danger.
+waschen,to wash,Ich wasche meine Hände vor dem Essen.,I wash my hands before eating.
+fernsehen,to watch TV,Wir sehen jeden Abend fern.,We watch TV every evening.
+wiegen,to weigh,Sie wiegt das Gemüse sorgfältig.,She weighs the vegetables carefully.
+flüstern,to whisper,Er flüstert ihr ein Geheimnis zu.,He whispers a secret to her.
+gewinnen,to win,Sie gewinnen das Spiel leicht.,They win the game easily.
+wünschen,to wish,Ich wünsche dir alles Gute zum Geburtstag.,I wish you a happy birthday.
+trainieren,to work out,Er trainiert jeden Tag im Fitnessstudio.,He works out at the gym every day.
+schreiben,to write,Ich schreibe E-Mails an meine Kunden.,I write emails to my clients.
+gähnen,to yawn,"Sie gähnt, wenn sie müde ist.",She yawns when she is tired.
