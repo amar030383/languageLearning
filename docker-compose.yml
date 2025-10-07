@@ -1,25 +1,25 @@
 version: "3.9"
-services:
-  backend:
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
-    container_name: german-backend
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./SingeSheet.csv:/app/SingeSheet.csv:ro
-      - ./german_audio:/app/german_audio:ro
-      - ./backend:/app/backend:ro
-    environment:
-      - PYTHONUNBUFFERED=1
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: german-frontend
+services:
+  germanfastapi-backend:
+    build: ./backend
+    container_name: backend
+    networks:
+      default:
+        aliases:
+          - backend
+
+  germanfastapi-frontend:
+    build: ./frontend
     depends_on:
-      - backend
+      - germanfastapi-backend
     ports:
-      - "3000:80"
+      - "80:80"
+    networks:
+      default:
+        aliases:
+          - frontend
+
+networks:
+  default:
+    driver: bridge
