@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import axios from 'axios'
+import axios from 'axios';
 import Sidebar from './components/Sidebar'
 import './App.css'
 
@@ -39,10 +39,11 @@ function VocabularyPlayer() {
     fetchExcludedWords()
   }, [])
 
+  // Use axios for API calls
   const fetchVocabulary = async () => {
     try {
       setLoading(true)
-      const response = await axios.get('/api/vocabulary')
+      const response = await axios.get('/api/vocabulary');
       setVocabulary(response.data)
       setLoading(false)
     } catch (err) {

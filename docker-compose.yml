@@ -1,9 +1,8 @@
 version: "3.9"
+
 services:
   backend:
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
+    image: amar3383/german-backend:latest
     container_name: german-backend
     ports:
       - "8000:8000"
@@ -13,13 +12,26 @@ services:
       - ./backend:/app/backend:ro
     environment:
       - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/vocabulary"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
 
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: amar3383/german-frontend:latest
     container_name: german-frontend
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     ports:
       - "3000:80"
+    environment:
+      - VITE_API_URL=http://backend:8000
+    restart: unless-stopped
+
+networks:
+  default:
+    name: german-vocabulary-network
+    driver: bridge
