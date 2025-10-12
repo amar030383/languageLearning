@@ -156,6 +156,8 @@ async def get_vocabulary() -> List[Dict[str, Any]]:
                 "english_sentence": english_sentence
             })
 
+    random.shuffle(vocabulary_list)  # <-- Shuffle the list here
+
     return vocabulary_list
 
 
