@@ -10,11 +10,14 @@ const VocabularyPlayer = () => {
   const [error, setError] = useState(null)
   const [currentAudioType, setCurrentAudioType] = useState(null)
   const [germanSpeed, setGermanSpeed] = useState(0.75)
+  const [excludedWords, setExcludedWords] = useState(new Set())
+  const [showExcludedWords, setShowExcludedWords] = useState(false)
   const audioRef = useRef(null)
   const autoPlayRef = useRef(false)
   // Fetch vocabulary data on component mount
   useEffect(() => {
     fetchVocabulary()
+    fetchExcludedWords()
   }, [])
 
   const fetchVocabulary = async () => {
@@ -71,6 +74,59 @@ const VocabularyPlayer = () => {
     } catch (err) {
       console.error('Error in playAudio:', err)
       setCurrentAudioType(null)
+    }
+  }
+
+  const fetchExcludedWords = async () => {
+    try {
+      const resp = await axios.get('http://localhost:8000/api/excluded-words')
+      const excludedSet = new Set(resp.data.map(item => item.word_index))
+      setExcludedWords(excludedSet)
+    } catch (err) {
+      console.error('Error fetching excluded words:', err)
+    }
+  }
+
+  const toggleExcludedWord = async (wordIndex) => {
+    try {
+      if (excludedWords.has(wordIndex)) {
+        // remove
+        await axios.delete(`http://localhost:8000/api/excluded-words/${wordIndex}`)
+        setExcludedWords(prev => {
+          const s = new Set(prev)
+          s.delete(wordIndex)
+          return s
+        })
+      } else {
+        // add
+        await axios.post('http://localhost:8000/api/excluded-words', { word_index: wordIndex })
+        setExcludedWords(prev => {
+          const s = new Set(prev)
+          s.add(wordIndex)
+          return s
+        })
+
+        // If excluding current word, move to next
+        if (wordIndex === currentIndex) {
+          stopAudio()
+          findNextAvailableWord()
+        }
+      }
+    } catch (err) {
+      console.error('Error toggling excluded word:', err)
+    }
+  }
+
+  const findNextAvailableWord = () => {
+    if (vocabulary.length === 0) return
+
+    let nextIndex = currentIndex
+    for (let i = 0; i < vocabulary.length; i++) {
+      nextIndex = (currentIndex + i + 1) % vocabulary.length
+      if (!excludedWords.has(vocabulary[nextIndex].index)) {
+        setCurrentIndex(nextIndex)
+        break
+      }
     }
   }
 
@@ -194,6 +250,16 @@ const VocabularyPlayer = () => {
           <span className="index-badge">
             {currentIndex + 1} / {vocabulary.length}
           </span>
+          <div className="word-controls">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                checked={excludedWords.has(currentItem.index)}
+                onChange={() => toggleExcludedWord(currentItem.index)}
+              />
+              Mark as Learned
+            </label>
+          </div>
         </div>
 
         <div className="vocab-content">
@@ -210,6 +276,12 @@ const VocabularyPlayer = () => {
                 {currentItem.english_word}
               </h2>
             </div>
+            <div className="word-item hindi">
+              <span className="label">Hindi</span>
+              <h2>
+                {currentItem.hindi_word}
+              </h2>
+            </div>
           </div>
 
           <div className="sentence-section">
@@ -223,6 +295,12 @@ const VocabularyPlayer = () => {
               <span className="label">English Sentence</span>
               <p className={currentAudioType === 'english_sentence' ? 'playing' : ''}>
                 {currentItem.english_sentence}
+              </p>
+            </div>
+            <div className="sentence-item hindi-sentence">
+              <span className="label">Hindi Sentence</span>
+              <p>
+                {currentItem.hindi_sentence}
               </p>
             </div>
           </div>
@@ -285,7 +363,44 @@ const VocabularyPlayer = () => {
       <footer className="footer">
         <p>Order: German word → English word → German sentence (slow) → English sentence</p>
         {isAutoPlay && <p className="autoplay-status">🔄 AutoPlay is ON - Playing continuously...</p>}
+        <div className="excluded-words-controls">
+          <button
+            className="btn btn-secondary"
+            onClick={() => setShowExcludedWords(!showExcludedWords)}
+          >
+            {showExcludedWords ? 'Hide' : 'Show'} Learned Words ({excludedWords.size})
+          </button>
+        </div>
       </footer>
+      {showExcludedWords && (
+        <div className="excluded-words-panel">
+          <h3>📚 Learned Words ({excludedWords.size})</h3>
+          <div className="excluded-words-list">
+            {Array.from(excludedWords).map(wordIndex => {
+              const word = vocabulary.find(v => v.index === wordIndex)
+              if (!word) return null
+
+              return (
+                <div key={wordIndex} className="excluded-word-item">
+                  <span className="excluded-word-text">
+                    {word.german_word} ({word.english_word}) — {word.hindi_word}
+                  </span>
+                  <button
+                    className="btn btn-small btn-secondary"
+                    onClick={() => toggleExcludedWord(wordIndex)}
+                  >
+                    Include Again
+                  </button>
+                </div>
+              )
+            })}
+            {excludedWords.size === 0 && (
+              <p className="no-excluded-words">No words marked as learned yet.</p>
+            )}
+          </div>
+        </div>
+      )}
+
     </div>
   )
 }

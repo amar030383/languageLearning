@@ -1,0 +1,799 @@
+Haus,house,Das ist mein Haus.,That is my house.,घर,वह मेरा घर है।
+Buch,book,Das Buch ist interessant.,The book is interesting.,किताब,किताब दिलचस्प है.
+Tisch,table,Der Tisch ist groß.,The table is big.,मेज़,मेज बड़ी है.
+Stuhl,chair,Der Stuhl ist bequem.,The chair is comfortable.,कुर्सी,कुर्सी आरामदायक है.
+Wasser,water,Ich trinke Wasser.,I drink water.,पानी,मैं पानी पीता हूं।
+Essen,food,Das Essen ist lecker.,The food is tasty.,खाना,खाना स्वादिष्ट है.
+Geld,money,Er hat kein Geld.,He has no money.,धन,उसके पास पैसे नहीं हैं.
+Zeit,time,Ich habe keine Zeit.,I have no time.,समय,मेरे पास बिल्कुल समय नही है।
+Tag,day,Heute ist ein schöner Tag.,Today is a beautiful day.,दिन,अाज का दिन सुंदर दिन है।
+Nacht,night,Die Nacht ist dunkel.,The night is dark.,रात,रात अंधेरी है.
+Stadt,city,Die Stadt ist groß.,The city is big.,शहर,शहर बड़ा है.
+Arbeit,work/job,Ich gehe zur Arbeit.,I go to work.,कार्य नौकरी,मैं काम पर जाता हूँ।
+Mensch,human/person,Jeder Mensch ist wichtig.,Every person is important.,मानव/व्यक्ति,हर व्यक्ति महत्वपूर्ण है.
+Mann,man,Der Mann liest die Zeitung.,The man reads the newspaper.,आदमी,आदमी अखबार पढ़ता है.
+Frau,woman,Die Frau spricht Deutsch.,The woman speaks German.,महिला,महिला जर्मन बोलती है.
+Kind,child,Das Kind spielt draußen.,The child plays outside.,बच्चा,बच्चा बाहर खेलता है.
+Eltern,parents,Meine Eltern sind nett.,My parents are nice.,अभिभावक,मेरे माता-पिता अच्छे हैं.
+Bruder,brother,Mein Bruder schläft.,My brother is sleeping.,भाई,मेरा भाई सो रहा है.
+Schwester,sister,Meine Schwester lernt.,My sister is studying.,बहन,मेरी बहन पढ़ रही है.
+Familie,family,Meine Familie ist groß.,My family is big.,परिवार,मेरा परिवार बड़ा है.
+Name,name,Mein Name ist Anna.,My name is Anna.,नाम,मेरा नाम एना है।
+Ding,thing,Das ist ein gutes Ding.,That is a good thing.,चीज़,यह एक अच्छी बात है।
+Sache,matter/thing,Die Sache ist wichtig.,The matter is important.,बात/बात,मामला महत्वपूर्ण है.
+Land,country,Deutschland ist ein Land.,Germany is a country.,देश,जर्मनी एक देश है.
+Straße,street,Die Straße ist lang.,The street is long.,गली,सड़क लंबी है.
+Platz,place/square,Der Platz ist leer.,The square is empty.,स्थान/वर्ग,चौक खाली है.
+Park,park,Der Park ist schön.,The park is beautiful.,पार्क,पार्क सुंदर है.
+Schule,school,Die Schule ist groß.,The school is big.,विद्यालय,स्कूल बड़ा है.
+Universität,university,Die Universität ist alt.,The university is old.,विश्वविद्यालय,यूनिवर्सिटी पुरानी है.
+Krankenhaus,hospital,Das Krankenhaus ist neu.,The hospital is new.,अस्पताल,अस्पताल नया है.
+Geschäft,shop/store,Das Geschäft ist offen.,The shop is open.,दुकान दुकान,दुकान खुली है.
+Supermarkt,supermarket,Der Supermarkt ist nah.,The supermarket is near.,सुपरमार्केट,सुपरमार्केट नजदीक है.
+Käse,cheese,Der Käse schmeckt gut.,The cheese tastes good.,पनीर,पनीर का स्वाद अच्छा है.
+Obst,fruit,Obst ist gesund.,Fruit is healthy.,फल,फल स्वास्थ्यवर्धक है.
+Gemüse,vegetables,Gemüse ist frisch.,Vegetables are fresh.,सब्ज़ियाँ,सब्जियाँ ताजी हैं.
+Kaffee,coffee,Ich trinke Kaffee.,I drink coffee.,कॉफी,मुझे कॉफी पीना है।
+Tee,tea,Tee ist heiß.,Tea is hot.,चाय,चाय गर्म है.
+Bier,beer,Bier ist kalt.,Beer is cold.,बियर,बीयर ठंडी है.
+Wein,wine,Der Wein ist rot.,The wine is red.,शराब,शराब लाल है.
+Licht,light,Das Licht ist hell.,The light is bright.,रोशनी,प्रकाश उज्ज्वल है.
+Sonne,sun,Die Sonne scheint.,The sun is shining.,सूरज,सूरज चमक रहा है।
+Mond,moon,Der Mond ist rund.,The moon is round.,चंद्रमा,चाँद गोल है.
+Stern,star,Der Stern leuchtet.,The star shines.,तारा,तारा चमकता है.
+Himmel,sky,Der Himmel ist blau.,The sky is blue.,आकाश,आसमान नीला है.
+Wind,wind,Der Wind ist stark.,The wind is strong.,हवा,हवा तेज़ है.
+Regen,rain,Der Regen ist stark.,The rain is heavy.,बारिश,बारिश भारी है.
+Schnee,snow,Der Schnee ist weiß.,The snow is white.,बर्फ,बर्फ सफेद है.
+Wald,forest,Der Wald ist groß.,The forest is big.,जंगल,जंगल बड़ा है.
+Fluss,river,Der Fluss ist lang.,The river is long.,नदी,नदी लम्बी है.
+See,lake,Der See ist tief.,The lake is deep.,झील,झील गहरी है.
+Meer,sea,Das Meer ist weit.,The sea is wide.,समुद्र,समुद्र विस्तृत है.
+Strand,beach,Der Strand ist leer.,The beach is empty.,समुद्र तट,समुद्र तट खाली है.
+Zimmer,room,Das Zimmer ist klein.,The room is small.,कमरा,कमरा छोटा है.
+Schlafzimmer,bedroom,Das Schlafzimmer ist ruhig.,The bedroom is quiet.,सोने का कमरा,शयनकक्ष शांत है.
+Küche,kitchen,Die Küche ist sauber.,The kitchen is clean.,रसोईघर,रसोई साफ़ है.
+Bad,bathroom,Das Bad ist groß.,The bathroom is big.,स्नानघर,बाथरूम बड़ा है.
+Toilette,toilet,Die Toilette ist frei.,The toilet is free.,शौचालय,शौचालय निःशुल्क है.
+Bett,bed,Das Bett ist weich.,The bed is soft.,बिस्तर,बिस्तर नरम है.
+Computer,computer,Der Computer ist alt.,The computer is old.,कंप्यूटर,कंप्यूटर पुराना है.
+Handy,mobile phone,Mein Handy ist neu.,My mobile phone is new.,चल दूरभाष,मेरा मोबाइल फ़ोन नया है.
+Uhr,clock/watch,Die Uhr ist teuer.,The watch is expensive.,घड़ी/घड़ी,घड़ी महँगी है.
+Brille,glasses,Meine Brille ist kaputt.,My glasses are broken.,चश्मा,मेरा चश्मा टूट गया है.
+Kleidung,clothes,Die Kleidung ist schön.,The clothes are nice.,कपड़े,कपड़े अच्छे हैं.
+Kopf,head,Mein Kopf tut weh.,My head hurts.,सिर,मेरे सिर में दर्द होता है।
+Hand,hand,Meine Hand ist kalt.,My hand is cold.,हाथ,मेरा हाथ ठंडा है.
+Fuß,foot,Mein Fuß tut weh.,My foot hurts.,पैर,मेरे पैर दर्द में होता है।
+Auge,eye,Mein Auge ist blau.,My eye is blue.,आँख,मेरी आंख नीली है.
+Ohr,ear,Mein Ohr hört Musik.,My ear hears music.,कान,मेरा कान संगीत सुनता है.
+Nase,nose,Meine Nase ist klein.,My nose is small.,नाक,मेरी नाक छोटी है.
+Mund,mouth,Der Mund ist offen.,The mouth is open.,मुँह,मुँह खुला है.
+Haar,hair,Dein Haar ist lang.,Your hair is long.,बाल,आपके बाल लम्बे हैं.
+Gesicht,face,Dein Gesicht ist schön.,Your face is beautiful.,चेहरा,आपका चेहरा सुन्दर है.
+Körper,body,Der Körper ist gesund.,The body is healthy.,शरीर,शरीर स्वस्थ रहता है.
+Arzt,doctor,Der Arzt ist nett.,The doctor is nice.,चिकित्सक,डॉक्टर अच्छा है.
+Lehrer,teacher,Der Lehrer erklärt gut.,The teacher explains well.,अध्यापक,टीचर अच्छे से समझाते हैं.
+Student,student,Der Student lernt viel.,The student studies a lot.,विद्यार्थी,विद्यार्थी खूब पढ़ता है।
+Problem,problem,Das Problem ist klein.,The problem is small.,संकट,समस्या छोटी है.
+Lösung,solution,Die Lösung ist einfach.,The solution is simple.,समाधान,समाधान सरल है.
+Idee,idea,Das ist eine gute Idee.,That is a good idea.,विचार,यह एक अच्छा विचार है।
+Frage,question,Ich habe eine Frage.,I have a question.,सवाल,मेरा एक सवाल है।
+Antwort,answer,Die Antwort ist richtig.,The answer is correct.,उत्तर,उत्तर सही है.
+Gefühl,feeling,Das Gefühl ist stark.,The feeling is strong.,अनुभूति,भावना प्रबल है.
+Gedanke,thought,Dein Gedanke ist klug.,Your thought is smart.,सोचा,आपकी सोच स्मार्ट है.
+Traum,dream,Der Traum war schön.,The dream was beautiful.,सपना,सपना खूबसूरत था.
+Leben,life,Das Leben ist kurz.,Life is short.,ज़िंदगी,जिंदगी छोटी है।
+Tod,death,Der Tod ist still.,Death is silent.,मौत,मौत खामोश है.
+Urlaub,vacation,Der Urlaub ist bald.,The vacation is soon.,छुट्टी,छुट्टियाँ जल्द ही हैं.
+Reise,trip/journey,Die Reise ist lang.,The trip is long.,यात्रा/यात्रा,यात्रा लंबी है.
+Sport,sport,Sport ist gesund.,Sport is healthy.,खेल,खेल स्वस्थ है.
+Spiel,game,Das Spiel macht Spaß.,The game is fun.,खेल,खेल मजेदार है.
+Musik,music,Musik ist schön.,Music is beautiful.,संगीत,संगीत सुंदर है.
+Film,movie,Der Film ist spannend.,The movie is exciting.,चलचित्र,फिल्म रोमांचक है.
+Zeitung,newspaper,Die Zeitung ist neu.,The newspaper is new.,अखबार,अखबार नया है.
+Nachricht,message/news,Ich habe eine Nachricht.,I have a message.,संदेश/समाचार,मेरे पास एक संदेश है.
+Brief,letter,Der Brief ist lang.,The letter is long.,पत्र,पत्र लम्बा है.
+Wort,word,Das Wort ist schwer.,The word is difficult.,शब्द,शब्द कठिन है.
+Satz,sentence,Der Satz ist kurz.,The sentence is short.,वाक्य,वाक्य छोटा है.
+Sprache,language,Die Sprache ist schwer.,The language is difficult.,भाषा,भाषा कठिन है.
+Beispiel,example,Das ist ein Beispiel.,That is an example.,उदाहरण,वह एक उदाहरण है.
+Minute,minute,Eine Minute ist kurz.,A minute is short.,मिनट,एक मिनट कम है.
+Stunde,hour,Eine Stunde ist lang.,An hour is long.,घंटा,एक घंटा लंबा है.
+Woche,week,Die Woche ist vorbei.,The week is over.,सप्ताह,सप्ताह ख़त्म हो गया.
+Monat,month,Der Monat ist kalt.,The month is cold.,महीना,महीना ठंडा है.
+Jahr,year,Das Jahr ist neu.,The year is new.,वर्ष,साल नया है.
+Party,party,Die Party ist heute.,The party is today.,दल,पार्टी आज है.
+Geschenk,gift,Das Geschenk ist teuer.,The gift is expensive.,उपहार,उपहार महंगा है.
+Preis,price/prize,Der Preis ist hoch.,The price is high.,पुरस्कार का,कीमत अधिक है.
+Größe,size,Die Größe ist klein.,The size is small.,आकार,आकार छोटा है.
+Farbe,color,Die Farbe ist rot.,The color is red.,रंग,रंग लाल है.
+jeden Tag,every day,Ich lerne jeden Tag.,I study every day.,रोज रोज,मैं हर दिन अध्ययन करता हूँ।
+unfreundlich,unfriendly,Der Mann ist unfreundlich.,The man is unfriendly.,अमित्र,आदमी अमित्र है.
+heute,today,Heute ist schön.,Today is nice.,आज,आज का दिन अच्छा है.
+toll,great,Das Essen ist toll.,The food is great.,महान,खाना बढ़िया है.
+prima,excellent,Der Film war prima.,The movie was excellent.,उत्कृष्ट,फिल्म बेहतरीन थी.
+fantastisch,fantastic,Das ist fantastisch!,That is fantastic!,ज़बरदस्त,वह शानदार है!
+es geht,so-so / it’s okay,Mir geht es. Es geht.,I’m okay / so-so.,ऐसा-ऐसा / यह ठीक है,मैं ठीक हूं/ऐसा-वैसा।
+miserabel,miserable,Das Wetter ist miserabel.,The weather is miserable.,दुखी,मौसम ख़राब है.
+furchtbar,terrible,Das Essen ist furchtbar.,The food is terrible.,भयानक,खाना भयानक है.
+müde,tired,Ich bin müde.,I am tired.,थका हुआ,मैं थक गया हूँ।
+krank,sick,Er ist krank.,He is sick.,बीमार,वह बीमार है.
+wunderbar,wonderful,Die Stadt ist wunderbar.,The city is wonderful.,आश्चर्यजनक,शहर अद्भुत है.
+U-Bahn,subway,Die U-Bahn kommt.,The subway is coming.,भूमिगत मार्ग,मेट्रो आ रही है.
+Telefon,telephone,Das Telefon klingelt.,The phone is ringing.,टेलीफ़ोन,फ़ोन बज रहा है.
+Tür,door,Die Tür ist offen.,The door is open.,दरवाजा,दरवाज़ा खुला है.
+Fenster,window,Das Fenster ist zu.,The window is closed.,खिड़की,खिड़की बंद है.
+Tasche,bag,Die Tasche ist schwer.,The bag is heavy.,थैला,बैग भारी है.
+Stift,pen,Der Stift ist blau.,The pen is blue.,कलम,कलम नीला है.
+große Flasche,big bottle,Ich habe eine große Flasche Wasser.,I have a big bottle of water.,बड़ी बोतल,मेरे पास पानी की एक बड़ी बोतल है.
+Boden,floor/ground,Der Boden ist nass.,The floor is wet.,फर्श/जमीन,फर्श गीला है।
+Apfel,apple,Der Apfel ist rot.,The apple is red.,सेब,सेब लाल है।
+Sandwich,sandwich,Ich esse ein Sandwich.,I eat a sandwich.,सैंडविच,मैं सैंडविच खाता हूं।
+Restaurant,restaurant,Das Restaurant ist voll.,The restaurant is full.,रेस्टोरेंट,रेस्तरां भरा हुआ है.
+Paket,package,Das Paket ist hier.,The package is here.,पैकेट,पैकेज यहाँ है.
+Bargeld,cash,Ich habe kein Bargeld.,I have no cash.,नकद,मेरे पास नकदी नहीं है.
+ungesund,unhealthy,Das Essen ist ungesund.,The food is unhealthy.,बीमार,भोजन अस्वास्थ्यकर है.
+dabei,with it / included,Ich bin dabei.,I am in / I join.,इसके साथ / सम्मिलित,मैं शामिल हूं / मैं शामिल हूं.
+Sprudelwasser,sparkling water,Ich trinke Sprudelwasser.,I drink sparkling water.,सोडा,मैं स्पार्कलिंग पानी पीता हूं.
+gern,gladly / like to,Ich lese gern.,I like to read.,ख़ुशी से/पसंद है,मुझे पढ़ना पसंद है.
+danke schön,thank you very much,Danke schön für alles.,Thank you very much for everything.,आपका बहुत-बहुत धन्यवाद,सब कुछ के लिए बहुत बहुत धन्यवाद।
+Speisekarte,menu,"Die Speisekarte, bitte.","The menu, please.",मेनू,मेन्यू दीजिए कृपया।
+immer,always,Ich bin immer pünktlich.,I am always on time.,हमेशा,मैं हमेशा समय पर हूँ.
+zurück,back,Ich komme zurück.,I come back.,पीछे,मैं लौट आया।
+Kellner,waiter,Der Kellner ist freundlich.,The waiter is friendly.,परिचारक,वेटर मिलनसार है.
+Geburtstag,birthday,Heute ist mein Geburtstag.,Today is my birthday.,जन्मदिन,आज मेरा जन्मदिन हे।
+gemeinsam,together,Wir essen gemeinsam.,We eat together.,एक साथ,हम एक साथ खाना खाते हैं.
+kühlen,to cool,Das Wasser kühlt schnell.,The water cools quickly.,ठंडा करना,पानी जल्दी ठंडा हो जाता है.
+besser,better,Mir geht es besser.,I feel better.,बेहतर,मैं बेहतर महसूस कर रहा हूँ।
+Mode,fashion,Mode ist wichtig.,Fashion is important.,पहनावा,फैशन महत्वपूर्ण है.
+Brillen,glasses,Ich trage Brillen.,I wear glasses.,चश्मा,मैं चश्मा पहनने।
+sage,(I) say,Ich sage die Wahrheit.,I say the truth.,(मैं कहता हूँ,मैं सच कहता हूं.
+Antwort,answer,Deine Antwort ist richtig.,Your answer is correct.,उत्तर,आपका उत्तर सही है.
+sehe,(I) see,Ich sehe dich.,I see you.,(अच्छा ऐसा है,मैं तुम्हें देखता हूं.
+hier,here,Ich bin hier.,I am here.,यहाँ,मैं यहां हूं।
+Schlüssel,key,Der Schlüssel ist neu.,The key is new.,चाबी,कुंजी नई है.
+offen,open,Das Fenster ist offen.,The window is open.,खुला,खिड़की खुली है.
+Kuchen,cake,Der Kuchen ist süß.,The cake is sweet.,केक,केक मीठा है.
+Bild,picture,Das Bild ist schön.,The picture is beautiful.,चित्र,चित्र सुन्दर है.
+Hilfe,help,"Hilfe, bitte!","Help, please!",मदद,कृपया मदद करें!
+Geschichte,story / history,Die Geschichte ist lang.,The story is long.,कहानी/इतिहास,कहानी लंबी है.
+jetzt,now,Ich mache es jetzt.,I do it now.,अब,मैं अब यह करता हूँ।
+Thema,topic,Das Thema ist interessant.,The topic is interesting.,विषय,विषय रोचक है.
+Rechnung,bill,"Die Rechnung, bitte.","The bill, please.",बिल,कृपया बिल दें।
+Oma,grandma,Meine Oma ist nett.,My grandma is nice.,दादी,मेरी दादी अच्छी हैं.
+Blumen,flowers,Die Blumen sind schön.,The flowers are beautiful.,फूल,फूल सुंदर हैं।
+laut,loud,Das Radio ist laut.,The radio is loud.,ऊँचा स्वर,रेडियो तेज़ है.
+leise,quiet,Die Musik ist leise.,The music is quiet.,शांत,संगीत शांत है.
+spinnen,to spin / spiders,Spinnen machen Netze.,Spiders make webs.,घूमना/मकड़ियों,मकड़ियाँ जाला बनाती हैं।
+Glück,luck / happiness,Viel Glück!,Good luck!,भाग्य/ख़ुशी,आपको कामयाबी मिले!
+Flasche,bottle,Die Flasche ist voll.,The bottle is full.,बोतल,बोतल भरी हुई है.
+Wand,wall,Die Wand ist weiß.,The wall is white.,दीवार,दीवार सफेद है.
+Jacke,jacket,Die Jacke ist neu.,The jacket is new.,जैकेट,जैकेट नई है.
+tief,deep,Der See ist tief.,The lake is deep.,गहरा,झील गहरी है.
+Zähne,teeth,Meine Zähne sind weiß.,My teeth are white.,दाँत,मेरे दांत सफेद हैं.
+Suppe,soup,Die Suppe ist heiß.,The soup is hot.,शोरबा,सूप गर्म है.
+Fleisch,meat,Fleisch ist teuer.,Meat is expensive.,मांस,मांस महँगा है.
+schnell,fast,Der Hund läuft schnell.,The dog runs fast.,तेज़,कुत्ता तेज़ दौड़ता है.
+früh,early,Ich stehe früh auf.,I get up early.,जल्दी,मैं जल्दी उठता हूं।
+heute Abend,this evening,Heute Abend gehe ich ins Kino.,This evening I go to the cinema.,यह शाम,आज शाम को मैं सिनेमा देखने जाता हूँ।
+gerne,gladly / like to,Ich esse gerne Pizza.,I like to eat pizza.,ख़ुशी से/पसंद है,मुझे पिज़्ज़ा खाना पसंद है।
+Lied,song,Das Lied ist schön.,The song is beautiful.,गाना,गाना खूबसूरत है.
+Baum,tree,Der Baum ist alt.,The tree is old.,पेड़,पेड़ पुराना है.
+Sonnenuntergang,sunset,Der Sonnenuntergang ist rot.,The sunset is red.,सूर्यास्त,सूर्यास्त लाल है.
+vor,in front of / before,Das Auto steht vor dem Haus.,The car is in front of the house.,के सामने/पहले,कार घर के सामने है.
+Mädchen,girl,Das Mädchen lacht.,The girl laughs.,लड़की,लड़की हंसती है.
+Junge,boy,Der Junge spielt.,The boy plays.,लड़का,लड़का खेलता है.
+hungrig,hungry,Ich bin hungrig.,I am hungry.,भूखा,मुझे भूख लगी है.
+Ankunft,arrival,Die Ankunft ist pünktlich.,The arrival is on time.,आगमन,आगमन समय पर है.
+einfach,simple / easy,Das ist einfach.,That is easy.,सरल/आसान,ओ आसान है।
+Tanz,dance,Der Tanz ist schön.,The dance is beautiful.,नृत्य,नृत्य सुन्दर है.
+Großhandel,wholesale,Der Großhandel ist günstig.,The wholesale is cheap.,थोक,थोक सस्ता है.
+Berg,mountain,Der Berg ist hoch.,The mountain is high.,पर्वत,पहाड़ ऊँचा है.
+Hund,dog,Der Hund bellt.,The dog barks.,कुत्ता,कुत्ता भौंकता है.
+Katze,cat,Die Katze schläft.,The cat is sleeping.,बिल्ली,बिल्ली सो रही है।
+Markt,market,Der Markt ist voll.,The market is crowded.,बाज़ार,बाज़ार में भीड़ है.
+Bahnhof,train station,Der Bahnhof ist groß.,The train station is big.,रेलवे स्टेशन,रेलवे स्टेशन बड़ा है.
+Flughafen,airport,Der Flughafen ist weit.,The airport is far.,एयरपोर्ट,हवाई अड्डा दूर है.
+Zug,train,Der Zug ist schnell.,The train is fast.,रेलगाड़ी,ट्रेन तेज़ है.
+Bus,bus,Der Bus kommt spät.,The bus comes late.,बस,बस देर से आती है.
+Kino,cinema,Das Kino ist leer.,The cinema is empty.,सिनेमा,सिनेमा खाली है.
+Kleid,dress,Das Kleid ist schön.,The dress is beautiful.,पोशाक,पोशाक सुंदर है.
+Schuhe,shoes,Die Schuhe sind neu.,The shoes are new.,जूते,जूते नये हैं.
+Lampe,lamp,Die Lampe ist hell.,The lamp is bright.,चिराग,दीपक उज्ज्वल है.
+Baby,baby,Das Baby schläft.,The baby is sleeping.,बच्चा,बच्चा सो रहा है.
+Insel,island,Die Insel ist klein.,The island is small.,द्वीप,द्वीप छोटा है.
+Feuer,fire,Das Feuer ist heiß.,The fire is hot.,आग,आग गरम है.
+Erde,earth/soil,Die Erde ist braun.,The soil is brown.,पृथ्वी/मिट्टी,मिट्टी भूरी है.
+Luft,air,Die Luft ist frisch.,The air is fresh.,वायु,हवा ताज़ा है.
+Hafen,harbor/port,Der Hafen ist groß.,The harbor is big.,बंदरगाह/बंदरगाह,बंदरगाह बड़ा है.
+Schiff,ship,Das Schiff ist alt.,The ship is old.,जहाज,जहाज पुराना है.
+Boot,boat,Das Boot ist klein.,The boat is small.,नाव,नाव छोटी है.
+Brücke,bridge,Die Brücke ist lang.,The bridge is long.,पुल,पुल लम्बा है.
+Hausaufgabe,homework,Ich mache die Hausaufgabe.,I do the homework.,गृहकार्य,मैं गृह कार्य करता हूँ।
+Büro,office,Das Büro ist modern.,The office is modern.,कार्यालय,कार्यालय आधुनिक है.
+Chef,boss,Mein Chef ist streng.,My boss is strict.,मालिक,मेरा बॉस सख्त है.
+Kollege,colleague (m),Mein Kollege hilft mir.,My colleague helps me.,सहकर्मी (पुरुष),मेरा सहकर्मी मेरी मदद करता है.
+Kundin,customer (f),Die Kundin ist freundlich.,The customer is friendly.,ग्राहक (एफ),ग्राहक मिलनसार है.
+Firma,company,Die Firma ist groß.,The company is big.,कंपनी,कंपनी बड़ी है.
+Projekt,project,Das Projekt ist neu.,The project is new.,परियोजना,प्रोजेक्ट नया है.
+Vertrag,contract,Der Vertrag ist wichtig.,The contract is important.,अनुबंध,अनुबंध महत्वपूर्ण है.
+Termin,appointment,Ich habe einen Termin.,I have an appointment.,नियुक्ति,मेरा एक नियुक्ति है।
+Besprechung,meeting,Die Besprechung ist morgen.,The meeting is tomorrow.,बैठक,बैठक कल है.
+Telefonat,phone call,Das Telefonat ist lang.,The phone call is long.,फोन कॉल,फ़ोन कॉल लंबी है.
+E-Mail,email,Ich schreibe eine E-Mail.,I write an email.,ईमेल,मैं एक ईमेल लिखता हूं.
+Post,mail / post,Die Post ist hier.,The mail is here.,मेल/पोस्ट,मेल यहाँ है.
+Ticket,ticket,Das Ticket ist teuer.,The ticket is expensive.,टिकट,टिकट महंगा है.
+Pass,passport,Der Pass ist gültig.,The passport is valid.,पासपोर्ट,पासपोर्ट वैध है.
+Koffer,suitcase,Der Koffer ist schwer.,The suitcase is heavy.,सूटकेस,सूटकेस भारी है.
+Geldbörse,wallet,Meine Geldbörse ist leer.,My wallet is empty.,बटुआ,मेरा बटुआ खाली है.
+Kamera,camera,Die Kamera ist neu.,The camera is new.,कैमरा,कैमरा नया है.
+Foto,photo,Das Foto ist schön.,The photo is beautiful.,तस्वीर,फोटो खूबसूरत है.
+Konzert,concert,Das Konzert war laut.,The concert was loud.,संगीत समारोह,कॉन्सर्ट ज़ोरदार था.
+Theater,theater,Das Theater ist voll.,The theater is full.,थिएटर,थिएटर खचाखच भरा हुआ है.
+Buchhandlung,bookstore,Die Buchhandlung ist groß.,The bookstore is big.,किताबों की दुकान,किताबों की दुकान बड़ी है.
+Bibliothek,library,Die Bibliothek ist ruhig.,The library is quiet.,पुस्तकालय,पुस्तकालय शांत है.
+Magazin,magazine,Das Magazin ist interessant.,The magazine is interesting.,पत्रिका,पत्रिका दिलचस्प है.
+Radio,radio,Das Radio ist leise.,The radio is quiet.,रेडियो,रेडियो शांत है.
+Laptop,laptop,Mein Laptop ist schnell.,My laptop is fast.,लैपटॉप,मेरा लैपटॉप तेज़ है.
+Internet,internet,Das Internet funktioniert.,The internet works.,इंटरनेट,इंटरनेट काम करता है.
+Software,software,Die Software ist neu.,The software is new.,सॉफ़्टवेयर,सॉफ्टवेयर नया है.
+Hardware,hardware,Die Hardware ist teuer.,The hardware is expensive.,हार्डवेयर,हार्डवेयर महंगा है.
+Fahrrad,bicycle,Das Fahrrad ist alt.,The bicycle is old.,साइकिल,साइकिल पुरानी है.
+Motorrad,motorcycle,Das Motorrad ist laut.,The motorcycle is loud.,मोटरसाइकिल,मोटरसाइकिल की आवाज तेज है.
+Tankstelle,gas station,Die Tankstelle ist nah.,The gas station is near.,गैस स्टेशन,गैस स्टेशन निकट है.
+Café,café,Das Café ist klein.,The café is small.,कैफे,कैफ़े छोटा है.
+Hotel,hotel,Das Hotel ist teuer.,The hotel is expensive.,होटल,होटल महंगा है.
+Balkon,balcony,Der Balkon ist groß.,The balcony is big.,बालकनी,बालकनी बड़ी है.
+Garten,garden,Der Garten ist schön.,The garden is beautiful.,बगीचा,बगीचा सुन्दर है.
+Taxi,taxi,Das Taxi ist hier.,The taxi is here.,टैक्सी,टैक्सी यहाँ है.
+Weg,way / path,Der Weg ist lang.,The way is long.,रास्ता/रास्ता,रास्ता लम्बा है.
+Tunnel,tunnel,Der Tunnel ist dunkel.,The tunnel is dark.,सुरंग,सुरंग में अंधेरा है.
+Fahrer,driver,Der Fahrer ist müde.,The driver is tired.,ड्राइवर,ड्राइवर थक गया है.
+Passagier,passenger,Der Passagier wartet.,The passenger is waiting.,यात्री,यात्री इंतज़ार कर रहा है.
+Dorf,village,Das Dorf ist klein.,The village is small.,गाँव,गाँव छोटा है।
+Nachbar,neighbor,Mein Nachbar ist nett.,My neighbor is nice.,पड़ोसी,मेरा पड़ोसी अच्छा है.
+Vater,father,Mein Vater liest.,My father is reading.,पिता,मेरे पिता पढ़ रहे हैं.
+Mutter,mother,Meine Mutter kocht.,My mother is cooking.,माँ,मेरी माँ खाना बना रही है.
+Sohn,son,Mein Sohn spielt.,My son is playing.,बेटा,मेरा बेटा खेल रहा है.
+Tochter,daughter,Meine Tochter singt.,My daughter is singing.,बेटी,मेरी बेटी गा रही है.
+Ärztin,doctor,Die Ärztin ist freundlich.,The doctor is friendly.,चिकित्सक,डॉक्टर मिलनसार है.
+Krankenschwester,nurse,Die Krankenschwester hilft.,The nurse helps.,देखभाल करना,नर्स मदद करती है.
+Apotheke,pharmacy,Die Apotheke ist offen.,The pharmacy is open.,फार्मेसी,फार्मेसी खुली है.
+Medikament,medicine,Das Medikament ist wichtig.,The medicine is important.,दवा,दवा महत्वपूर्ण है.
+Krankheit,illness,Die Krankheit ist schlimm.,The illness is serious.,बीमारी,बीमारी गंभीर है.
+Polizei,police,Die Polizei kommt.,The police are coming.,पुलिस,पुलिस आ रही है.
+Feuerwehr,fire brigade,Die Feuerwehr ist schnell.,The fire brigade is fast.,अग्नि शामक दल,फायर ब्रिगेड तेज है.
+Unfall,accident,Der Unfall ist schlimm.,The accident is serious.,दुर्घटना,दुर्घटना गंभीर है.
+Gesetz,law,Das Gesetz ist klar.,The law is clear.,कानून,कानून स्पष्ट है.
+Gericht,court,Das Gericht ist groß.,The court is big.,अदालत,अदालत बड़ी है.
+Richter,judge,Der Richter spricht.,The judge speaks.,न्यायाधीश,जज बोलता है.
+Anwalt,lawyer,Der Anwalt hilft.,The lawyer helps.,वकील,वकील मदद करता है.
+Unterricht,lesson/class,Der Unterricht beginnt.,The class begins.,पाठ/कक्षा,क्लास शुरू होती है.
+Prüfung,exam/test,Die Prüfung ist schwer.,The exam is difficult.,परीक्षा/परीक्षा,परीक्षा कठिन है.
+Note,grade,Die Note ist gut.,The grade is good.,श्रेणी,ग्रेड अच्छा है.
+Bildschirm,screen,Der Bildschirm ist hell.,The screen is bright.,स्क्रीन,स्क्रीन चमकदार है.
+Tastatur,keyboard,Die Tastatur ist schwarz.,The keyboard is black.,कीबोर्ड,कीबोर्ड काला है.
+Maus,mouse,Die Maus ist klein.,The mouse is small.,चूहा,चूहा छोटा है.
+Drucker,printer,Der Drucker funktioniert.,The printer works.,मुद्रक,प्रिंटर काम करता है.
+Heft,notebook,Das Heft ist neu.,The notebook is new.,नोटबुक,नोटबुक नई है.
+Bleistift,pencil,Der Bleistift ist spitz.,The pencil is sharp.,पेंसिल,पेंसिल तेज़ है.
+Papier,paper,Das Papier ist weiß.,The paper is white.,कागज़,कागज सफेद है.
+Umschlag,envelope,Der Umschlag ist leer.,The envelope is empty.,लिफ़ाफ़ा,लिफाफा खाली है.
+Karte,card / map,Die Karte ist klein.,The card is small.,कार्ड/मानचित्र,कार्ड छोटा है.
+Hemd,shirt,Das Hemd ist blau.,The shirt is blue.,कमीज,शर्ट नीली है.
+Hose,pants,Die Hose ist schwarz.,The pants are black.,पैंट,पैंट काला है.
+Schuh,shoe,Der Schuh ist neu.,The shoe is new.,जूता,जूता नया है.
+Hut,hat,Der Hut ist schwarz.,The hat is black.,टोपी,टोपी काली है.
+Tal,valley,Das Tal ist grün.,The valley is green.,घाटी,घाटी हरी है.
+Gras,grass,Das Gras ist nass.,The grass is wet.,घास,घास गीली है.
+Tier,animal,Das Tier ist groß.,The animal is big.,जानवर,जानवर बड़ा है.
+Vogel,bird,Der Vogel fliegt.,The bird is flying.,चिड़िया,पक्षी उड़ रहा है.
+Fisch,fish,Der Fisch schwimmt.,The fish is swimming.,मछली,मछली तैर रही है.
+Pferd,horse,Das Pferd läuft.,The horse is running.,घोड़ा,घोड़ा दौड़ रहा है.
+Kuh,cow,Die Kuh gibt Milch.,The cow gives milk.,गाय,गाय दूध देती है.
+Schwein,pig,Das Schwein schläft.,The pig is sleeping.,सुअर,सुअर सो रहा है.
+Huhn,chicken,Das Huhn legt Eier.,The chicken lays eggs.,मुर्गी,मुर्गी अंडे देती है.
+Ei,egg,Das Ei ist frisch.,The egg is fresh.,अंडा,अंडा ताज़ा है.
+Laden,shop/store,Der Laden ist offen.,The shop is open.,दुकान,दुकान खुली है.
+Kaufhaus,department store,Das Kaufhaus ist groß.,The department store is big.,डिपार्टमेंट स्टोर,डिपार्टमेंटल स्टोर बड़ा है.
+Bar,bar,Die Bar ist voll.,The bar is full.,छड़,बार भरा हुआ है.
+Ticket,ticket,Das Ticket ist teuer.,The ticket is expensive.,टिकट,टिकट महंगा है.
+Mantel / coat,coat,Der Mantel ist warm.,The coat is warm.,कोट,कोट गर्म है.
+Schal / scarf,scarf,Der Schal ist rot.,The scarf is red.,दुपट्टा,दुपट्टा लाल है.
+Handschuhe,gloves,Die Handschuhe sind warm.,The gloves are warm.,दस्ताने,दस्ताने गर्म हैं.
+Frühling,spring,Der Frühling ist schön.,Spring is beautiful.,वसंत,वसंत सुन्दर है.
+Sommer,summer,Der Sommer ist heiß.,Summer is hot.,गर्मी,बहुत गर्मी है।
+Herbst,autumn,Der Herbst ist bunt.,Autumn is colorful.,शरद ऋतु,शरद ऋतु रंगीन है.
+Winter,winter,Der Winter ist kalt.,Winter is cold.,सर्दी,सर्दी ठंडी है.
+Rot,red,Das Auto ist rot.,The car is red.,लाल,कार लाल है.
+Blau,blue,Das Hemd ist blau.,The shirt is blue.,नीला,शर्ट नीली है.
+Grün,green,Das Gras ist grün.,The grass is green.,हरा,घास हरी है.
+Gelb,yellow,Die Blume ist gelb.,The flower is yellow.,पीला,फूल पीला है.
+Schwarz,black,Die Hose ist schwarz.,The pants are black.,काला,पैंट काला है.
+Weiß,white,Die Wand ist weiß.,The wall is white.,सफ़ेद,दीवार सफेद है.
+Braun,brown,Das Pferd ist braun.,The horse is brown.,भूरा,घोड़ा भूरे रंग का है.
+Pink,pink,Das Kleid ist pink.,The dress is pink.,गुलाबी,पोशाक गुलाबी है.
+Orange,orange,Die Jacke ist orange.,The jacket is orange.,नारंगी,जैकेट नारंगी है.
+Lila / Purple,purple,Das Tuch ist lila.,The scarf is purple.,बैंगनी,दुपट्टा बैंगनी है.
+Grau / gray,gray,Das Auto ist grau.,The car is gray.,स्लेटी,कार भूरे रंग की है.
+Beige,beige,Der Mantel ist beige.,The coat is beige.,बेज,कोट बेज रंग का है.
+Türkis,turquoise,Das Tuch ist türkis.,The scarf is turquoise.,फ़िरोज़ा,दुपट्टा फ़िरोज़ा है.
+Gold,gold,Die Uhr ist aus Gold.,The watch is made of gold.,सोना,घड़ी सोने से बनी है.
+Silber,silver,Der Ring ist aus Silber.,The ring is made of silver.,चाँदी,अंगूठी चांदी की बनी है.
+Essen,food,Das Essen ist lecker.,The food is tasty.,खाना,खाना स्वादिष्ट है.
+Getränk,drink,Das Getränk ist kalt.,The drink is cold.,पीना,पेय ठंडा है.
+Frühstück,breakfast,Ich esse Frühstück.,I eat breakfast.,नाश्ता,मैंनें नाश्ता कर लिया।
+Mittagessen,lunch,Ich esse Mittagessen.,I eat lunch.,दिन का खाना,मैं दोपहर का भोजन खाता हूं।
+Abendessen,dinner,Ich esse Abendessen.,I eat dinner.,रात का खाना,मैं रात का भोजन करता हूं।
+Brot / bread,bread,Das Brot ist frisch.,The bread is fresh.,रोटी,रोटी ताज़ा है.
+Fleisch / meat,meat,Das Fleisch ist rot.,The meat is red.,मांस,मांस लाल है.
+Apfel / apple,apple,Der Apfel ist süß.,The apple is sweet.,सेब,सेब मीठा है.
+Milch / milk,milk,Ich trinke Milch.,I drink milk.,दूध,मुझे दूध पीना पसंद है।
+Kaffee / coffee,coffee,Ich trinke Kaffee.,I drink coffee.,कॉफी,मुझे कॉफी पीना है।
+Tee / tea,tea,Ich trinke Tee.,I drink tea.,चाय,में चाय पीता हूँ।
+Saft / juice,juice,Der Saft ist frisch.,The juice is fresh.,रस,जूस ताज़ा है.
+Reis / rice,rice,Der Reis ist gekocht.,The rice is cooked.,चावल,चावल पक गया है.
+Nudeln,noodles,Die Nudeln sind lecker.,The noodles are tasty.,नूडल्स,नूडल्स स्वादिष्ट हैं.
+Salat / salad,salad,Der Salat ist frisch.,The salad is fresh.,सलाद,सलाद ताज़ा है.
+Großvater,grandfather,Mein Großvater ist alt.,My grandfather is old.,दादा,मेरे दादाजी बूढ़े हैं.
+Großmutter,grandmother,Meine Großmutter ist nett.,My grandmother is nice.,दादी,मेरी दादी अच्छी हैं.
+Kinder,children,Die Kinder spielen.,The children are playing.,बच्चे,बच्चे खेल रहे हैं.
+Ehefrau,wife,Meine Ehefrau kocht.,My wife is cooking.,पत्नी,मेरी पत्नी खाना बना रही है.
+Partner,partner,Mein Partner ist nett.,My partner is nice.,साथी,मेरा पार्टनर अच्छा है.
+Freund,boyfriend,Mein Freund ist hier.,My boyfriend is here.,दोस्त,मेरा बॉयफ्रेंड यहाँ है.
+Freundin,girlfriend,Meine Freundin ist schön.,My girlfriend is beautiful.,दोस्त,मेरी गर्लफ्रेंड खूबसूरत है.
+Ehe / marriage,marriage,Die Ehe ist glücklich.,The marriage is happy.,शादी,शादी खुशहाल है.
+Scheidung,divorce,Die Scheidung ist schwierig.,The divorce is difficult.,तलाक,तलाक कठिन है.
+Onkel / uncle,uncle,Mein Onkel wohnt hier.,My uncle lives here.,चाचा,मेरे चाचा यहीं रहते हैं.
+Tante / aunt,aunt,Meine Tante kommt.,My aunt is coming.,चाची,मेरी मौसी आ रही है.
+Neffe / nephew,nephew,Mein Neffe spielt draußen.,My nephew plays outside.,भतीजा,मेरा भतीजा बाहर खेलता है.
+Nichte / niece,niece,Meine Nichte lacht.,My niece laughs.,भतीजी,मेरी भतीजी हंसती है.
+sonnig / sunny,sunny,Heute ist es sonnig.,Today it is sunny.,धूप वाला,आज धूप है.
+regnerisch,rainy,Es ist regnerisch.,It is rainy.,बरसाती,यहा बरसात है।
+bewölkt,cloudy,Der Himmel ist bewölkt.,The sky is cloudy.,बादलों से घिरा,आसमान में बादल छाए हुए हैं.
+verschneit,snowy,Es ist verschneit.,It is snowy.,हिमाच्छन्न,यह बर्फ है।
+windig / windy,windy,Heute ist es windig.,Today it is windy.,तूफ़ानी,आज बहुत हवा चल रही है.
+neblig / foggy,foggy,Es ist neblig draußen.,It is foggy outside.,कोहरे वाला,बाहर कोहरा है.
+links / left,left,Gehe nach links.,Go left.,बाएं,जाना छोड़ दिया।
+rechts / right,right,Gehe nach rechts.,Go right.,सही,सही जाना।
+geradeaus,straight,Gehe geradeaus.,Go straight.,सीधा,सीधे जाओ.
+hinter,behind,Das Auto ist hinter dem Haus.,The car is behind the house.,पीछे,कार घर के पीछे है.
+Norden,north,Der Norden ist kalt.,The north is cold.,उत्तर,उत्तर ठंडा है.
+Süden,south,Der Süden ist warm.,The south is warm.,दक्षिण,दक्षिण गर्म है.
+Osten,east,Der Osten ist schön.,The east is beautiful.,पूर्व,पूर्व सुंदर है.
+Westen,west,Der Westen ist ruhig.,The west is calm.,पश्चिम,पश्चिम शांत है.
+Kopf / head,head,Mein Kopf tut weh.,My head hurts.,सिर,मेरे सिर में दर्द होता है।
+Auge / eye,eye,Mein Auge ist rot.,My eye is red.,आँख,मेरी आंख लाल है.
+Ohr / ear,ear,Mein Ohr tut weh.,My ear hurts.,कान,मेरे कान में दर्द है.
+Nase / nose,nose,Meine Nase ist klein.,My nose is small.,नाक,मेरी नाक छोटी है.
+Mund / mouth,mouth,Mein Mund ist trocken.,My mouth is dry.,मुँह,मेरा मुँह सूख गया है.
+Hand / hand,hand,Meine Hand ist kalt.,My hand is cold.,हाथ,मेरा हाथ ठंडा है.
+Arm / arm,arm,Mein Arm ist lang.,My arm is long.,हाथ,मेरा हाथ लम्बा है.
+Bein / leg,leg,Mein Bein ist müde.,My leg is tired.,टांग,मेरा पैर थक गया है.
+Fuß / foot,foot,Mein Fuß tut weh.,My foot hurts.,पैर,मेरे पैर दर्द में होता है।
+Finger / finger,finger,Mein Finger ist verletzt.,My finger is injured.,उँगलिया,मेरी उंगली घायल हो गई है.
+Gutschein,voucher / coupon,Ich habe einen Gutschein bekommen.,I received a voucher.,वाउचर/कूपन,मुझे एक वाउचर मिला.
+Vergiftung,poisoning,Die Vergiftung ist gefährlich.,The poisoning is dangerous.,जहर,जहर खतरनाक है.
+Verbrennung,burn,Die Verbrennung tut weh.,The burn hurts.,जलाना,जलने से दर्द होता है.
+Waschraum,washroom,Der Waschraum ist sauber.,The washroom is clean.,टट्टी,शौचालय साफ़ है.
+Angebot,offer / deal,Das Angebot ist günstig.,The offer is cheap.,प्रस्ताव/सौदा,ऑफर सस्ता है.
+schlecht,bad,Das ist schlecht.,That is bad.,खराब,वह बुरा है.
+neu,new,Das Auto ist neu.,The car is new.,नया,कार नई है.
+alt,old,Das Buch ist alt.,The book is old.,पुराना,किताब पुरानी है.
+schön,beautiful,Die Blume ist schön.,The flower is beautiful.,सुंदर,फूल सुंदर है.
+hässlich,ugly,Das Bild ist hässlich.,The picture is ugly.,कुरूप,तस्वीर बदसूरत है.
+glücklich,happy,Ich bin glücklich.,I am happy.,खुश,मैं खुश हूँ।
+traurig,sad,Er ist traurig.,He is sad.,दुखद,वह दुखी है.
+schnell,fast,Das Auto ist schnell.,The car is fast.,तेज़,कार तेज़ है.
+langsam,slow,Die Schnecke ist langsam.,The snail is slow.,धीमा,घोंघा धीमा है.
+warm,warm,Es ist warm heute.,It is warm today.,गरम,आज गर्मी है।
+kalt,cold,Das Wasser ist kalt.,The water is cold.,ठंडा,पानी ठंडा है.
+leise,quiet,Sei bitte leise.,Please be quiet.,शांत,कृपया शांत रहें।
+laut,loud,Die Musik ist laut.,The music is loud.,ऊँचा स्वर,संगीत तेज़ है.
+jung,young,Das Kind ist jung.,The child is young.,युवा,बच्चा छोटा है.
+reich,rich,Er ist reich.,He is rich.,अमीर,वह अमीर है.
+arm,poor,Sie ist arm.,She is poor.,गरीब,वह गरीब है.
+billig,cheap,Das T-Shirt ist billig.,The T-shirt is cheap.,सस्ता,टी-शर्ट सस्ती है.
+teuer,expensive,Das Handy ist teuer.,The phone is expensive.,महँगा,फ़ोन महँगा है.
+kurz,short,Der Weg ist kurz.,The way is short.,छोटा,रास्ता छोटा है.
+lang,long,Der Film ist lang.,The movie is long.,लंबा,फिल्म लंबी है.
+breit,wide,Die Straße ist breit.,The street is wide.,चौड़ा,सड़क चौड़ी है.
+eng,narrow,Die Gasse ist eng.,The alley is narrow.,सँकरा,गली संकरी है.
+hoch,high/tall,Der Turm ist hoch.,The tower is tall.,उंचा लंबा,टावर ऊंचा है.
+tief,deep,Das Wasser ist tief.,The water is deep.,गहरा,पानी गहरा है.
+hell,bright,Das Zimmer ist hell.,The room is bright.,चमकदार,कमरा उजियाला है.
+dunkel,dark,Der Keller ist dunkel.,The basement is dark.,अँधेरा,तहखाने में अंधेरा है.
+nass,wet,Mein Haar ist nass.,My hair is wet.,गीला,मेरे बाल गीले है।
+trocken,dry,Das Handtuch ist trocken.,The towel is dry.,सूखा,तौलिया सूखा है.
+sauber,clean,Die Küche ist sauber.,The kitchen is clean.,साफ,रसोई साफ़ है.
+schmutzig,dirty,Die Schuhe sind schmutzig.,The shoes are dirty.,गंदा,जूते गंदे हैं.
+leer,empty,Die Flasche ist leer.,The bottle is empty.,खाली,बोतल खाली है.
+voll,full,Der Korb ist voll.,The basket is full.,भरा हुआ,टोकरी भरी हुई है.
+offen,open,Die Tür ist offen.,The door is open.,खुला,दरवाज़ा खुला है.
+geschlossen,closed,Das Geschäft ist geschlossen.,The store is closed.,बंद किया हुआ,स्टोर बंद हो चुका है।
+leicht,easy/light,Die Tasche ist leicht.,The bag is light.,आसान/हल्का,बैग हल्का है.
+wichtig,important,Das ist wichtig.,That is important.,महत्वपूर्ण,यह महत्वपूर्ण है.
+interessant,interesting,Das Buch ist interessant.,The book is interesting.,दिलचस्प,किताब दिलचस्प है.
+langweilig,boring,Der Film ist langweilig.,The movie is boring.,उबाऊ,फिल्म उबाऊ है.
+richtig,correct/right,Das ist richtig.,That is correct.,सही/सही,यह सही है।
+falsch,wrong/false,Das ist falsch.,That is wrong.,ग़लत/झूठा,यह गलत है.
+wahr,TRUE,Die Geschichte ist wahr.,The story is true.,सत्य,कहानी सच्ची है.
+echt,real/genuine,Ist das echt?,Is that real?,असली/असली,क्या यह असली है?
+gesund,healthy,Obst ist gesund.,Fruit is healthy.,स्वस्थ,फल स्वास्थ्यवर्धक है.
+wach,awake,Ich bin wach.,I am awake.,जागना,मै जाग रहा हूँ।
+durstig,thirsty,Ich bin durstig.,I am thirsty.,प्यासा,मुझे प्यास लगी है।
+satt,full (eaten),Ich bin satt.,I am full.,पूरा (खाया हुआ),मेरा पेट भरा है।
+dick,fat/thick,Die Katze ist dick.,The cat is fat.,मोटा/मोटा,बिल्ली मोटी है.
+dünn,thin/skinny,Sie ist dünn.,She is thin.,पतला/पतला,वह पतली है.
+stark,strong,Er ist stark.,He is strong.,मज़बूत,वह मजबूत है।
+schwach,weak,Ich bin schwach.,I am weak.,कमज़ोर,मैं कमजोर हूं।
+klein,small,Ein kleiner Hund.,A small dog.,छोटा,एक छोटा कुत्ता.
+freundlich,friendly,Sie ist freundlich.,She is friendly.,दोस्ताना,वह मिलनसार है.
+nett,nice,Er ist nett.,He is nice.,अच्छा,वह अच्छा है.
+gemein,mean,Das war gemein.,That was mean.,अर्थ,वह औसत था।
+lecker,delicious,Der Kuchen ist lecker.,The cake is delicious.,स्वादिष्ट,केक स्वादिष्ट है.
+eklig,disgusting,Dieses Essen ist eklig.,This food is disgusting.,घिनौना,यह खाना घृणित है.
+beschäftigt,busy,Sie ist jetzt beschäftigt.,She is busy now.,व्यस्त,वह अभी व्यस्त है.
+frei,free / available,Das Zimmer ist frei.,The room is free.,मुफ़्त/उपलब्ध,कमरा मुफ़्त है.
+unwichtig,unimportant,Das ist unwichtig.,That is unimportant.,महत्वहीन,वह महत्वहीन है.
+bereit,ready,Ich bin bereit.,I am ready.,तैयार,मैं तैयार हूँ।
+fertig,finished / done,Die Arbeit ist fertig.,The work is finished.,समाप्त / हो गया,काम ख़त्म हो गया.
+ruhig,calm,Er ist ruhig.,He is calm.,शांत,वह शांत है।
+nervös,nervous,Sie ist nervös.,She is nervous.,घबराया हुआ,वह घबराई हुई है.
+klug,clever / smart,Der Junge ist klug.,The boy is clever.,चतुर/चतुर,लड़का होशियार है.
+dumm,stupid / dumb,Das war eine dumme Idee.,That was a stupid idea.,मूर्ख/मूर्ख,वह एक मूर्खतापूर्ण विचार था.
+weich,soft,Das Kissen ist weich.,The pillow is soft.,कोमल,तकिया मुलायम है.
+hart,hard,Der Tisch ist hart.,The table is hard.,मुश्किल,मेज कठिन है.
+sicher,safe / certain,Der Ort ist sicher.,The place is safe.,सुरक्षित/निश्चित,जगह सुरक्षित है.
+gefährlich,dangerous,Diese Straße ist gefährlich.,That road is dangerous.,खतरनाक,वह सड़क खतरनाक है.
+schwer,heavy / difficult,Die Kiste ist schwer.,The box is heavy.,भारी / कठिन,बक्सा भारी है.
+spät,late,Ich bin spät.,I am late.,देर,मैं देरी से हूँ।
+früh,early,Ich stehe früh auf.,I wake up early.,जल्दी,मैं जल्दी उठता हूँ।
+heiß,hot,Der Kaffee ist heiß.,The coffee is hot.,गर्म,कॉफ़ी गरम है.
+kühl,cool / chilly,Das Zimmer ist kühl.,The room is cool.,ठंडा/ठंडा,कमरा मस्त है.
+lustig,funny / amusing,Der Film ist lustig.,The movie is funny.,मज़ेदार/मनोरंजक,फिल्म मजेदार है.
+ernst,serious,Er sieht ernst aus.,He looks serious.,गंभीर,वह गंभीर लग रहा है.
+froh,happy,Sie ist heute froh.,She is happy today.,खुश,वह आज खुश है.
+höflich,polite,Sie ist höflich.,She is polite.,विनम्र,वह विनम्र है.
+unhöflich,impolite / rude,Der Kunde war unhöflich.,The customer was rude.,असभ्य/अशिष्ट,ग्राहक असभ्य था.
+kreativ,creative,Sie ist kreativ.,She is creative.,रचनात्मक,वह रचनात्मक है।
+faul,lazy,Er ist heute faul.,He is lazy today.,आलसी,वह आज आलसी है.
+fleißig,hardworking,Sie ist fleißig.,She is hardworking.,मेहनती,वो बहुत मेहनती है।
+zuverlässig,reliable,Er ist zuverlässig.,He is reliable.,भरोसेमंद,वह विश्वसनीय है.
+lustlos,unmotivated,Ich fühle mich lustlos.,I feel unmotivated.,प्रेरणाहीन,मैं प्रेरितहीन महसूस करता हूँ।
+witzig,funny / witty,Der Film ist witzig.,The movie is funny.,मजाकिया/मजाकिया,फिल्म मजेदार है.
+modern,modern,Dieses Gebäude ist modern.,This building is modern.,आधुनिक,यह इमारत आधुनिक है.
+mild,mild,Die Suppe ist mild.,The soup is mild.,हल्का,सूप हल्का है.
+hier,here,Komm hierher!,Come here!,यहाँ,यहाँ आओ!
+dort,there,Das Buch liegt dort.,The book is there.,वहाँ,किताब वहाँ है.
+3,later,Wir sehen uns später.,We will see each other later.,बाद में,हम एक दूसरे से बाद में मिलेंगे.
+heute,today,Heute ist Montag.,Today is Monday.,आज,आज सोमवार हे।
+morgen,tomorrow,Morgen gehe ich einkaufen.,Tomorrow I will go shopping.,कल,कल मैं खरीदारी करने जाऊंगा.
+gestern,yesterday,Gestern war es kalt.,Yesterday it was cold.,कल,कल ठंड थी.
+oft,often,Ich gehe oft spazieren.,I go for walks often.,अक्सर,मैं अक्सर घूमने जाता हूं.
+immer,always,Ich bin immer müde.,I am always tired.,हमेशा,मैं हमेशा थका हुआ रहता हूं.
+nie,never,Ich trinke nie Kaffee.,I never drink coffee.,कभी नहीं,मैं कभी कॉफी नहीं पीता।
+sehr,very,Das Buch ist sehr gut.,The book is very good.,बहुत,किताब बहुत अच्छी है.
+nicht,not,Ich verstehe das nicht.,I do not understand that.,नहीं,मुझे यह समझ में नहीं आता।
+gut,good,Das Essen schmeckt gut.,The food tastes good.,अच्छा,भोजन का स्वाद अच्छा है.
+bald,soon,Ich komme bald.,I will come soon.,जल्द ही,मेरा जल्दी आना होगा।
+schon,already,Ich habe das schon gesehen.,I have already seen that.,पहले से,वह मैं पहले ही देख चुका हूं.
+noch,still/yet,Ich bin noch hier.,I am still here.,अभी भी/अभी तक,मैं अभी भी यहाँ हुँ।
+erst,only/just,Ich bin erst angekommen.,I have just arrived.,केवल बस,मैं अभी आया हूं.
+wieder,again,Ich komme wieder.,I will come again.,दोबारा,मैं फिर आ जाऊँगा।
+weg,away,Er ist weg.,He is away.,दूर,वह दूर है.
+dabei,with it / present,Ich bin dabei.,I am joining in.,इसके साथ / वर्तमान,मैं इसमें शामिल हो रहा हूं.
+drinnen,inside,Es ist warm drinnen.,It is warm inside.,अंदर,यह अंदर से गर्म है.
+draußen,outside,Wir spielen draußen.,We are playing outside.,बाहर,हम बाहर खेल रहे हैं.
+oben,above / up,Das Buch liegt oben.,The book is upstairs.,ऊपर/ऊपर,किताब ऊपर है.
+unten,below / down,Die Katze ist unten.,The cat is downstairs.,नीचे/नीचे,बिल्ली नीचे है.
+links,left,Gehe nach links.,Go to the left.,बाएं,बाईं ओर जाएं.
+rechts,right,Biege rechts ab.,Turn right.,सही,दांए मुड़िए।
+geradeaus,straight,Gehe geradeaus.,Go straight ahead.,सीधा,आगे सीधे बढ़ो।
+vorne,in front,Das Auto ist vorne.,The car is in front.,सामने,कार सामने है.
+hinten,in back / behind,Die Tasche ist hinten.,The bag is in the back.,पीछे/पीछे,बैग पीछे है.
+nirgends,nowhere,Ich finde es nirgends.,I can’t find it anywhere.,कहीं नहीं,मेरे द्वारा इसे कहीं भी ढूंढा जा सकता है।
+manchmal,sometimes,Ich gehe manchmal schwimmen.,I sometimes go swimming.,कभी-कभी,मैं कभी-कभी तैराकी करने जाता हूं।
+selten,rarely,Ich esse selten Fleisch.,I rarely eat meat.,कभी-कभार,मैं मांस कम ही खाता हूं.
+meistens,mostly,Ich esse meistens Obst.,I mostly eat fruit.,ज्यादातर,मैं ज्यादातर फल खाता हूं.
+kaum,hardly / barely,Ich habe kaum Zeit.,I hardly have time.,मुश्किल से / बमुश्किल,मेरे पास मुश्किल से ही समय होता है.
+ganz,completely / quite,Das ist ganz einfach.,That is quite simple.,पूरी तरह से/काफी,यह काफी सरल है.
+ziemlich,fairly / quite,Das ist ziemlich teuer.,That is fairly expensive.,निष्पक्ष/बिल्कुल,वह काफी महंगा है.
+wirklich,really,Das ist wirklich gut.,That is really good.,वास्तव में,वह वास्तव में अच्छा है।
+genug,enough,Ich habe genug Geld.,I have enough money.,पर्याप्त,मेरे पास पर्याप्त पैसा है.
+zu,too / to,Es ist zu heiß.,It is too hot.,भी/को,यह बहुत गरम है.
+fast,almost,Ich bin fast fertig.,I am almost done.,लगभग,मेरा लगभग हो गया है।
+leider,unfortunately,Leider kann ich nicht kommen.,"Unfortunately, I cannot come.",दुर्भाग्य से,"दुर्भाग्य से, मैं नहीं आ सकता."
+vielleicht,maybe / perhaps,Vielleicht regnet es morgen.,Maybe it will rain tomorrow.,शायद हो सकता है,शायद कल बारिश होगी.
+sicher,sure / safe,Bist du sicher?,Are you sure?,निश्चित/सुरक्षित,क्या आपको यकीन है?
+natürlich,of course / naturally,Natürlich helfe ich dir.,Of course I will help you.,अवश्य/स्वाभाविक रूप से,बेशक मैं आपकी मदद करूंगा.
+auch,also / too,Ich komme auch.,I am coming too.,भी भी,मैं भी आ रहा हूँ।
+nur,only / just,Ich habe nur einen Apfel.,I only have one apple.,केवल बस,मेरे पास केवल एक सेब है.
+sogar,even,Er hat sogar gelacht.,He even laughed.,यहां तक ​​की,वह हँसे भी।
+sowieso,anyway,Ich mache es sowieso.,I will do it anyway.,फिर भी,मैं इसे वैसे भी करूंगा.
+danach,after that,Danach gehen wir essen.,After that we will go eat.,इसके बाद,उसके बाद हम खाना खाने चलेंगे.
+davor,before that,Ich war davor dort.,I was there before that.,इससे पहले,मैं उससे पहले वहां था.
+deshalb,therefore,"Ich bin müde, deshalb gehe ich schlafen.","I am tired, therefore I am going to sleep.",इसलिए,मैं थक गया हूँ इसलिए सोने जा रहा हूँ.
+trotz,despite,Trotz des Regens gehen wir spazieren.,"Despite the rain, we are going for a walk.",इसके बावजूद,बारिश के बावजूद हम घूमने जा रहे हैं.
+eigentlich,actually,Eigentlich mag ich Pizza.,"Actually, I like pizza.",वास्तव में,"दरअसल, मुझे पिज़्ज़ा पसंद है."
+besonders,especially,Ich mag Schokolade besonders.,I especially like chocolate.,विशेष रूप से,मुझे खासतौर पर चॉकलेट पसंद है.
+gern,gladly,Ich spiele gern Fußball.,I like to play soccer.,ख़ुशी से,मैं फुटबॉल खेलना पसंद करता हुँ।
+zusammen,together,Wir arbeiten zusammen.,We work together.,एक साथ,हम एक साथ कार्य करते हैं।
+ebenfalls,likewise / also,Ich bin ebenfalls müde.,I am also tired.,इसी तरह / भी,मैं भी थक गया हूँ.
+vorher,before,Ich esse vorher etwas.,I eat something before.,पहले,मैं पहले कुछ खाता हूं.
+nachher,afterwards,Wir gehen nachher ins Kino.,We are going to the cinema afterwards.,उसके बाद,हम बाद में सिनेमा देखने जा रहे हैं।
+zunächst,at first / initially,Zunächst lernen wir Deutsch.,"At first, we learn German.",प्रथमतः/शुरुआत में,"सबसे पहले, हम जर्मन सीखते हैं।"
+inzwischen,meanwhile / by now,Inzwischen ist er zu Hause.,"Meanwhile, he is at home.",इस बीच / अब तक,इस बीच वह घर पर हैं.
+übrigens,by the way,"Übrigens, ich komme morgen.","By the way, I am coming tomorrow.",वैसे,वैसे मैं कल आ रहा हूँ.
+plötzlich,suddenly,Plötzlich begann es zu regnen.,Suddenly it started to rain.,अचानक,अचानक बारिश होने लगी.
+erneut,again / once more,Ich versuche es erneut.,I will try it again.,पुनः/एक बार और,मैं इसे दोबारा आज़माऊंगा.
+normalerweise,normally,Normalerweise gehe ich um 7 Uhr.,"Normally, I go at 7 o’clock.",सामान्यतः,आम तौर पर मैं 7 बजे जाता हूं.
+zumindest,at least,Ich habe zumindest etwas gelernt.,I learned at least something.,कम से कम,मैंने कम से कम कुछ तो सीखा.
+absolut,absolutely,Das ist absolut richtig.,That is absolutely correct.,बिल्कुल,यह बिल्कुल सही है.
+genauso,just like / exactly,Ich denke genauso.,I think exactly the same.,बिलकुल वैसे ही / बिल्कुल,मैं बिल्कुल वैसा ही सोचता हूं.
+anders,different / otherwise,Heute ist alles anders.,Today everything is different.,भिन्न/अन्यथा,आज सब कुछ अलग है.
+zusätzlich,additionally,Zusätzlich kaufe ich Brot.,"Additionally, I am buying bread.",इसके अतिरिक्त,"इसके अतिरिक्त, मैं ब्रेड भी खरीद रहा हूं।"
+bloß,only / just,Ich wollte bloß helfen.,I just wanted to help.,केवल बस,मैं बस मदद करना चाहता था.
+jeweils,each / respectively,Wir treffen uns jeweils am Montag.,We meet each Monday.,प्रत्येक / क्रमशः,हम प्रत्येक सोमवार को मिलते हैं।
+nochmals,once again,Ich danke dir nochmals.,I thank you once again.,फिर एक बार,मैं एक बार फिर आपको धन्यवाद देता हूं.
+überhaupt,at all,Ich verstehe das überhaupt nicht.,I don’t understand that at all.,बिल्कुल भी,मैं इसे बिल्कुल नहीं समझता।
+ohnehin,anyway / in any case,Ich mache es ohnehin.,I am doing it anyway.,वैसे भी / किसी भी मामले में,मैं वैसे भी यह कर रहा हूँ.
+ursprünglich,originally,Ursprünglich kam er aus Berlin.,"Originally, he came from Berlin.",मौलिक रूप से,वह मूलतः बर्लिन से आये थे।
+äußerst,extremely,Das ist äußerst wichtig.,That is extremely important.,अत्यंत,यह अत्यंत महत्वपूर्ण है.
+hauptsächlich,mainly / primarily,Ich arbeite hauptsächlich am Computer.,I mainly work on the computer.,मुख्य रूप से / मुख्य रूप से,मैं मुख्यतः कंप्यूटर पर काम करता हूँ।
+vermutlich,probably,Vermutlich kommt er später.,He will probably come later.,शायद,वह शायद बाद में आएगा.
+deutlich,clear / distinct,Das ist deutlich sichtbar.,That is clearly visible.,स्पष्ट/विशिष्ट,वह तो साफ़ दिख रहा है.
+freiwillig,voluntary,Er arbeitet freiwillig hier.,He works here voluntarily.,स्वैच्छिक,वह यहां स्वेच्छा से काम करता है।
+vorhersehbar,predictable,Das Ergebnis war vorhersehbar.,The result was predictable.,उम्मीद के मुताबिक,परिणाम पूर्वानुमानित था.
+regelmäßig,regularly,Ich gehe regelmäßig joggen.,I go jogging regularly.,नियमित रूप से,मैं नियमित रूप से जॉगिंग करने जाता हूं।
+umsonst,for free / in vain,Ich habe es umsonst versucht.,I tried it in vain.,मुफ़्त में/व्यर्थ में,मैंने इसे व्यर्थ आज़माया।
+echt,really / genuine,Das ist echt interessant.,That is really interesting.,वास्तव में / वास्तविक,यह वाकई दिलचस्प है.
+früher,earlier / formerly,Früher wohnte ich in Berlin.,I used to live in Berlin.,पहले/पूर्व में,मैं बर्लिन में रहता था.
+daher,therefore / hence,"Es regnet, daher bleibe ich zu Hause.","It is raining; therefore, I stay at home.",इसलिए/इसलिए,"बरस गया बादल का पानी;इसलिए, मैं घर पर ही रहता हूं।"
+deswegen,therefore / that's why,"Ich bin krank, deswegen bleibe ich im Bett.","I am sick, that's why I stay in bed.",इसलिये / इसलिये,"मैं बीमार हूं, इसलिए बिस्तर पर ही रहता हूं."
+niemals,never,Ich werde das niemals tun.,I will never do that.,कभी नहीं,मैं ऐसा कभी नहीं करूंगा.
+beinahe,almost / nearly,Ich habe es beinahe vergessen.,I almost forgot it.,लगभग/लगभग,मैं इसे लगभग भूल ही गया था।
+komplett,complete / entirely,Das Projekt ist komplett fertig.,The project is completely finished.,पूर्ण/पूरी तरह से,प्रोजेक्ट पूरी तरह ख़त्म हो गया है.
+extra,extra / special,Ich kaufe extra Kuchen.,I am buying cake especially.,अतिरिक्त विशेष,मैं खासतौर पर केक खरीद रहा हूं.
+sofort,immediately,Ich komme sofort.,I am coming immediately.,तुरंत,मैं तुरंत आ रहा हूं.
+gleichzeitig,simultaneously,Wir arbeiten gleichzeitig.,We are working simultaneously.,इसके साथ ही,हम एक साथ काम कर रहे हैं.
+ebenso,likewise / as well,Ich denke ebenso.,I think the same way.,इसी तरह / भी,मैं भी ऐसा ही सोचता हूं.
+irgendwo,somewhere,Ich habe es irgendwo gesehen.,I saw it somewhere.,कहीं,मैंने इसे कहीं देखा.
+nirgendwo,nowhere,Ich finde es nirgendwo.,I can’t find it anywhere.,कहीं नहीं,मेरे द्वारा इसे कहीं भी ढूंढा जा सकता है।
+längst,long ago / already,Er ist längst gegangen.,He left long ago.,बहुत पहले/पहले से ही,वह बहुत पहले चला गया.
+zuletzt,last / finally,Zuletzt haben wir Pizza gegessen.,"Finally, we ate pizza.",अंतिम/आख़िरकार,आख़िरकार हमने पिज़्ज़ा खाया.
+getrennt,separated,Wir schlafen getrennt.,We sleep separately.,अलग,हम अलग सोते हैं.
+täglich,daily,Ich trainiere täglich.,I train daily.,दैनिक,मैं रोजाना ट्रेनिंग करता हूं।
+wöchentlich,weekly,Wir treffen uns wöchentlich.,We meet weekly.,साप्ताहिक,हम साप्ताहिक मिलते हैं.
+monatlich,monthly,Die Rechnung kommt monatlich.,The bill comes monthly.,महीने के,बिल मासिक आता है.
+jährlich,yearly / annually,Wir machen das jährlich.,We do this annually.,वार्षिक/वार्षिक,हम ऐसा प्रतिवर्ष करते हैं।
+dort drüben,over there,Das Haus ist dort drüben.,The house is over there.,वहाँ पर,घर वहीं पर है.
+da vorne,at the front,Die Klasse ist da vorne.,The class is at the front.,मोर्चे पर,क्लास सबसे आगे है.
+da hinten,at the back,Die Tasche ist da hinten.,The bag is at the back.,पीठ पर,बैग पीछे है.
+unterwegs,on the way,Ich bin unterwegs.,I am on the way.,रास्ते में,मैं रास्ते में हूँ।
+vorbei,past / over,Wir sind am Park vorbei gegangen.,We walked past the park.,अतीत/पर,हम पार्क के पास से गुजरे।
+bisher,so far / until now,Bisher lief alles gut.,"So far, everything went well.",अब तक / अब तक,अब तक सब कुछ ठीक रहा.
+irgendwohin,to somewhere,Ich gehe irgendwohin.,I am going somewhere.,कहीं के लिए,मैं कहीं जा रहा हूँ.
+nirgendwohin,to nowhere,Wir fahren nirgendwohin.,We are going nowhere.,कहीं नहीं,हम कहीं नहीं जा रहे हैं.
+weiterhin,furthermore / still,Wir arbeiten weiterhin.,We continue to work.,इसके अलावा / अभी भी,हम काम करना जारी रखते हैं।
+gleich,immediately,Ich komme gleich.,I will come immediately.,तुरंत,मैं तुरंत आऊंगा.
+irgendwie,somehow,Ich schaffe es irgendwie.,I will manage it somehow.,किसी तरह,मैं इसे किसी तरह मैनेज कर लूंगा.
+offenbar,obviously,Offenbar hat er Recht.,"Obviously, he is right.",ज़ाहिर तौर से,"जाहिर है, वह सही है."
+tagsüber,during the day,Tagsüber arbeite ich.,I work during the day.,दिन के दौरान,मैं दिन में काम करता हूं.
+nachts,at night,Nachts schlafe ich.,I sleep at night.,रात में,हम रात को सोते हैं।
+grundsätzlich,basically,Grundsätzlich stimme ich zu.,"Basically, I agree.",मूल रूप से,"मूलतः, मैं सहमत हूँ."
+akzeptieren,to accept,Ich akzeptiere das Angebot.,I accept the offer.,कबूल करना,मैं प्रस्ताव स्वीकार करता हूं.
+zustimmen,to agree,Ich stimme dir zu.,I agree with you.,राजी होना,मैं आपसे सहमत हूँ।
+analysieren,to analyze,Der Arzt analysiert die Ergebnisse.,The doctor analyzes the results.,विश्लेषण करने के लिए,डॉक्टर परिणामों का विश्लेषण करता है।
+entschuldigen,to apologize,Ich entschuldige mich für den Fehler.,I apologize for the mistake.,माफी माँगने के लिए,गलती के लिए मुझे माफ करना।
+sich bewerben,to apply,Ich bewerbe mich um die Stelle.,I apply for the job.,लगा देना,मैं नौकरी के लिए आवेदन करता हूं.
+ankommen,to arrive,Wir kommen am Bahnhof an.,We arrive at the station.,आने के लिए,हम स्टेशन पहुँचे।
+verhaften,to arrest,Die Polizei verhaftet den Dieb.,The police arrest the thief.,बंदी बनाना,पुलिस ने चोर को गिरफ्तार कर लिया.
+fragen,to ask,Ich frage eine Frage.,I ask a question.,पूछने के लिए,मैं एक प्रश्न पूछता हूँ.
+backen,to bake,Sie backt einen Kuchen.,She bakes a cake.,सेंकना,वह केक बनाती है.
+sein,to be-is/am/are,Ich bin Student.,I am a student.,होना-है/हैं/हैं,मैं पढ़ता हूं।
+können,to be able to,Ich kann schwimmen.,I can swim.,करने में सक्षम हो,मैं तैर सकता हूं।
+geboren werden,to be born,Er wurde in Berlin geboren.,He was born in Berlin.,पैदा होना,उनका जन्म बर्लिन में हुआ था.
+heißen,to be called,Ich heiße Anna.,My name is Anna.,कहा जा सकता है,मेरा नाम एना है।
+beginnen,to begin,Der Unterricht beginnt jetzt.,The lesson begins now.,शुरू करने के लिए,पाठ अब शुरू होता है.
+glauben,to believe,Ich glaube dir.,I believe you.,विश्वास करना,मुझे आप पर विश्वास है।
+gehören,to belong,Das Buch gehört mir.,The book belongs to me.,सदस्य बनने के लिए,किताब मेरी है.
+blinken,to blink,Er blinzelt mit den Augen.,He blinks his eyes.,झपकने के लिए,वह अपनी आँखें झपकाते हैं.
+bluten,to bleed,Ich blute am Finger.,I bleed from my finger.,खून करने के लिए,मेरी उंगली से खून बह रहा है.
+kochen,to boil,Das Wasser kocht.,The water boils.,उबालने के लिए,पानी उबल जाता है.
+buchen,to book,Ich buche einen Flug.,I book a flight.,बुक करने के लिए,मैं एक फ्लाइट बुक करता हूं.
+leihen,to borrow,Ich leihe ein Buch aus der Bibliothek.,I borrow a book from the library.,उधार लेना,मैं पुस्तकालय से एक पुस्तक उधार लेता हूँ।
+atmen,to breathe,Wir atmen frische Luft.,We breathe fresh air.,साँस लेना,हम ताजी हवा में सांस लेते हैं।
+bringen,to bring,Ich bringe Blumen.,I bring flowers.,लाने के लिए,मैं फूल लाता हूँ.
+bürsten,to brush,Sie bürstet ihr Haar.,She brushes her hair.,ब्रश करने के लिए,वह अपने बालों को संवारती है।
+bauen,to build,Sie bauen ein Haus.,They build a house.,निर्माण करने के लिए,वे एक घर बनाते हैं.
+brennen,to burn,Das Feuer brennt.,The fire burns.,जलाना,आग जलती है.
+begraben,to bury,Wir begraben den Schatz.,We bury the treasure.,दफनाने के लिए,हम खजाना दफनाते हैं।
+kaufen,to buy,Ich kaufe Brot.,I buy bread.,खरीदने के लिए,मैं रोटी खरीदता हूं.
+rufen,to call,Ich rufe meinen Freund.,I call my friend.,आवाज देना,मैं अपने दोस्त को फ़ोन करता हूँ.
+absagen,to cancel,Ich sage das Treffen ab.,I cancel the meeting.,निरस्त करना,मैं बैठक रद्द करता हूं.
+tragen,to carry,Er trägt eine Tasche.,He carries a bag.,ले जाने के लिए,वह एक बैग रखता है.
+ändern,to change,Sie ändert ihren Plan.,She changes her plan.,को बदलने,वह अपनी योजना बदल देती है।
+prüfen,to check,Der Lehrer prüft die Hausaufgabe.,The teacher checks the homework.,जाँच करने के लिए,शिक्षक गृहकार्य की जाँच करता है।
+wählen,to choose,Ich wähle das rote Hemd.,I choose the red shirt.,चुन लेना,मैं लाल शर्ट चुनता हूं.
+reinigen,to clean,Wir reinigen das Zimmer.,We clean the room.,को साफ,हम कमरा साफ़ करते हैं.
+klettern,to climb,Das Kind klettert auf den Baum.,The child climbs the tree.,चढ़ना,बच्चा पेड़ पर चढ़ जाता है.
+schließen,to close,Bitte schließe die Tür.,Please close the door.,बंद कर देना,कृपया दरवाज़ा बंद करें।
+kämmen,to comb,Sie kämmt ihr Haar.,She combs her hair.,कंघी करने के लिए,वह अपने बालों में कंघी करती है।
+vergleichen,to compare,Ich vergleiche zwei Preise.,I compare two prices.,तुलना करने के लिए,मैं दो कीमतों की तुलना करता हूं।
+verbinden,to connect,Ich verbinde das Kabel.,I connect the cable.,कनेक्ट करने के लिए,मैं केबल जोड़ता हूं.
+gratulieren,to congratulate,Ich gratuliere dir.,I congratulate you.,बधाई देने के लिए,मेरी ओर से आपको बधाई हो।
+koordinieren,to coordinate,Sie koordiniert das Projekt.,She coordinates the project.,समायोजन करना,वह परियोजना का समन्वय करती है।
+kopieren,to copy,Ich kopiere den Text.,I copy the text.,प्रतिलिपि बनाने के लिए,मैं पाठ की प्रतिलिपि बनाता हूँ.
+korrigieren,to correct,Der Lehrer korrigiert,The teacher corrects,ठीक करना,शिक्षक सुधारता है
+husten,to cough,Er hustet laut.,He coughs loudly.,खाँसी,वह जोर से खांसता है.
+zählen,to count,Ich zähle bis zehn.,I count to ten.,गिनती करने के लिए,मैं दस तक गिनता हूं.
+schneiden,to cut,Sie schneidet das Brot.,She cuts the bread.,कटौती करने के लिए,वह रोटी काटती है.
+tanzen,to dance,Wir tanzen zusammen.,We dance together.,नृत्य करने के लिए,हम साथ में डांस करते हैं.
+entscheiden,to decide,Ich entscheide heute.,I decide today.,ठान ले,मैं आज फैसला करता हूं.
+dekorieren,to decorate,Wir dekorieren das Zimmer.,We decorate the room.,सजा देना,हम कमरा सजाते हैं.
+besiegen,to defeat,Die Mannschaft besiegt den Gegner.,The team defeats the opponent.,हारना,टीम प्रतिद्वंद्वी को हरा देती है.
+definieren,to define,Der Lehrer definiert das Wort.,The teacher defines the word.,परिभाषित करने के लिए,शिक्षक शब्द को परिभाषित करता है.
+löschen,to delete,Ich lösche die Datei.,I delete the file.,हटाना,मैं फ़ाइल हटा देता हूँ.
+liefern,to deliver,Der Postbote liefert den Brief.,The postman delivers the letter.,हवाले करना,डाकिया पत्र वितरित करता है।
+verlangen,to demand,Ich verlange Respekt.,I demand respect.,मांग करने के लिए,मैं सम्मान की मांग करता हूं.
+beschreiben,to describe,Sie beschreibt das Bild.,She describes the picture.,वर्णन करना,वह चित्र का वर्णन करती है।
+entwerfen,to design,Er entwirft ein Haus.,He designs a house.,डिजाइन करने के लिए,वह एक घर डिजाइन करता है।
+entwickeln,to develop,Sie entwickeln eine neue App.,They develop a new app.,विकसित करने के लिए,वे एक नया ऐप विकसित करते हैं।
+sterben,to die,Die Blume stirbt.,The flower dies.,दम टूटना,फूल मर जाता है.
+nicht zustimmen,to disagree,Ich stimme ihm nicht zu.,I disagree with him.,असहमत होना,मैं उससे असहमत हूं.
+trennen,to disconnect,Ich trenne das Kabel.,I disconnect the cable.,विच्छेद करना,मैं केबल काट देता हूं.
+diskutieren,to discuss,Wir diskutieren das Problem.,We discuss the problem.,गुफ़्तगू करना,हम समस्या पर चर्चा करते हैं.
+entdecken,to discover,Er entdeckt ein Geheimnis.,He discovers a secret.,खोज करना,उसे एक रहस्य का पता चलता है।
+herunterladen,to download,Ich lade ein Lied herunter.,I download a song.,डाउनलोड करने के लिए,मैं एक गाना डाउनलोड करता हूँ.
+zeichnen,to draw,Das Kind zeichnet eine Katze.,The child draws a cat.,आकर्षित करने के लिए,बच्चा एक बिल्ली का चित्र बनाता है.
+trinken,to drink,Ich trinke Wasser.,I drink water.,पीने के लिए,मैं पानी पीता हूं।
+fahren,to drive,Er fährt das Auto.,He drives the car.,गाड़ी चलाना,वह कार चलाता है.
+trocknen,to dry,Die Sonne trocknet die Kleider.,The sun dries the clothes.,सुखाना,सूरज कपड़े सुखा देता है.
+essen,to eat,Wir essen einen Apfel.,We eat an apple.,को खाने के,हम एक सेब खाते हैं.
+leeren,to empty,Ich leere das Glas.,I empty the glass.,खाली करना,मैंने गिलास खाली कर दिया.
+enden,to end,Der Film endet bald.,The movie ends soon.,कहानी समाप्त होना,फिल्म जल्द ही ख़त्म हो जाती है.
+genießen,to enjoy,Ich genieße die Musik.,I enjoy the music.,आनंद के लिए,मैं संगीत का आनंद लेता हूं.
+erleben,to experience,Wir erleben ein Abenteuer.,We experience an adventure.,अनुभव करना,हम एक रोमांच का अनुभव करते हैं।
+erklären,to explain,Er erklärt die Regeln.,He explains the rules.,वर्णन करना,वह नियम बताते हैं.
+fallen,to fall,Der Apfel fällt vom Baum.,The apple falls from the tree.,गिरने के लिये,सेब पेड़ से गिरता है.
+fühlen,to feel,Ich fühle mich glücklich.,I feel happy.,महसूस करने के लिए,मुझे खुशी महसूस हो रही है।
+kämpfen,to fight,Sie kämpfen für die Freiheit.,They fight for freedom.,लड़ने के लिए,वे आज़ादी के लिए लड़ते हैं.
+füllen,to fill,Ich fülle die Flasche mit Wasser.,I fill the bottle with water.,भरने के लिए,मैं बोतल में पानी भरता हूं.
+filmen,to film,Er filmt die Hochzeit.,He films the wedding.,फिल्माने के लिए,वह शादी का फिल्मांकन करता है।
+finden,to find,Ich finde die Schlüssel.,I find the keys.,ढूँढ़ने के लिए,मुझे चाबियाँ मिल गईं।
+folgen,to follow,Der Hund folgt mir.,The dog follows me.,अनुकरण करना,कुत्ता मेरा पीछा करता है.
+vergeben,to forgive,Ich vergebe meinem Freund.,I forgive my friend.,क्षमा करना,मैंने अपने दोस्त को माफ कर दिया.
+frieren,to freeze,Ich friere in der Kälte.,I freeze in the cold.,जम जाना,मैं ठंड में जम गया हूं.
+braten,to fry,Er brät die Kartoffeln.,He fries the potatoes.,भून के लिए,वह आलू भूनता है.
+funktionieren,to function,Die Maschine funktioniert gut.,The machine functions well.,कार्य करने के लिए,मशीन अच्छे से काम करती है.
+bekommen,to get,Ich bekomme ein Geschenk.,I get a gift.,पाने के,मुझे एक उपहार मिलता है.
+aufstehen,to get up,Ich stehe um sieben Uhr auf.,I get up at 7 o’clock.,उठना,मैं 7 बजे उठता हूं.
+geben,to give,Sie gibt mir ein Buch.,She gives me a book.,दे देना,वह मुझे एक किताब देती है.
+gehen,to go,Wir gehen zur Schule.,We go to school.,चल देना,हम स्कूल जाते हैं.
+ausgehen,to go out,Sie gehen heute Abend aus.,They go out tonight.,बाहर जाने के लिए,वे आज रात बाहर जायेंगे.
+grüßen,to greet,Ich grüße meinen Nachbarn.,I greet my neighbor.,अभिवादन करना,मैं अपने पड़ोसी को नमस्कार करता हूं.
+grillen,to grill,Wir grillen Würstchen.,We grill sausages.,जाली के लिए,हम सॉसेज ग्रिल करते हैं।
+raten,to guess,Kannst du die Antwort raten?,Can you guess the answer?,अंदाज़ करना,क्या आप उत्तर का अनुमान लगा सकते हैं?
+hängen,to hang,Das Bild hängt an der Wand.,The picture hangs on the wall.,फांसी के लिए,तस्वीर दीवार पर टंगी है.
+hassen,to hate,Ich hasse Lügen.,I hate lies.,नफ़रत करना,मुझे झूठ से नफरत है.
+haben,to have,Ich habe ein Auto.,I have a car.,रखने के लिए,मेरे पास एक कार है.
+hören,to hear,Ich höre Musik.,I hear music.,सुनने के लिए,मैं संगीत सुनता हूं.
+heizen,to heat,Wir heizen das Zimmer.,We heat the room.,गर्मी के लिए,हम कमरे को गर्म करते हैं।
+helfen,to help,Sie hilft ihrem Bruder.,She helps her brother.,की मदद,वह अपने भाई की मदद करती है।
+hoffen,to hope,Ich hoffe auf gutes Wetter.,I hope for good weather.,आशा करना,मुझे अच्छे मौसम की आशा है.
+halten,to hold,Er hält meine Hand.,He holds my hand.,धारण करना,उसने मेरा हाथ पकड़ लिया.
+verbessern,to improve,Sie verbessert ihr Deutsch.,She improves her German.,सुधार करने के लिए,वह अपनी जर्मन सुधारती है।
+installieren,to install,Ich installiere das Programm.,I install the program.,स्थापित करने के लिए,मैं प्रोग्राम इंस्टॉल करता हूं।
+einladen,to invite,Ich lade meine Freunde ein.,I invite my friends.,आमंत्रित करने के लिए,मैं अपने दोस्तों को आमंत्रित करता हूं.
+jucken,to itch,Mein Arm juckt.,My arm itches.,खुजली करना,मेरी बांह में खुजली हो रही है.
+beitreten,to join,Ich trete dem Verein bei.,I join the club.,शामिल होना,मैं क्लब में शामिल हो गया.
+springen,to jump,Die Katze springt auf den Tisch.,The cat jumps on the table.,कूदने के लिए,बिल्ली मेज पर कूदती है.
+küssen,to kiss,Sie küssen sich.,They kiss each other.,चुंबन के लिए,वे एक दूसरे को चूमते हैं।
+stricken,to knit,Meine Großmutter strickt,My grandmother knits.,को बुनना,मेरी दादी बुनती हैं।
+klopfen,to knock,Jemand klopft an die Tür.,Someone knocks on the door.,दस्तक देने के लिए,कोई दरवाज़ा खटखटाता है.
+wissen,to know,Ich weiß die Antwort.,I know the answer.,जानने के,मुझे उत्तर पता है.
+lachen,to laugh,Wir lachen über den Witz.,We laugh at the joke.,हँसने के लिए,हम मजाक पर हंसते हैं.
+lernen,to learn,Ich lerne Deutsch.,I learn German.,जानने के लिए,मैं जर्मन सीखता हूं.
+verlassen,to leave,Er verlässt das Haus.,He leaves the house.,छोड़ जाना,वह घर छोड़ देता है.
+mögen,to like,Ich mag Pizza.,I like pizza.,पसंद आना,मैं पिज्जा पसंद करता हूं।
+zuhören,to listen,Bitte hör mir zu.,Please listen to me.,श्रवण करना,कृपया मेरी बात सुनें।
+leben,to live,Sie leben in Berlin.,They live in Berlin.,जिया जाता है,वे बर्लिन में रहते हैं.
+laden,to load,Ich lade die Kisten.,I load the boxes.,लोड हो,मैं बक्से लोड करता हूँ।
+verlieren,to lose,Ich verliere meine Schlüssel.,I lose my keys.,खोने के लिए,मैं अपनी चाबियाँ खो देता हूँ.
+lieben,to love,Ich liebe meine Familie.,I love my family.,प्यार करने के लिए,मुझे अपने परिवार से प्यार है।
+schaffen,to manage,Ich schaffe die Aufgabe.,I manage the task.,प्रबंधन करना,मैं कार्य का प्रबंधन करता हूं.
+machen,to make,Ich mache Frühstück.,I make breakfast.,बनाने के लिए,मैं नाश्ता बनाऊंगा।
+mischen,to mix,Sie mischt die Farben.,She mixes the colors.,मिश्रण करना,वह रंग मिलाती है.
+müssen,to must,Ich muss jetzt gehen.,I must go now.,ज़रूर,अब मुझे जाना चाहिए।
+nennen,to name,Er nennt die Farben.,He names the colors.,नाम देने के लिए,वह रंगों को नाम देता है।
+brauchen,to need,Ich brauche Hilfe.,I need help.,जरूरत को,मुझे मदद की ज़रूरत है।
+bemerken,to notice,Ich bemerke den Fehler.,I notice the mistake.,सूचना के लिए,मुझे गलती नजर आयी.
+öffnen,to open,Bitte öffne das Fenster.,Please open the window.,को खोलने के लिए,कृपया खिड़की खोल दें।
+bestellen,to order,Ich bestelle eine Pizza.,I order a pizza.,ऑर्डर करने के लिए,मैं पिज़्ज़ा ऑर्डर करता हूँ.
+organisieren,to organize,Wir organisieren eine Party.,We organize a party.,आयोजित करना,हम एक पार्टी का आयोजन करते हैं.
+packen,to pack,Ich packe meinen Koffer.,I pack my suitcase.,पैक करना,मैं अपना सूटकेस पैक करता हूं।
+malen,to paint,Das Kind malt ein Bild.,The child paints a picture.,पेंट करने के लिए,बच्चा एक चित्र बनाता है.
+parken,to park,Er parkt das Auto.,He parks the car.,पार्क करना,वह कार पार्क करता है.
+teilnehmen,to participate,Ich nehme am Spiel teil.,I participate in the game.,भाग लेने के लिए,मैं खेल में भाग लेता हूं.
+einfügen,to paste,Ich füge den Text ein.,I paste the text.,चिपकाने के लिए,मैं पाठ चिपकाता हूँ.
+bezahlen,to pay,Sie bezahlt die Rechnung.,She pays the bill.,भुगतान करने के लिए,वह बिल का भुगतान करती है।
+fotografieren,to photograph,Er fotografiert die Stadt.,He photographs the city.,फोटो खींचने के लिए,वह शहर की तस्वीरें खींचता है।
+planen,to plan,Wir planen eine Reise.,We plan a trip.,योजना के लिए,हम एक यात्रा की योजना बनाते हैं।
+spielen,to play,Die Kinder spielen Fußball.,The children play football.,खेलने के लिए,बच्चे फुटबॉल खेलते हैं.
+pflanzen,to plant,Sie pflanzen einen Baum.,They plant a tree.,पौधा लगाना,वे एक पेड़ लगाते हैं.
+üben,to practice,Ich übe Klavier.,I practice the piano.,अभ्यास के लिए,मैं पियानो का अभ्यास करता हूं.
+vorbereiten,to prepare,Sie bereitet das Abendessen vor.,She prepares dinner.,परशा।तैयारी करना,वह रात का खाना तैयार करती है.
+drücken,to press,Er drückt den Knopf.,He presses the button.,दबाना,वह बटन दबाता है.
+drucken,to print,Ich drucke das Dokument.,I print the document.,प्रिंट,मैं दस्तावेज़ प्रिंट करता हूँ.
+beweisen,to prove,Er beweist seinen Standpunkt.,He proves his point.,साबित करना,वह अपनी बात साबित करता है.
+ziehen,to pull,Ich ziehe die Tür.,I pull the door.,खींचना,मैं दरवाज़ा खींचता हूँ.
+schieben,to push,Sie schiebt die Kiste.,She pushes the box.,धक्का मारना,वह बॉक्स को धक्का देती है.
+lesen,to read,Ich lese ein Buch.,I read a book.,पढ़ने के लिए,मैंने एक किताब पढ़ी।
+erhalten,to receive,Ich erhalte einen Brief.,I receive a letter.,ग्रहण करना,मुझे एक पत्र मिलता है.
+reparieren,to repair,Er repariert das Fahrrad.,He repairs the bike.,ठीक करने के लिए,वह बाइक की मरम्मत करता है।
+wiederholen,to repeat,Bitte wiederhole die Frage.,Please repeat the question.,दोहराने के लिए,कृपया प्रश्न दोहराएँ.
+reservieren,to reserve,Ich reserviere einen Tisch.,I reserve a table.,आरक्षित करने के लिए,मैं एक टेबल आरक्षित करता हूं.
+neu starten,to restart,Er startet den Computer neu.,He restarts the computer.,पुनः आरंभ करने के लिए,वह कंप्यूटर को पुनः प्रारंभ करता है.
+retten,to rescue,Der Feuerwehrmann rettet das Kind.,The firefighter rescues the child.,बचाव के लिए,फायरफाइटर ने बच्चे को बचाया.
+steigen,to rise,Die Sonne steigt auf.,The sun rises.,ऊपर उठना,सूर्य उदय होता है।
+laufen,to run,Ich laufe zur Schule.,I run to school.,चलाने के लिए,मैं स्कूल की ओर भागता हूं.
+sagen,to say,Er sagt Hallo.,He says hello.,कहने के लिए,वह नमस्ते कहता है.
+scannen,to scan,Ich scanne das Dokument.,I scan the document.,स्कैन करने के लिए,मैं दस्तावेज़ स्कैन करता हूं.
+schreien,to scream,Das Baby schreit laut.,The baby screams loudly.,चीख,बच्चा जोर-जोर से चिल्लाता है.
+sehen,to see,Ich sehe die Sterne.,I see the stars.,देखने के लिए,मैं तारे देखता हूँ.
+verkaufen,to sell,Sie verkaufen Obst.,They sell fruits.,बेचने के लिए,वे फल बेचते हैं.
+senden,to send,Ich sende eine E-Mail.,I send an email.,भेजने के लिए,मैं एक ईमेल भेजता हूं.
+nähen,to sew,Sie näht ein Kleid.,She sews a dress.,सिलाई करने के लिए,वह एक पोशाक सिलती है.
+einkaufen,to shop,Wir kaufen im Markt ein.,We shop in the market.,खरीदना,हम बाजार में खरीदारी करते हैं.
+sollen,to should,Du sollst mehr essen.,You should eat more.,चाहिये के लिए,आपको और अधिक खाना चाहिए।
+zeigen,to show,Er zeigt das Bild.,He shows the picture.,जाहिर करना,वह चित्र दिखाता है.
+duschen,to shower,Ich dusche jeden Morgen.,I shower every morning.,स्नान करने के लिए,मैं हर सुबह स्नान करता हूं।
+signieren,to sign,Ich signiere das Dokument jeden Tag.,I sign the document every day.,हस्ताक्षर करने के लिए,मैं हर दिन दस्तावेज़ पर हस्ताक्षर करता हूं।
+singen,to sing,Sie singt wunderschön.,She sings beautifully.,गाने के लिए,वह खूबसूरती से गाती है।
+sitzen,to sit,Wir sitzen jeden Nachmittag im Park.,We sit in the park every afternoon.,बेठना,हम हर दोपहर पार्क में बैठते हैं।
+schlafen,to sleep,Er schläft jede Nacht acht Stunden.,He sleeps eight hours every night.,सोने के लिए,वह हर रात आठ घंटे सोते हैं।
+riechen,to smell,Die Blumen riechen wunderbar.,The flowers smell amazing.,सूंघना,फूलों की सुगंध अद्भुत है.
+lächeln,to smile,"Sie lächelt, wenn sie glücklich ist.",She smiles when she is happy.,मुस्कान के लिए,जब वह खुश होती है तो मुस्कुराती है।
+niesen,to sneeze,"Er niest, wenn er Allergien hat.",He sneezes when he has allergies.,छींकना,एलर्जी होने पर उसे छींक आती है।
+lösen,to solve,Ich löse Probleme bei der Arbeit.,I solve problems at work.,समाधान करना,मैं कार्यस्थल पर समस्याओं का समाधान करता हूं.
+sortieren,to sort,Wir sortieren die Papiere nach Datum.,We sort the papers by date.,सुलझाने के लिए,हम तिथि के अनुसार कागजातों को क्रमबद्ध करते हैं।
+stehen,to stand,Sie stehen in der Schlange für Tickets.,They stand in line for tickets.,सहन करना,वे टिकट के लिए लाइन में खड़े हैं.
+starten,to start,Ich starte meine Arbeit um 9 Uhr.,I start my work at 9 AM.,आरंभ करना,मैं अपना काम सुबह 9 बजे शुरू करता हूं।
+bleiben,to stay,Wir übernachten in einem Hotel,We stay at a hotel,रहने के लिए,हम एक होटल में ठहरते हैं
+stehlen,to steal,Er stiehlt Süßigkeiten aus dem Glas.,He steals sweets from the jar.,चोरी करने के लिए,वह जार से मिठाइयाँ चुरा लेता है।
+dehnen,to stretch,Er dehnt sich vor dem Training.,He stretches before exercising.,खिंचाव,वह व्यायाम करने से पहले स्ट्रेचिंग करते हैं।
+studieren,to study,Ich studiere jeden Abend Deutsch.,I study German every evening.,अध्ययन करना,मैं हर शाम जर्मन सीखता हूं।
+leiden,to suffer,Er leidet an einer Erkältung.,He suffers from a cold.,बर्दाश्त करना,वह सर्दी से पीड़ित है।
+vorschlagen,to suggest,"Ich schlage vor, eine Pause zu machen.",I suggest taking a break.,करने के लिए सुझाव,मैं एक ब्रेक लेने का सुझाव देता हूं।
+unterstützen,to support,Sie unterstützen ihre Freunde.,They support their friends.,समर्थन के लिए,वे अपने दोस्तों का समर्थन करते हैं।
+überraschen,to surprise,Er überrascht sie mit Blumen.,He surprises her with flowers.,आश्चर्य करना,वह उसे फूलों से आश्चर्यचकित करता है।
+schwitzen,to sweat,Sie schwitzt viel beim Training.,She sweats a lot during workouts.,पसीना आना,वर्कआउट के दौरान वह खूब पसीना बहाती हैं।
+schwimmen,to swim,Wir schwimmen jeden Sommer im See.,We swim in the lake every summer.,तैरने के लिए,हम हर गर्मियों में झील में तैरते हैं।
+nehmen,to take,Er nimmt den Bus zur Arbeit.,He takes the bus to work.,लेने के,वह काम पर जाने के लिए बस लेता है।
+schmecken,to taste,Dieser Kuchen schmeckt lecker.,This cake tastes delicious.,स्वाद के लिए,यह केक बहुत स्वादिष्ट लगता है.
+unterrichten,to teach,Sie unterrichtet Englisch für Kinder.,She teaches English to children.,को पढ़ाने के,वह बच्चों को अंग्रेजी पढ़ाती हैं।
+sprechen,to talk,Wir sprechen über unsere Pläne.,We talk about our plans.,बातचीत करना,हम अपनी योजनाओं के बारे में बात करते हैं.
+danken,to thank,Ich danke dir für deine Hilfe.,I thank you for your help.,धन्यवाद करने,मैं आपकी मदद के लिए धन्यवाद देता हूं.
+denken,to think,Ich denke über meine Zukunft nach.,I think about my future.,सोचने के लिए,मैं अपने भविष्य के बारे में सोचता हूं.
+reisen,to travel,Wir reisen jeden Sommer nach Deutschland.,We travel to Germany every summer.,यात्रा करना,हम हर गर्मियों में जर्मनी की यात्रा करते हैं।
+versuchen,to try,"Er versucht, das Problem zu lösen.",He tries to solve the problem.,प्रयत्न करना,वह समस्या का समाधान करने का प्रयास करता है।
+drehen,to turn,Sie dreht den Knauf langsam.,She turns the knob slowly.,चालू करने के लिए,वह धीरे से घुंडी घुमाती है।
+verstehen,to understand,Ich verstehe die Anweisungen.,I understand the instructions.,समझ में,मैं निर्देशों को समझता हूं.
+aufbinden,to untie,Er bindet das Seil vorsichtig auf.,He unties the rope carefully.,खोलना,वह सावधानी से रस्सी खोलता है।
+hochladen,to upload,Sie lädt Fotos auf die Website hoch.,She uploads photos to the website.,अपलोड करने के लिए,वह वेबसाइट पर तस्वीरें अपलोड करती हैं।
+benutzen,to use,Wir benutzen den Computer für die Arbeit.,We use the computer for work.,उपयोग करने के लिए,हम काम के लिए कंप्यूटर का उपयोग करते हैं।
+besuchen,to visit,Ich besuche meine Großeltern.,I visit my grandparents,मुआयना करने के लिए,मैं अपने दादा-दादी से मिलने जाता हूँ
+wählen,to vote,Sie wählen bei jeder Wahl.,They vote in every election.,मतदान करना,वे हर चुनाव में वोट करते हैं.
+warten,to wait,Wir warten jeden Morgen auf den Bus.,We wait for the bus every morning.,प्रतीक्षा करना,हम हर सुबह बस का इंतजार करते हैं।
+aufwachen,to wake up,Ich wache um 7 Uhr auf.,I wake up at 7 AM.,जागृत करने के लिए,मैं सुबह 7 बजे उठता हूं.
+wollen,to want,Ich will eine Tasse Kaffee.,I want a cup of coffee.,चाहने के लिए,मुझे एक कप कॉफी चाहिए।
+warnen,to warn,Er warnt mich vor der Gefahr.,He warns me about the danger.,चेतावनी देना,वह मुझे ख़तरे के बारे में आगाह करता है.
+waschen,to wash,Ich wasche meine Hände vor dem Essen.,I wash my hands before eating.,धोना,मैं खाने से पहले अपने हाथ धोता हूं।
+fernsehen,to watch TV,Wir sehen jeden Abend fern.,We watch TV every evening.,टीवी देखना,हम हर शाम टीवी देखते हैं।
+wiegen,to weigh,Sie wiegt das Gemüse sorgfältig.,She weighs the vegetables carefully.,वजन करना,वह सब्ज़ियों को ध्यान से तौलती है।
+flüstern,to whisper,Er flüstert ihr ein Geheimnis zu.,He whispers a secret to her.,कानाफूसी के लिए,वह उसे एक रहस्य फुसफुसाता है।
+gewinnen,to win,Sie gewinnen das Spiel leicht.,They win the game easily.,जीतने के लिए,वे आसानी से गेम जीत जाते हैं.
+wünschen,to wish,Ich wünsche dir alles Gute zum Geburtstag.,I wish you a happy birthday.,इच्छा करना,मेरी ओर से आपको जन्मदिन की बधाई हो।
+trainieren,to work out,Er trainiert jeden Tag im Fitnessstudio.,He works out at the gym every day.,कसरत करना,वह हर दिन जिम में वर्कआउट करते हैं।
+schreiben,to write,Ich schreibe E-Mails an meine Kunden.,I write emails to my clients.,लिखना,मैं अपने ग्राहकों को ईमेल लिखता हूं।

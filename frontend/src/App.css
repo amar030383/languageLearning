@@ -25,6 +25,66 @@ code {
   width: 100%;
   height: 80px;
   background: rgba(255, 255, 255, 0.1);
+.word-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.04);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.excluded-words-controls {
+  margin-top: 12px;
+}
+
+.excluded-words-panel {
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.excluded-words-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.excluded-word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.excluded-word-text {
+  font-weight: 600;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
   backdrop-filter: blur(10px);
   padding: 10px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -157,7 +217,8 @@ code {
 
 .word-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* three columns: German | English | Hindi */
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   margin-bottom: 30px;
 }
@@ -177,6 +238,17 @@ code {
 .word-item.english {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   color: white;
+}
+
+/* Hindi styling */
+.word-item.hindi {
+  background: linear-gradient(135deg, #ffd194 0%, #ff8552 100%);
+  color: #2b2b2b;
+  font-family: 'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', 'Arial Unicode MS', sans-serif;
+}
+
+.word-item.hindi .label {
+  color: #a86b2a;
 }
 
 .word-item .label {
@@ -235,6 +307,14 @@ code {
   animation: pulse 0.5s ease-in-out infinite;
   color: #667eea;
   font-weight: 600;
+}
+
+/* Hindi sentence styling */
+.sentence-item.hindi-sentence {
+  background: #fff7ef;
+  border-left-color: #ff8552;
+  font-family: 'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', 'Arial Unicode MS', sans-serif;
+  color: #333;
 }
 
 .controls {

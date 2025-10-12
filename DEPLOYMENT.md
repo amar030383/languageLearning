@@ -10,14 +10,10 @@ This document explains how to run the German Vocabulary Player with Docker local
 ## 1) Run locally with Docker Compose
 
 ```bash
-# From repo root
+
 docker compose down -v
 docker compose up -d --build
 
-# Open
-# Frontend: http://localhost:3000
-# Backend:  http://localhost:8000
-```
 
 Sanity checks:
 ```bash
@@ -37,8 +33,8 @@ If port 8000 is in use:
 Backend:
 ```bash
 docker login -u <your_dockerhub_username>
-docker build -t <your_dockerhub_username>/german-vocab-backend:latest -f backend/Dockerfile .
-docker push <your_dockerhub_username>/german-vocab-backend:latest
+docker build -t <your_dockerhub_username>/german-backend:latest -f backend/Dockerfile .
+docker push <your_dockerhub_username>/german-backend:latest
 ```
 
 Frontend:
