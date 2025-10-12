@@ -76,7 +76,6 @@ def init_database():
 # Initialize database on startup
 init_database()
 
-
 def load_vocabulary_data() -> pd.DataFrame:
     """
     Load vocabulary data from CSV file.
@@ -85,15 +84,31 @@ def load_vocabulary_data() -> pd.DataFrame:
         DataFrame containing vocabulary data
     """
     try:
-        df = pd.read_csv(
-            CSV_PATH,
-            header=None,
-            names=['german_word', 'english_word', 'german_sentence', 'english_sentence']
-        )
+        # Try to read CSV assuming it already has headers (preferred)
+        df_try = pd.read_csv(CSV_PATH)
+
+        expected_cols = ['german_word', 'english_word', 'german_sentence', 'english_sentence', 'hindi_word', 'hindi_sentence']
+
+        # If the expected columns are present, use this dataframe. Otherwise fall back to reading without header.
+        if set(expected_cols).issubset(set(df_try.columns)):
+            df = df_try
+        else:
+            # No header present — read without header and assign canonical names for the first 6 columns.
+            df = pd.read_csv(
+                CSV_PATH,
+                header=None,
+                names=expected_cols,
+                usecols=range(6),
+                dtype=str,
+            )
+
+        # Ensure string values and strip whitespace
+        for col in df.columns:
+            df[col] = df[col].astype(str).str.strip()
+
         return df
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error loading vocabulary data: {str(e)}")
-
 
 def create_safe_filename(text: str) -> str:
     """
@@ -107,7 +122,6 @@ def create_safe_filename(text: str) -> str:
     """
     return "".join(c if c.isalnum() else "_" for c in text)
 
-
 @app.get("/")
 async def root() -> Dict[str, str]:
     """
@@ -117,7 +131,6 @@ async def root() -> Dict[str, str]:
         Welcome message
     """
     return {"message": "German Vocabulary API"}
-
 
 @app.get("/api/vocabulary")
 async def get_vocabulary() -> List[Dict[str, Any]]:
@@ -146,6 +159,9 @@ async def get_vocabulary() -> List[Dict[str, Any]]:
         english_word = str(row['english_word']).strip()
         german_sentence = str(row['german_sentence']).strip()
         english_sentence = str(row['english_sentence']).strip()
+        # Optional Hindi fields (may be absent or NaN)
+        hindi_word = str(row['hindi_word']).strip() if 'hindi_word' in row.index else ''
+        hindi_sentence = str(row['hindi_sentence']).strip() if 'hindi_sentence' in row.index else ''
 
         if german_word and english_word and german_word != 'nan' and english_word != 'nan':
             vocabulary_list.append({
@@ -153,13 +169,14 @@ async def get_vocabulary() -> List[Dict[str, Any]]:
                 "german_word": german_word,
                 "english_word": english_word,
                 "german_sentence": german_sentence,
-                "english_sentence": english_sentence
+                "english_sentence": english_sentence,
+                "hindi_word": hindi_word,
+                "hindi_sentence": hindi_sentence
             })
 
     random.shuffle(vocabulary_list)  # <-- Shuffle the list here
 
     return vocabulary_list
-
 
 @app.get("/api/excluded-words")
 async def get_excluded_words() -> List[Dict[str, Any]]:
@@ -187,6 +204,41 @@ async def get_excluded_words() -> List[Dict[str, Any]]:
     conn.close()
     return excluded_words
 
+
+@app.get("/api/csv-headers")
+async def csv_headers() -> List[str]:
+    """
+    Return the CSV column headers detected/used when loading the vocabulary CSV.
+    """
+    df = load_vocabulary_data()
+    return list(df.columns)
+
+
+@app.get("/api/vocabulary/full")
+async def get_vocabulary_full() -> List[Dict[str, Any]]:
+    """
+    Return the full CSV rows (all columns) as a list of dicts. Excluded words are filtered out the same way as `/api/vocabulary`.
+    """
+    df = load_vocabulary_data()
+
+    # Get excluded word indices
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute('SELECT word_index FROM excluded_words')
+    excluded_indices = {row[0] for row in cursor.fetchall()}
+    conn.close()
+
+    rows: List[Dict[str, Any]] = []
+    for index, row in df.iterrows():
+        if index in excluded_indices:
+            continue
+
+        # Convert the entire row to a dict, ensure str values
+        row_dict = {col: (None if pd.isna(row[col]) else str(row[col]).strip()) for col in df.columns}
+        row_dict["index"] = int(index)
+        rows.append(row_dict)
+
+    return rows
 
 @app.post("/api/excluded-words")
 async def add_excluded_word(request: ExcludedWordRequest) -> Dict[str, str]:
@@ -228,7 +280,6 @@ async def add_excluded_word(request: ExcludedWordRequest) -> Dict[str, str]:
         conn.close()
         raise HTTPException(status_code=500, detail=f"Error adding excluded word: {str(e)}")
 
-
 @app.delete("/api/excluded-words/{word_index}")
 async def remove_excluded_word(word_index: int) -> Dict[str, str]:
     """
@@ -259,6 +310,7 @@ async def remove_excluded_word(word_index: int) -> Dict[str, str]:
     except Exception as e:
         conn.close()
         raise HTTPException(status_code=500, detail=f"Error removing excluded word: {str(e)}")
+
 async def get_vocabulary_item(index: int) -> Dict[str, Any]:
     """
     Get a specific vocabulary entry by index.
@@ -279,15 +331,18 @@ async def get_vocabulary_item(index: int) -> Dict[str, Any]:
     english_word = str(row['english_word']).strip()
     german_sentence = str(row['german_sentence']).strip()
     english_sentence = str(row['english_sentence']).strip()
+    hindi_word = str(row['hindi_word']).strip() if 'hindi_word' in row.index else ''
+    hindi_sentence = str(row['hindi_sentence']).strip() if 'hindi_sentence' in row.index else ''
     
     return {
         "index": index,
         "german_word": german_word,
         "english_word": english_word,
         "german_sentence": german_sentence,
-        "english_sentence": english_sentence
+        "english_sentence": english_sentence,
+        "hindi_word": hindi_word,
+        "hindi_sentence": hindi_sentence
     }
-
 
 @app.api_route("/api/audio/{index}/{audio_type}", methods=["GET", "HEAD"])
 async def get_audio(index: int, audio_type: str) -> FileResponse:
@@ -334,232 +389,6 @@ async def get_audio(index: int, audio_type: str) -> FileResponse:
         media_type="audio/mpeg",
         headers={"Content-Disposition": f"inline; filename={audio_file.name}"}
     )
-
-
-@app.post("/api/translate")
-async def translate_word(request: TranslationRequest) -> TranslationResponse:
-    """
-    Translate English word or sentence to German using external API.
-
-    Args:
-        request: Translation request with English word or sentence
-
-    Returns:
-        Translation response with German translation and examples
-    """
-    english_input = request.english_word.strip()
-
-    try:
-        # Use LibreTranslate API for translation
-        german_translation = await translate_with_libretranslate(english_input)
-
-        # Generate example sentences using the original input and translation
-        english_sentence = english_input
-        german_sentence = german_translation
-
-        return TranslationResponse(
-            german_word=german_translation,
-            english_sentence=english_sentence,
-            german_sentence=german_sentence
-        )
-
-    except Exception as e:
-        # Fallback: return input as-is if translation fails
-        return TranslationResponse(
-            german_word=f"Translation service unavailable: {english_input}",
-            english_sentence=english_input,
-            german_sentence=f"Übersetzung nicht verfügbar: {english_input}"
-        )
-
-
-async def translate_with_libretranslate(text: str) -> str:
-    """
-    Translate text using LibreTranslate API with fallback to local translation.
-
-    Args:
-        text: Text to translate
-
-    Returns:
-        Translated text in German
-    """
-    try:
-        # LibreTranslate API endpoint (free public instance)
-        url = "https://libretranslate.com/translate"
-
-        payload = {
-            "q": text,
-            "source": "en",
-            "target": "de",
-            "format": "text"
-        }
-
-        headers = {
-            "Content-Type": "application/json"
-        }
-
-        response = requests.post(url, json=payload, headers=headers, timeout=10)
-
-        if response.status_code == 200:
-            result = response.json()
-            translated_text = result.get("translatedText", text)
-
-            # Check if translation was successful (not just returning original text)
-            if translated_text.strip().lower() != text.strip().lower():
-                return translated_text
-            else:
-                # API returned original text, use fallback
-                return translate_with_fallback(text)
-        else:
-            # If API fails, use fallback
-            return translate_with_fallback(text)
-
-    except Exception as e:
-        # If API is unavailable, use fallback
-        return translate_with_fallback(text)
-
-
-def translate_with_fallback(text: str) -> str:
-    """
-    Fallback translation using pattern matching and word-by-word translation.
-
-    Args:
-        text: Text to translate
-
-    Returns:
-        Translated text in German using fallback method
-    """
-    # Common phrase patterns for better sentence translation
-    phrase_patterns = {
-        "hello how are you": "hallo wie geht es dir",
-        "how are you": "wie geht es dir",
-        "i am fine": "mir geht es gut",
-        "i am good": "mir geht es gut",
-        "thank you": "danke",
-        "goodbye": "tschüss",
-        "good morning": "guten morgen",
-        "good afternoon": "guten tag",
-        "good evening": "guten abend",
-        "good night": "gute nacht",
-        "i love you": "ich liebe dich",
-        "i miss you": "du fehlst mir",
-        "i need help": "ich brauche hilfe",
-        "where is": "wo ist",
-        "how much": "wie viel",
-        "what time": "wie spät",
-        "i don't understand": "ich verstehe nicht",
-        "please speak slowly": "bitte sprechen sie langsam",
-        "can you help me": "können sie mir helfen",
-        "i am hungry": "ich bin hungrig",
-        "i am thirsty": "ich bin durstig",
-        "i am tired": "ich bin müde",
-        "i am happy": "ich bin glücklich",
-        "i am sad": "ich bin traurig",
-        "this is": "das ist",
-        "that is": "das ist",
-        "here is": "hier ist",
-        "there is": "dort ist",
-        "i have": "ich habe",
-        "i want": "ich möchte",
-        "i like": "ich mag",
-        "i don't like": "ich mag nicht",
-        "do you speak english": "sprechen sie englisch",
-        "do you speak german": "sprechen sie deutsch",
-        "i speak a little german": "ich spreche ein bisschen deutsch",
-        "how old are you": "wie alt bist du",
-        "where are you from": "woher kommst du",
-        "i am from": "ich komme aus",
-        "what do you do": "was machst du beruflich",
-        "i am a student": "ich bin student",
-        "i am a teacher": "ich bin lehrer",
-        "i work at": "ich arbeite bei",
-        "i live in": "ich wohne in",
-        "how is the weather": "wie ist das wetter",
-        "it is sunny": "es ist sonnig",
-        "it is raining": "es regnet",
-        "it is cold": "es ist kalt",
-        "it is hot": "es ist heiß",
-        "i am going to": "ich gehe zu",
-        "i am coming from": "ich komme von",
-        "see you later": "bis später",
-        "see you tomorrow": "bis morgen",
-        "take care": "pass auf dich auf",
-        "have a good day": "hab einen schönen tag",
-        "have a good night": "hab eine gute nacht",
-        "see you soon": "bis bald",
-        "i am sorry": "es tut mir leid",
-        "excuse me": "entschuldigung",
-        "nice to meet you": "freut mich dich kennenzulernen",
-        "what is your name": "wie heißt du",
-        "my name is": "ich heiße",
-        "i am": "ich bin",
-        "you are": "du bist",
-        "he is": "er ist",
-        "she is": "sie ist",
-        "we are": "wir sind",
-        "they are": "sie sind"
-    }
-
-    # Check for exact phrase matches first
-    text_lower = text.lower().strip()
-    if text_lower in phrase_patterns:
-        return phrase_patterns[text_lower]
-
-    # Word-by-word translation with improved vocabulary
-    word_translations = {
-        "house": "Haus", "home": "Zuhause", "car": "Auto", "dog": "Hund", "cat": "Katze",
-        "book": "Buch", "table": "Tisch", "chair": "Stuhl", "water": "Wasser", "food": "Essen",
-        "computer": "Computer", "phone": "Telefon", "music": "Musik", "school": "Schule",
-        "friend": "Freund", "family": "Familie", "work": "Arbeit", "time": "Zeit", "day": "Tag",
-        "night": "Nacht", "good": "gut", "bad": "schlecht", "big": "groß", "small": "klein",
-        "hot": "heiß", "cold": "kalt", "happy": "glücklich", "sad": "traurig", "tired": "müde",
-        "beautiful": "schön", "fast": "schnell", "slow": "langsam", "new": "neu", "old": "alt",
-        "hello": "hallo", "goodbye": "tschüss", "yes": "ja", "no": "nein", "please": "bitte",
-        "thank": "danke", "sorry": "entschuldigung", "welcome": "willkommen", "test": "Test",
-        "this": "dieses", "that": "jenes", "now": "jetzt", "here": "hier", "there": "dort",
-        "let's": "lassen wir", "let us": "lassen wir", "i": "ich", "you": "du", "he": "er",
-        "she": "sie", "we": "wir", "they": "sie", "me": "mir", "my": "mein", "your": "dein",
-        "his": "sein", "her": "ihr", "our": "unser", "their": "ihr", "the": "der/die/das",
-        "a": "ein/eine", "an": "ein/eine", "is": "ist", "are": "sind", "was": "war",
-        "were": "waren", "will": "werde", "would": "würde", "can": "kann", "could": "könnte",
-        "should": "sollte", "may": "darf", "might": "könnte", "must": "muss", "have": "habe",
-        "has": "hat", "had": "hatte", "do": "tue", "does": "tut", "did": "tat", "make": "mache",
-        "made": "machte", "go": "gehe", "went": "ging", "come": "komme", "came": "kam",
-        "see": "sehe", "saw": "sah", "look": "schaue", "watch": "schaue", "read": "lese",
-        "write": "schreibe", "learn": "lerne", "teach": "lehre", "help": "helfe", "play": "spiele",
-        "work": "arbeite", "buy": "kaufe", "sell": "verkaufe", "give": "gebe", "take": "nehme",
-        "eat": "esse", "drink": "trinke", "sleep": "schlafe", "run": "laufe", "walk": "gehe",
-        "talk": "spreche", "listen": "höre", "hear": "höre", "speak": "spreche", "say": "sage",
-        "tell": "sage", "ask": "frage", "answer": "antworte", "know": "weiß", "think": "denke",
-        "understand": "verstehe", "remember": "erinnere", "forget": "vergesse", "love": "liebe",
-        "like": "mag", "hate": "hasse", "want": "möchte", "need": "brauche", "find": "finde",
-        "lose": "verliere", "win": "gewinne", "start": "beginne", "finish": "beende", "stop": "stoppe",
-        "open": "öffne", "close": "schließe", "begin": "beginne", "end": "ende", "live": "lebe",
-        "die": "sterbe", "kill": "töte", "save": "rette", "keep": "behalte", "hold": "halte",
-        "bring": "bringe", "carry": "trage", "send": "sende", "receive": "empfange", "get": "bekomme",
-        "put": "lege", "set": "setze", "place": "stelle", "sit": "sitze", "stand": "stehe",
-        "lie": "liege", "build": "baue", "cook": "koche", "clean": "putze", "wash": "wasche",
-        "drive": "fahre", "fly": "fliege", "swim": "schwimme", "jump": "springe", "dance": "tanze",
-        "sing": "singe", "draw": "zeichne", "paint": "male", "write": "schreibe", "read": "lese",
-        "study": "studiere", "teach": "lehre", "travel": "reise", "visit": "besuche", "meet": "treffe",
-        "call": "rufe", "text": "schreibe", "email": "maile", "message": "nachrichte", "chat": "chatte"
-    }
-
-    words = text.split()
-    translated_words = []
-
-    for word in words:
-        # Remove punctuation for translation
-        clean_word = word.strip('.,!?').lower()
-        german_word = word_translations.get(clean_word, clean_word.title())
-
-        # Keep original capitalization for proper nouns or first words
-        if word.istitle() or (word == words[0] and word[0].isupper()):
-            german_word = german_word.capitalize()
-
-        translated_words.append(german_word)
-
-    return ' '.join(translated_words)
-
 
 if __name__ == "__main__":
     import uvicorn

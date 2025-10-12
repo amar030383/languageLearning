@@ -40,7 +40,7 @@ API Docs: http://localhost:8000/docs
 ### Backend
 ```bash
 # Create and activate virtual environment
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
