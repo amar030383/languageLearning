@@ -40,11 +40,11 @@ API Docs: http://localhost:8000/docs
 ### Backend
 ```bash
 # Create and activate virtual environment
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 
 # Start backend server
 uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
@@ -55,9 +55,16 @@ uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 cd frontend
 
 # Install dependencies
-npm install
+sudo apt update
+sudo apt install curl -y
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node -v   # Should show v20.x.x
 
 # Start development server
+cd /home/automation/languageLearning/frontend
+rm -rf node_modules package-lock.json
+npm install
 npm run dev
 ```
 

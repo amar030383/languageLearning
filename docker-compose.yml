@@ -2,7 +2,10 @@ version: "3.9"
 
 services:
   backend:
-    image: amar3383/german-backend:latest
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: german-backend:local
     container_name: german-backend
     ports:
       - "8000:8000"
@@ -20,7 +23,10 @@ services:
     restart: unless-stopped
 
   frontend:
-    image: amar3383/german-frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: german-frontend:local
     container_name: german-frontend
     depends_on:
       backend:
