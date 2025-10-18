@@ -28,9 +28,16 @@ def main():
         with open("translation_log.txt", "w", encoding="utf-8") as f:
             f.write(f"Translation started at {datetime.now()}\n")
 
-        # Load CSV file
-        df = pd.read_csv("SingeSheet.csv")
-        print(f"Loaded CSV with {len(df)} rows")
+        # Load CSV file (use python engine and skip malformed lines)
+        try:
+            df = pd.read_csv("SingeSheet.csv", engine="python", on_bad_lines="skip")
+            print(f"Loaded CSV with {len(df)} rows")
+        except Exception as e:
+            # If reading fails, write a clear log and exit
+            with open("translation_log.txt", "a", encoding="utf-8") as f:
+                f.write(f"Failed to read SingeSheet.csv: {e}\n")
+            print(f"Failed to read SingeSheet.csv: {e}")
+            sys.exit(1)
         english_word_col = df.columns[1]
         english_sentence_col = df.columns[3]
 
@@ -67,11 +74,20 @@ def main():
 
     except KeyboardInterrupt:
         print("\nProcess interrupted. Saving progress...")
-        df.to_excel("SingeSheet_with_Hindi_interrupted.xlsx", index=False)
+        try:
+            df.to_excel("SingeSheet_with_Hindi_interrupted.xlsx", index=False)
+        except Exception:
+            # If df is not available or saving fails, write a fallback log
+            with open("translation_log.txt", "a", encoding="utf-8") as f:
+                f.write("Process interrupted before any progress could be saved.\n")
         sys.exit(0)
     except Exception as e:
         print(f"\nUnexpected error: {e}")
-        df.to_excel("SingeSheet_with_Hindi_error.xlsx", index=False)
+        try:
+            df.to_excel("SingeSheet_with_Hindi_error.xlsx", index=False)
+        except Exception:
+            with open("translation_log.txt", "a", encoding="utf-8") as f:
+                f.write(f"Unexpected error and failed to save dataframe: {e}\n")
         sys.exit(1)
 
 if __name__ == "__main__":
